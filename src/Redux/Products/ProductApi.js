@@ -8,3 +8,4 @@ export const getPostsApi = async() => {
     console.log(data)
 }
 
+//bm
