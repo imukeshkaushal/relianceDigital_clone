@@ -4,14 +4,15 @@ import './App.css';
 import AdminLogin from './Pages/AdminLogin';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
-import AllRoutes from './Routers/AllRoutes';
+
+import Footer from './Components/Footer';
+import Navbar from './Components/Navbar';
+import Carousel1 from './Pages/Carousel';
 
 
 function App() {
   return (
     <div>
-      <AllRoutes/>
-      
     </div>
   );
 }
