@@ -1,40 +1,32 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteProduct, getCartProducts } from '../../Redux/cart/cart.action';
 import crt from "./cart.module.css" 
+import { FaPlus } from 'react-icons/fa';
+
 
 const Cart = () => {
   const data = useSelector((store) => store.cartManager.data);
   const dispatch = useDispatch();
+  const [delevery, setDelevery] = useState("");
+  const [total, setTotal] = useState(0); 
 
-  // const handleTotal = (arr) => {
-  //   let pr = 0; 
-  //   arr.forEach((e) => {
-  //     let x = e.price
-  //     let a = x.split(".")
-  //     let z = a[0].split(",").join(""); 
-  //     pr += +z; 
-  //     setTotal((el) => el + (Number(z)));
-  //   })
-  //   console.log(total); 
-  //   handleTotalAmt(pr);  
-  // }
+  const handleTotal = (arr) => { 
+    setTotal(0); 
+    let amt = 0; 
+    arr.forEach((e) => {
+      let x = e.price
+      let a = x.split(".")
+      let z = a[0].split(",").join("");  
+      amt += +z; 
+    })  
+    setTotal(amt); 
+  }
 
-  // const handleTotalAmt = (x) => {   
-  //   const toIndianCurrency = (num) => {
-  //     const curr = num.toLocaleString('en-IN', {
-  //       style: 'currency',
-  //       currency: 'INR'
-  //     });
-  //     return curr;
-  //   };
-  //   let ans = toIndianCurrency(x);   
-  //   setInTotal(ans); 
-  // } 
 
   const handleDelete = (id) => {
     dispatch(deleteProduct(id))
-    dispatch(getCartProducts())
+    dispatch(getCartProducts()) 
   }
 
 
@@ -42,7 +34,15 @@ const Cart = () => {
     if (data.length === 0) {
       dispatch(getCartProducts())
     }
-
+    const date = new Date();
+    const x = date.getDate() + 7;
+    date.setDate(x)
+    let s = date.toString().split(" ")
+    let a = s[2] + " " + s[1] + " " + s[3]
+    setDelevery(a);
+    // setTimeout(()=>{
+      handleTotal(data); 
+    // },1000)
   }, [data.length, dispatch])
 
 
@@ -56,15 +56,19 @@ const Cart = () => {
                 <img src={el.img} alt="Product images" className={crt.cartimg} />
               </div>
               <div>
-                <h3>{el.name}</h3>
+                <h3>{el.name}</h3>  
+                <h5> <FaPlus size="12" className={crt.plslogo} /> <span> RECOMMENDED SERVICES/WARRANTY </span> </h5>
               </div>
-              <div>
+              <div id={crt.mxm}>
                 <h2> ₹{el.price} </h2>
-                <h2 id={crt.strikethrough}> M.R.P: {el.mrp} <span> Inclusive of all taxes </span> </h2>
+                <h2 id={crt.strikethrough}> M.R.P: <i style={{textDecoration:"line-through"}}> {el.mrp} </i> <span> Inclusive of all taxes </span> </h2> 
+                <h2 id={crt.ships}> Free Shipping </h2>
+                <h2 id={crt.delevery}> <img src="https://www.reliancedigital.in/build/client/images/standard_delivery_icon.png" width="24px" alt="truck" /> Delivere by: {delevery} </h2> 
+                <h2 id={crt.gov}> *Delivery assurance is subject to our delivery locations staying open as per govt. regulations </h2>
               </div>
             </div>
             <div className={crt.cartbutton}>
-              <button onClick={() =>{handleDelete(el.id)}}>Remove</button>
+              <button onClick={() => { handleDelete(el.id) }}>Remove</button>
               <button> Move to wishlist </button>
             </div>
           </div>
@@ -77,27 +81,28 @@ const Cart = () => {
             <input type="text" placeholder='Coupon Code' />
             <button> APPLY </button>
           </div>
+          <hr />
           <div id={crt.pricebox}>
             <h4> PRICE DETAILS </h4>
             <div>
               <h4>Price (2 Items) </h4>
-              {/* <h4> {inTotal} </h4> */}
+              <h4> ₹{total} </h4>
             </div>
             <div>
               <h4>Delivery Charges</h4>
               <h4> FREE </h4>
             </div>
             <hr />
-            <div>
+            <div className={crt.payamt}>
               <h5> AMOUNT PAYABLE </h5>
-              {/* <h5> {inTotal} </h5>  */}
+              <h5> ₹{total} </h5> 
             </div>
             <hr />
           </div>
         </div>
       </div>
       <div className={crt.bottom}>
-        {/* <button> Total: {inTotal} </button> */}
+        <button> Total: ₹{total} </button>
         <button> Checkout </button>
       </div>
     </div>
