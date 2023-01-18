@@ -1,4 +1,10 @@
 
+import "./App.css";
+
+function App() {
+  return <div className="App"></div>;
+
+
 import Admin from './Admin/Admin';
 import './App.css';
 import AdminLogin from './Pages/AdminLogin';
@@ -15,6 +21,7 @@ function App() {
     <div>
     </div>
   );
+
 }
 
 export default App;
