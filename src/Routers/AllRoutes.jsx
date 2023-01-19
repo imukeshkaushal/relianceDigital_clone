@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Admin from '../Admin/Admin'
+import AdminRequireAuth from '../Admin/AdminRequireAuth'
 import AdminLogin from '../Pages/AdminLogin'
 import Home from '../Pages/Home'
 import Login from '../Pages/Login'
@@ -11,7 +12,7 @@ const AllRoutes = () => {
     <div>
         <Routes>
             <Route path='/' element = {<Home/>}></Route>
-            <Route path='/admin' element = {<Admin/>}></Route>
+            <Route path='/admin' element = {<AdminRequireAuth><Admin/></AdminRequireAuth>}></Route>
             <Route path='/admin/login' element = {<AdminLogin/>}></Route>
             <Route path='/login' element={<Login/>}></Route>
             <Route path='/register' element={<Register/>}></Route>
