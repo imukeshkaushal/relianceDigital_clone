@@ -1,7 +1,11 @@
 import "./App.css";
-
+import ProductCards from "./Pages/ProductCard/ProductCards";
 function App() {
-  return <div className="App"></div>;
+  return (
+  <div >
+  <ProductCards/>
+   </div>
+  )
 }
 
 export default App;

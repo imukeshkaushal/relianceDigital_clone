@@ -4,6 +4,7 @@ export const getPosts=()=>async(dispatch)=>{
     dispatch({type:GET_POSTS_LOADING});
     try{
         let data = await getPostsApi()
+        console.log(data)
         dispatch({type:GET_POSTS_SUCCESS,payload:data})
     }catch(e){
         dispatch({type:GET_POSTS_ERROR})
