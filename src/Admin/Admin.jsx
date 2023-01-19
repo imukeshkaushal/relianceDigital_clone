@@ -15,7 +15,7 @@ const Admin = () => {
   let [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("https://rus-digital-televisions.onrender.com/allproduct")
+    fetch("https://rus-digital-televisions.onrender.com/computers")
       .then((res) => res.json())
       .then((res) => setData(res));
   }, []);

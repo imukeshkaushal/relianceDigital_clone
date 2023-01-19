@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useSelector } from "react-redux";
 import { Navigate} from "react-router-dom";
@@ -5,7 +6,6 @@ import { Navigate} from "react-router-dom";
 
 const AdminRequireAuth = ({ children }) => {
   const {isAuth} = useSelector(store => store.adminAuthManager)
-
 
   if (isAuth) {
     return children;
@@ -17,5 +17,6 @@ const AdminRequireAuth = ({ children }) => {
     );
   }
 };
+
 
 export default AdminRequireAuth;

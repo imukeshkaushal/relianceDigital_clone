@@ -10,6 +10,7 @@ import {
 import thunk from "redux-thunk";
 import { adminReducer } from "./admin/admin.reducer";
 import { authAdminReducer } from "./adminAuth/adminAuth.reducer";
+import { authReducer } from "./auth/auth.reducer";
 import { cartReducer } from "./cart/cart.reducer";
 
   
@@ -18,6 +19,7 @@ import { cartReducer } from "./cart/cart.reducer";
         adminProductsManager : adminReducer,
         cartManager : cartReducer,
         adminAuthManager : authAdminReducer,
+        authManager : authReducer,
   });
   export const store = legacy_createStore(
     rootReducer,
