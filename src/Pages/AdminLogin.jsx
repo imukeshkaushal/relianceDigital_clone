@@ -1,7 +1,11 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
+
 import AdminLoginForm from "../Components/AdminLoginForm";
 
+
 const AdminLogin = () => {
+ 
+
   return (
     <Box width={["95%", "90%","90%", "90%"]} m="auto" mt={16}>
       <Flex m="auto" gap={["30px","50px","60px","100px"]} flexDirection={["column-reverse","column-reverse","column-reverse","row"]} alignItems="center">
