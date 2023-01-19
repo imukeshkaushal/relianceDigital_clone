@@ -1,0 +1,138 @@
+.topbox{
+    background-color: white; 
+}
+
+.hometop{
+    border: 1px solid rgb(162, 162, 162); 
+    display: flex; 
+    align-items: center; 
+    font-size: 13px; 
+    margin: 20px auto 0 auto;
+    color: rgba(52, 51, 51, 0.959); 
+    padding: 10px 30px; 
+}
+
+.main{
+    border: 1px solid rgba(189, 189, 189, 0.845); 
+    display: flex;   
+    width: 90%; 
+    margin: auto;  
+}
+
+.main>div:nth-child(1){
+    flex: 2; 
+    border: 1px solid rgba(189, 189, 189, 0.845); 
+    padding: 20px; 
+}
+
+.main>div:nth-child(2){
+    flex: 8;
+    border: 1px solid rgba(189, 189, 189, 0.845); 
+}
+
+.myinfo{
+    margin: 10px auto 20px auto; 
+}
+
+.links{
+    display: grid; 
+    grid-template-columns: repeat(1,1fr); 
+    gap: 6px; 
+}
+
+.links *{
+    text-decoration: none; 
+    color: black; 
+    font-size: small;
+}
+
+.links>button{
+    border: 0; 
+    text-align: left; 
+    font-size: small;   
+    font-weight: bold; 
+    display: flex; 
+    align-items: center; 
+    gap: 6px; 
+    cursor: pointer; 
+} 
+
+.lnk{
+    font-size: small; 
+    margin-left: 6% ; 
+    font-weight: 100; 
+    cursor: pointer; 
+}
+
+.lnk:hover{ 
+    font-weight: bold;
+}
+
+.links>h4 *{
+    text-decoration: none; 
+    color: black; 
+}
+
+.myinfo>h2{
+    font-size: medium;
+}
+
+.myinfo>p{
+    font-size: small; 
+    color: rgb(81, 81, 81);
+}
+
+/* ================= */
+/* part 2 */
+/* ==================== */
+
+
+.heading{
+    background-color: rgba(185, 255, 255, 0.765);
+    padding: 6px 20px;  
+}
+
+.heading>h3{
+    font-weight: 100; 
+    font-size: small; 
+}
+
+.option{
+    display: grid; 
+    grid-template-columns: repeat(3,1fr);  
+    gap: 20px; 
+    padding: 20px 10px; 
+}
+
+.option>div{
+    padding: 10px;  
+    border: 1px solid rgba(173, 173, 173, 0.715);  
+    border-radius: 6px;  
+    height: 80px; 
+    display: flex; 
+    cursor: pointer; 
+    align-items:flex-start ;  
+    justify-content: space-between; 
+} 
+
+.option img{
+    width: 60px;  
+}
+
+.option h3{
+    margin-left: 10px ;
+    color: rgb(4, 4, 141);   
+    font-size: 14px; 
+    font-weight: bolder;
+} 
+
+.option p{
+    margin-left: 10px ;   
+    margin-top: 4px; 
+    font-weight: 100;
+    color: rgba(49, 49, 49, 0.79);
+    font-size: 12px;
+}
+
+
+
