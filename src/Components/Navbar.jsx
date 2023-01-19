@@ -41,7 +41,7 @@ export default function Navbar() {
             </Box>
             </Flex>
         </Box>
-      <Box bg={useColorModeValue('#e42529', '#e42529')} px={4} position={"fixed"} w={"100%"}>
+      <Box bg={useColorModeValue('#e42529', '#e42529')} className="nav" px={4} position={"fixed"} zIndex={1} w={"100%"}>
         <Flex  className="input">
         {/* {sizes.map((size) => (
           <IconButton
@@ -106,7 +106,7 @@ export default function Navbar() {
          
        
       </Box>
-<Box backgroundColor={"#003380"} w={"100%"}  position={"fixed"} id="main_nav">
+<Box backgroundColor={"#003380"} w={"100%"}  position={"fixed"} zIndex={1} id="main_nav">
 <Box id="menu_nav" style={{ borderTop: "0px solid black" }} borderBottom='0px solid gainsboro'>
           <Box
             alignItems="center"
