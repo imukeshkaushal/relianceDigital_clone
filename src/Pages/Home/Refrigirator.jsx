@@ -7,13 +7,13 @@ import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import Heading from "./Heading";
 import { Link } from "react-router-dom";
-
+import uuid from "react-uuid";
 
 const Refri = ({ type, heading }) => {
   return (
-    <Box justifyContent="left" w="100%" m="auto" mt="6" cursor="pointer">
+    <Box justifyContent="left" w="95%" m="auto" mt="6" cursor="pointer">
       <Heading heading={heading} />
-      <Box mt="1">
+      <Box mt="1" >
         <Swiper
           modules={[Navigation, Autoplay]}
           navigation
@@ -42,9 +42,9 @@ const Refri = ({ type, heading }) => {
           }}
         >
           {type.map((i) => (
-            <Box width={"80%"} key={i.id}>
+            <Box key={uuid()} >
               <SwiperSlide p={10}>
-                <Link to={i.linked}>
+                {/* <Link to={i.linked}> */}
                   <Square m="auto" _hover={{ transform: "scale(1.1)" }}>
                     <Image src={`${i.img}`} alt={i.name} boxSize="160px" />
                   </Square>
@@ -89,7 +89,7 @@ const Refri = ({ type, heading }) => {
                           {i.discount}
                         </Text>
                       </Flex>
-                      <Text color="#003380">{i.Rating}</Text>
+                      <Text fontSize={12} color="#003380">{i.Rating}</Text>
                       <Box
                         borderRadius="xl"
                         border="1px"
@@ -106,7 +106,7 @@ const Refri = ({ type, heading }) => {
                       </Box>
                     </Box>
                   </Box>
-                </Link>
+                {/* </Link> */}
               </SwiperSlide>
             </Box>
           ))}

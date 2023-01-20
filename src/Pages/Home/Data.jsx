@@ -98,7 +98,8 @@ export const Laptops = [
       price: "32,999.00",
       mrp: "37,000.00",
       discount: "11%(₹4,001)",
-      id: 1,
+      Rating: "⭐⭐⭐⭐(1 Review)",
+      id: 11,
       linked: "computers",
     },
     {
@@ -107,7 +108,7 @@ export const Laptops = [
       price: "28,990.00",
       mrp: "41,204.00",
       discount: "30%(₹12,214)",
-      id: 2,
+      id: 12,
       linked: "computers",
     },
     {
@@ -116,7 +117,8 @@ export const Laptops = [
       price: "35,499.00",
       mrp: "59,390.00",
       discount: "40%(₹23,891)",
-      id: 3,
+      Rating: "⭐⭐⭐⭐(1 Review)",
+      id: 13,
       linked: "computers",
     },
     {
@@ -125,7 +127,8 @@ export const Laptops = [
       price: "41,400.00",
       mrp: "45,409.00",
       discount: "9%(₹4,009)",
-      id: 4,
+      Rating: "⭐⭐⭐(2 Review)",
+      id: 14,
       linked: "computers",
     },
     {
@@ -134,7 +137,7 @@ export const Laptops = [
       price: "40,499.00",
       mrp: "65,690.00",
       discount: "38%(₹25,191)",
-      id: 5,
+      id: 15,
       linked: "computers",
     },
     {
@@ -143,7 +146,8 @@ export const Laptops = [
       price: "38,990.00",
       mrp: "67,090.00",
       discount: "42%(₹28,100)",
-      id: 6,
+      Rating: "⭐⭐⭐⭐(1 Review)",
+      id: 16,
       linked: "computers",
     },
     {
@@ -152,7 +156,7 @@ export const Laptops = [
       price: "43,749.00",
       mrp: "49,977.00",
       discount: "12%(₹6,228)",
-      id: 7,
+      id: 17,
       linked: "computers",
     },
     {
@@ -161,7 +165,7 @@ export const Laptops = [
       price: "39,999.00",
       mrp: "47,833.00",
       discount: "16%(₹7,834)",
-      id: 8,
+      id: 18,
       linked: "computers",
     },
     {
@@ -170,7 +174,8 @@ export const Laptops = [
       price: "49,999.00",
       mrp: "70,990.00",
       discount: "30%(₹20,991)",
-      id: 9,
+      Rating: "⭐⭐⭐⭐(1 Review)",
+      id: 19,
       linked: "computers",
     },
     {
@@ -179,7 +184,7 @@ export const Laptops = [
       price: "57,928.00",
       mrp: "67,831.00",
       discount: "15%(₹9,903)",
-      id: 10,
+      id: 20,
       linked: "computers",
     },
     {
@@ -188,7 +193,8 @@ export const Laptops = [
       price: "60,499.00",
       mrp: "68,000.00",
       discount: "11%(₹7,501)",
-      id: 11,
+      Rating: "⭐⭐⭐⭐(1 Review)",
+      id: 21,
       linked: "computers",
     },
     {
@@ -197,7 +203,7 @@ export const Laptops = [
       price: "48,990.00",
       mrp: "69,990.00",
       discount: "30%(₹21,000)",
-      id: 12,
+      id: 22,
       linked: "computers",
     },
   ];
@@ -207,21 +213,25 @@ export const Card1 = [
     img: "https://www.reliancedigital.in/medias/Home-Appliances-Fest-Best-Deals-on-Washing-Machines-Small-Banners.jpg?context=bWFzdGVyfGltYWdlc3w0NjkxMXxpbWFnZS9qcGVnfGltYWdlcy9oMmEvaDE4Lzk5NDg3MDc4MTU0NTQuanBnfDFiYWIzNjVhM2M1MDE5MTI2YmE3OTljMTI2ZTY5ZGM3MGRhYjRlNWZlMTZkMjcwMGE1MTljZjg4ODY2ODM3N2Y",
     caption: "Slide 1",
     linked: "televisions",
+    id: 67,
   },
   {
     img: "https://www.reliancedigital.in/medias/Home-Appliances-Fes-Great-deals-on-Refrigeratorst-Small-Banners.jpg?context=bWFzdGVyfGltYWdlc3w0Mzg4OXxpbWFnZS9qcGVnfGltYWdlcy9oZmMvaDEyLzk5NDg3MDc4ODA5OTAuanBnfGE1YTE4ZTk3OGRmNTk4N2QxOGNlYmVkZWY0MGI1OTA1NzlkMTBiM2Y1ZDEzNTU5NjliNzAyMzFhNWZiYmM1ZTY",
     caption: "Slide 2",
     linked: "headphones",
+    id: 68,
   },
   {
     img: "https://www.reliancedigital.in/medias/Home-Appliances-Fest-Clearance-Sale-on-Air-Conditioners-Small-Banners.jpg?context=bWFzdGVyfGltYWdlc3w0NTA1NXxpbWFnZS9qcGVnfGltYWdlcy9oOGQvaDc5Lzk5NDg3MDc5NDY1MjYuanBnfDc0NjlhZjU0YjMwY2FjNGFlNmU2YmU5NTRhNmViOTg1M2U5NDlmODNjYjg5ODNhZjcyMTIzZGY3MzA1NTZkMDI",
     caption: "Slide 3",
     linked: "televisions",
+    id: 69,
   },
   {
     img: "https://www.reliancedigital.in/medias/Home-Appliances-Fest-best-seller-home-appliances-Small-Banners.jpg?context=bWFzdGVyfGltYWdlc3w1ODEzMHxpbWFnZS9qcGVnfGltYWdlcy9oM2YvaDQ2Lzk5NDg3MDgwMTIwNjIuanBnfGZiYjg2ZjAzNGM1YzUwYjk4Mjc1MTM0YTYxOGI1YzI3NDJlNTFmNjdlNmU5Yjc3NWRkODdlMmEzNzhmMTA0NDU",
     caption: "Slide 4",
     linked: "homeappliances",
+    id: 70,
   },
 ];
   
@@ -230,41 +240,49 @@ export const Card2 = [
     img: "https://www.reliancedigital.in/medias/Motorola-Moto-G42-Small-Banner-28-12-2022.jpg?context=bWFzdGVyfGltYWdlc3wyOTgyNXxpbWFnZS9qcGVnfGltYWdlcy9oZjcvaDBiLzk5NDUxMzc0MTQxNzQuanBnfGJjMTNkOWU4ZGYxNDNhOTJiMjljMTc3YmZkNGJhODljOTYzMWRkZTI4OWJjZjkyNjFiZmJjODUzNDgyMjZjZDE",
     caption: "Slide 1",
     linked: "televisions",
+    id: 71,
   },
   {
     img: "https://www.reliancedigital.in/medias/Hisense-HD-Ready-Smart-LED-TV-Small-Banner-28-12-2022.jpg?context=bWFzdGVyfGltYWdlc3w0OTgyNXxpbWFnZS9qcGVnfGltYWdlcy9oOWEvaDY1Lzk5Mzc4OTUxNjE4ODYuanBnfDZkM2I0YzZmM2UxZWNmZWE4M2FiYjEwYzM2NzdmMmM3NzQwYTE0ODFiMzA0ZDFkMzQ2ODQ4OGQ5MWRmZGI0MzM",
     caption: "Slide 2",
     linked: "headphones",
+    id: 72,
   },
   {
     img: "https://www.reliancedigital.in/medias/Smartwatches-Small-Banner-28-12-2022.jpg?context=bWFzdGVyfGltYWdlc3wzMTY3M3xpbWFnZS9qcGVnfGltYWdlcy9oNTEvaGY3Lzk5Mzc4OTUyOTI5NTguanBnfDQ2NzM2YjAxZTkzYmJiMTNlMjk4ODkxNTNlMTczMDcxYzU4NjMzZDZmNWQ3N2I5MGViNmMzZDAwNjExMmUxNTE",
     caption: "Slide 3",
     linked: "televisions",
+    id: 73,
   },
   {
     img: "https://www.reliancedigital.in/medias/Neckband-True-Wireless-Small-Banner-28-12-2022.jpg?context=bWFzdGVyfGltYWdlc3wzMjg5OHxpbWFnZS9qcGVnfGltYWdlcy9oNzYvaDE2Lzk5Mzc4OTUwOTYzNTAuanBnfGE1OTcxMTM4NGUyMjU3MmM4NTc4YTI1NThkMmQwOTc1ZDU2N2YwNjRjMWNiZTU2YjZiMzcwOTVkYjc0MzQ4MDc",
     caption: "Slide 4",
     linked: "homeappliances",
+    id: 74,
   },
   {
     img: "https://www.reliancedigital.in/medias/Appliances-Small-Banner-28-12-2022.jpg?context=bWFzdGVyfGltYWdlc3wyODYwNHxpbWFnZS9qcGVnfGltYWdlcy9oNzkvaGU3Lzk5Mzc4OTUzNTg0OTQuanBnfGZmNzY2ZDcwZWJiMzFjMjU1Y2I2NGFhYWY2ZWFlODc1ZGUwYTAxMjEyN2NiZDI4MzRkNzlmMzNkNDU2MzQ3MGU",
     caption: "Slide 5",
     linked: "televisions",
+    id: 75,
   },
   {
     img: "https://www.reliancedigital.in/medias/Printers-Monitors-Small-Banner-28-12-2022.jpg?context=bWFzdGVyfGltYWdlc3wzNDkxNHxpbWFnZS9qcGVnfGltYWdlcy9oYTkvaDFhLzk5MzkyMDYwNDU3MjYuanBnfDYwMDA0MjljYTU2YWZkOWE3MjY4YjA4ZDE1ZDVkZjkyZGVkZTdhNDU0Y2FkMWZlMzEyMjhhZWZkYTliMjZmZWM",
     caption: "Slide 6",
     linked: "headphones",
+    id: 77,
   },
   {
     img: "https://www.reliancedigital.in/medias/Microwave-Small-Banner-28-12-2022.jpg?context=bWFzdGVyfGltYWdlc3wzMDcwMnxpbWFnZS9qcGVnfGltYWdlcy9oYzEvaDU1Lzk5Mzc4OTU0ODk1NjYuanBnfDUxODE0YzQyYzRkMzUwN2ZhMTk4MDgxMjUwMTQyYTg3ZjMzMzhiMmVjMGNmMzcyZTRlNmVlNWVjZjk2ZDY3MTY",
     caption: "Slide 7",
     linked: "televisions",
+    id: 78,
   },
   {
     img: "https://www.reliancedigital.in/medias/Apple-MNEH3HNA-MacBook-Small-Banner-28-12-2022.jpg?context=bWFzdGVyfGltYWdlc3wzMzM3MHxpbWFnZS9qcGVnfGltYWdlcy9oZWYvaGUxLzk5Mzc4OTU1NTUxMDIuanBnfDYwYWNmOTM3MDhjYjBhYzVhZTlkMWY0MTMyZTUwMDg4NmY4NGRjOWQ3YjIyMjNlNzllMjE1MTNlZjNjZGQ2OTA",
     caption: "Slide 8",
     linked: "homeappliances",
+    id: 79,
   },
 ];
  
@@ -275,7 +293,8 @@ export const Laptops2 = [
     price: "32,999.00",
     mrp: "37,000.00",
     discount: "11%(₹4,001)",
-    id: 1,
+    Rating: "⭐⭐⭐⭐(1 Review)",
+    id: 23,
     linked: "computers",
   },
   {
@@ -284,7 +303,7 @@ export const Laptops2 = [
     price: "28,990.00",
     mrp: "41,204.00",
     discount: "30%(₹12,214)",
-    id: 2,
+    id: 24,
     linked: "computers",
   },
   {
@@ -293,7 +312,8 @@ export const Laptops2 = [
     price: "35,499.00",
     mrp: "59,390.00",
     discount: "40%(₹23,891)",
-    id: 3,
+    Rating: "⭐⭐⭐⭐(2 Review)",
+    id: 25,
     linked: "computers",
   },
   {
@@ -302,7 +322,7 @@ export const Laptops2 = [
     price: "41,400.00",
     mrp: "45,409.00",
     discount: "9%(₹4,009)",
-    id: 4,
+    id: 26,
     linked: "computers",
   },
   {
@@ -311,7 +331,8 @@ export const Laptops2 = [
     price: "40,499.00",
     mrp: "65,690.00",
     discount: "38%(₹25,191)",
-    id: 5,
+    Rating: "⭐⭐⭐⭐(1 Review)",
+    id: 27,
     linked: "computers",
   },
   {
@@ -320,7 +341,7 @@ export const Laptops2 = [
     price: "38,990.00",
     mrp: "67,090.00",
     discount: "42%(₹28,100)",
-    id: 6,
+    id: 28,
     linked: "computers",
   },
   {
@@ -329,7 +350,7 @@ export const Laptops2 = [
     price: "43,749.00",
     mrp: "49,977.00",
     discount: "12%(₹6,228)",
-    id: 7,
+    id: 29,
     linked: "computers",
   },
   {
@@ -338,7 +359,7 @@ export const Laptops2 = [
     price: "39,999.00",
     mrp: "47,833.00",
     discount: "16%(₹7,834)",
-    id: 8,
+    id: 30,
     linked: "computers",
   },
   {
@@ -347,7 +368,8 @@ export const Laptops2 = [
     price: "49,999.00",
     mrp: "70,990.00",
     discount: "30%(₹20,991)",
-    id: 9,
+    Rating: "⭐⭐⭐⭐(1 Review)",
+    id: 31,
     linked: "computers",
   },
   {
@@ -356,7 +378,7 @@ export const Laptops2 = [
     price: "57,928.00",
     mrp: "67,831.00",
     discount: "15%(₹9,903)",
-    id: 10,
+    id: 32,
     linked: "computers",
   },
   {
@@ -365,7 +387,8 @@ export const Laptops2 = [
     price: "60,499.00",
     mrp: "68,000.00",
     discount: "11%(₹7,501)",
-    id: 11,
+    Rating: "⭐⭐⭐(1 Review)",
+    id: 33,
     linked: "computers",
   },
   {
@@ -374,7 +397,8 @@ export const Laptops2 = [
     price: "48,990.00",
     mrp: "69,990.00",
     discount: "30%(₹21,000)",
-    id: 12,
+    Rating: "⭐⭐⭐⭐(1 Review)",
+    id: 34,
     linked: "computers",
   },
 ];
@@ -387,6 +411,8 @@ export const Phones = [
     price: "1,09,900.00",
     mrp: "1,10,999.00",
     discount: "1%(₹1,099)",
+    id: 35,
+    Rating: "⭐⭐⭐⭐(1 Review)",
     linked: "mobilesandtablets",
   },
   {
@@ -395,6 +421,7 @@ export const Phones = [
     caption: "Slide 2",
     price: "89,990.00",
     mrp: "90,889.00",
+    id: 36,
     discount: "1%(₹8,99)",
     linked: "mobilesandtablets",
   },
@@ -404,7 +431,9 @@ export const Phones = [
     caption: "Slide 3",
     price: "89,990.00",
     mrp: "90,889.00",
+    id: 37,
     discount: "1%(₹8,99)",
+    Rating: "⭐⭐⭐(1 Review)",
     linked: "mobilesandtablets",
   },
   {
@@ -412,6 +441,7 @@ export const Phones = [
     img: "https://www.reliancedigital.in/medias/Apple-iPhone-14-Plus-Mobile-Phone-493177767-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNDEwNHxpbWFnZS9qcGVnfGltYWdlcy9oOWIvaGFmLzk4OTA1NDE5NjEyNDYuanBnfGEwNTZiM2Y3MWY1YmFmOTU3MDI2MjUxM2E0NTI0NTIwMzFhMTE5Y2NjNzQ2MWY1MWI5ZjVmN2JjMmRjZjY3YTU",
     caption: "Slide 4",
     price: "89,990.00",
+    id: 38,
     mrp: "90,889.00",
     discount: "1%(₹8,99)",
     linked: "mobilesandtablets",
@@ -422,7 +452,9 @@ export const Phones = [
     caption: "Slide 1",
     price: "1,09,900.00",
     mrp: "1,10,999.00",
+    id: 39,
     discount: "1%(₹1,099)",
+    Rating: "⭐⭐⭐⭐(1 Review)",
     linked: "mobilesandtablets",
   },
 ];
@@ -434,7 +466,8 @@ export const TV = [
     price: "16,499.00",
     mrp: "19,999.00",
     discount: "18%(₹3,500)",
-    id: 1,
+    Rating: "⭐⭐⭐⭐(1 Review)",
+    id: 40,
     linked: "televisions",
   },
   {
@@ -443,7 +476,7 @@ export const TV = [
     price: "25,990.00",
     mrp: "70,990.00",
     discount: "63%(₹45,000)",
-    id: 2,
+    id: 42,
     linked: "televisions",
   },
   {
@@ -452,7 +485,7 @@ export const TV = [
     price: "13,490.00",
     mrp: "22,900.00",
     discount: "41%(₹9,410)",
-    id: 3,
+    id: 43,
     linked: "televisions",
   },
   {
@@ -461,7 +494,8 @@ export const TV = [
     price: "24,999.00",
     mrp: "46,999.00",
     discount: "47%(₹22,000)",
-    id: 4,
+    Rating: "⭐⭐⭐⭐(1 Review)",
+    id: 44,
     linked: "televisions",
   },
   {
@@ -470,7 +504,7 @@ export const TV = [
     price: "8,999.00",
     mrp: "19,990.00",
     discount: "55%(₹10,991)",
-    id: 5,
+    id: 45,
     linked: "televisions",
   },
   {
@@ -479,7 +513,7 @@ export const TV = [
     price: "9,999.00",
     mrp: "18,499.00",
     discount: "46%(₹8,500)",
-    id: 6,
+    id: 46,
     linked: "televisions",
   },
   {
@@ -488,7 +522,8 @@ export const TV = [
     price: "19,990.00",
     mrp: "44,990.00",
     discount: "56%(₹25,000)",
-    id: 7,
+    Rating: "⭐⭐⭐(1 Review)",
+    id: 47,
     linked: "televisions",
   },
   {
@@ -497,7 +532,7 @@ export const TV = [
     price: "10,990.00",
     mrp: "24,990.00",
     discount: "56%(₹14,000)",
-    id: 8,
+    id: 48,
     linked: "televisions",
   },
 ];
@@ -509,7 +544,9 @@ export const AppleWatch = [
     caption: "Slide 1",
     mrp: "85,405.00",
     price: "89,900.00",
+    id: 49,
     discount: "5%(₹4,495)",
+    Rating: "⭐⭐⭐⭐(2 Review)",
     linked: "personalcare",
   },
   {
@@ -517,6 +554,7 @@ export const AppleWatch = [
     img: "https://www.reliancedigital.in/medias/Apple-SE-Sports-Fitness-Watches-493177926-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNDk1OXxpbWFnZS9qcGVnfGltYWdlcy9oMmEvaDJkLzk4OTE5OTE5NzgwMTQuanBnfDdjNDY1NzJlNjlkNjg0MmZiZDQ2MTBjNzM0ZmY1NTZhYjExYTZlYTk2MmVlNDRmYzU4Yjc5MTNhZDkyOTZkNjc",
     caption: "Slide 2",
     mrp: "33,155.00",
+    id: 50,
     price: "34,900.00",
     discount: "5%(₹1,745)",
     linked: "personalcare",
@@ -527,7 +565,9 @@ export const AppleWatch = [
     caption: "Slide 3",
     mrp: "36,005.00",
     price: "37,900.00",
+    id: 51,
     discount: "5%(₹1,895)",
+    Rating: "⭐⭐⭐⭐(1 Review)",
     linked: "personalcare",
   },
   {
@@ -536,6 +576,7 @@ export const AppleWatch = [
     caption: "Slide 4",
     mrp: "85,405.00",
     price: "89,900.00",
+    id: 52,
     discount: "5%(₹4,495)",
     linked: "personalcare",
   },
@@ -545,7 +586,9 @@ export const AppleWatch = [
     caption: "Slide 1",
     mrp: "85,405.00",
     price: "89,900.00",
+    id: 53,
     discount: "5%(₹4,495)",
+    Rating: "⭐⭐⭐⭐(1 Review)",
     linked: "personalcare",
   },
 ];
@@ -557,7 +600,8 @@ export const Headphones = [
     price: "1,099.00",
     mrp: "3,499.00",
     discount: "69%(₹2,400)",
-    id: 1,
+    Rating: "⭐⭐⭐⭐(1 Review)",
+    id: 54,
     linked: "headphones",
   },
   {
@@ -566,15 +610,16 @@ export const Headphones = [
     price: "1,099.00",
     mrp: "2,990.00",
     discount: "63%(₹1,891)",
-    id: 2,
+    id: 55,
     linked: "headphones",
   },
   {
     name: "Apple MME73HN/A 3rd Generation Airpods with Mic and Wireless Charging Case, White",
     img: "https://www.reliancedigital.in/medias/Apple-Airpods-492571632-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMTQ1NnxpbWFnZS9qcGVnfGltYWdlcy9oMjgvaGU2Lzk4MjU2MDg5OTA3NTAuanBnfGU0MjZmMjM3YjYwMDhkYmUxOWIwYjllNTczODI0YzdjY2EyYTMyYjY5MTQ3ZTE4Y2I2YzEwNGMyN2Q1N2MwMzU",
     price: "18,500.00",
-    id: 3,
+    id: 56,
     linked: "headphones",
+    Rating: "⭐⭐⭐⭐(1 Review)",
   },
   {
     name: "boAt Airdopes 148 True Wireless Airdopes, Active Black",
@@ -591,7 +636,8 @@ export const Headphones = [
     price: "2,499.00",
     mrp: "2,999.00",
     discount: "17%(₹500)",
-    id: 5,
+    Rating: "⭐⭐⭐⭐(1 Review)",
+    id: 57,
     linked: "headphones",
   },
   {
@@ -600,7 +646,7 @@ export const Headphones = [
     price: "1,099.00",
     mrp: "2,990.00",
     discount: "63%(₹1,891)",
-    id: 6,
+    id: 58,
     linked: "headphones",
   },
   {
@@ -609,7 +655,7 @@ export const Headphones = [
     price: "1,699.00",
     mrp: "2,290.00",
     discount: "26%(₹591)",
-    id: 7,
+    id: 59,
     linked: "headphones",
   },
   {
@@ -618,7 +664,8 @@ export const Headphones = [
     price: "499.00",
     mrp: "1,899.00",
     discount: "74%(₹1,400)",
-    id: 8,
+    Rating: "⭐⭐⭐⭐(1 Review)",
+    id: 60,
     linked: "headphones",
   },
   {
@@ -627,7 +674,7 @@ export const Headphones = [
     price: "649.00",
     mrp: "2,999.00",
     discount: "78%(₹2,350)",
-    id: 9,
+    id: 61,
     linked: "headphones",
   },
   {
@@ -636,7 +683,7 @@ export const Headphones = [
     price: "20,990.00",
     mrp: "26,300.00",
     discount: "20%(₹5,310)",
-    id: 10,
+    id: 61,
     linked: "headphones",
   },
 ];
@@ -647,36 +694,68 @@ export const Explore1 = [
     caption: "Slide 1",
     categories: "Smartphone",
     linked: "personalcare",
+    id: 62,
   },
   {
     img: "https://www.reliancedigital.in/medias/Washing-Machine-180x180-15-01-2019.png?context=bWFzdGVyfGltYWdlc3wzNDU4MXxpbWFnZS9wbmd8aW1hZ2VzL2gzOC9oM2UvOTI1MTA1MDg4MTA1NC5wbmd8ZDAyZGNkMzU1MzE3N2E2OGFlOTliMzUyODZkYzlkNTc0NzFmODllY2JiZDVlNzdhYjg3MTgyMTc4ZGVhODA3ZA",
     caption: "Slide 2",
     categories: "Washing Machines",
     linked: "homeappliances",
+    id: 62,
   },
   {
     img: "https://www.reliancedigital.in/medias/Laptop-180x180-15-01-2019.png?context=bWFzdGVyfGltYWdlc3wyOTAwOXxpbWFnZS9wbmd8aW1hZ2VzL2g0Mi9oNTYvOTI1MTA1MDYxODkxMC5wbmd8N2ZjYTg0ZDAyOTZmMmQ5OTZhZDNiM2M4NDg0ZDgxY2UyNzNjMmJiYzMwZTZiOGQwOWE5N2JlZDI4M2ViMGZjNw",
     caption: "Slide 3",
     categories: "Laptops",
     linked: "computers",
+    id: 63,
   },
   {
     img: "https://www.reliancedigital.in/medias/TV-180x180-15-01-2019.png?context=bWFzdGVyfGltYWdlc3w0OTM4M3xpbWFnZS9wbmd8aW1hZ2VzL2g1ZC9oMTEvOTI1MTA1MDU1MzM3NC5wbmd8MThiNmU4NTZiNWI5MTE1ZGVjYjA4ZjIwM2QwZjUyMzFlOGExZTY0YmQ0MTRkYTkyN2M2MDZiYzUzZDY1ZjM4Ng",
     caption: "Slide 4",
     categories: "Televisions",
     linked: "televisions",
+    id: 64,
   },
   {
     img: "https://www.reliancedigital.in/medias/Watch-180x180-27-02-2020.png?context=bWFzdGVyfGltYWdlc3w2Njk2fGltYWdlL3BuZ3xpbWFnZXMvaGQ1L2g2My85MjUzNTA3NTk2MzE4LnBuZ3w4NmEwODU5NDI5YzVlMzJjNzRlNzNlYmJkMmJmYTZjMTI2OWY0YTUxYWU3YzMzM2E3YTc5YjljZmU4ZGMyNGQ2",
     caption: "Slide 5",
     categories: "Smart Wearables",
     linked: "personalcare",
+    id: 65,
   },
   {
     img: "https://www.reliancedigital.in/medias/Speaker-Headset-180x180-15-01-2019.png?context=bWFzdGVyfGltYWdlc3wyNzUzN3xpbWFnZS9wbmd8aW1hZ2VzL2g1YS9oODAvOTI1MTA1MDY4NDQ0Ni5wbmd8YmMyYWJiNzRhMzk4NjMxMDRmOWRlZGI1MzVjZDk2Y2IxYTkxOGNlNjlmZjA2YTgwMGIwMjhmYTJlYmNhYjIwOA",
     caption: "Slide 5",
     categories: "Speakers & Headsets",
     linked: "homeappliances",
+    id: 66,
   },
 ];
 
+export const BrandPromises = [
+  {
+    img: "https://www.reliancedigital.in/medias/Insta-Delivery-Brand-Promise-Icon.png?context=bWFzdGVyfGltYWdlc3wxNTM3fGltYWdlL3BuZ3xpbWFnZXMvaGI2L2gwNS85NDQ3MTcwMzQyOTQyLnBuZ3w2Yzc1ZmY1ZjYwOWIyNWU0ZTgwMjFlYmRkMTU5ZTgzMGI4ZDNmZTE2NjVjYmRlMmUwMmRiODI2OTExNWM5ZTdk",
+    caption: "Slide 1",
+    title: "INSTA DELIVERY",
+    desc: "LESS THAN 3 HRS.",
+  },
+  {
+    img: "https://www.reliancedigital.in/medias/Best-Finance-Options-2.png?context=bWFzdGVyfGltYWdlc3wxMjM4fGltYWdlL3BuZ3xpbWFnZXMvaDJmL2gxOS85NDQ3MTcwNDA4NDc4LnBuZ3xlMDBiNjY4YWI5YzMzYjZkZDhlZTMyMDhjYjE2YzI2OTY2NWJhYjk2M2VkNzdjZDg3NTNlMGEyMTA1ZjFlODZh",
+    caption: "Slide 2",
+    title: "BEST FINANCE OPTIONS",
+    desc: "WIDE RANGE",
+  },
+  {
+    img: "https://www.reliancedigital.in/medias/service-img.png?context=bWFzdGVyfGltYWdlc3w5MTB8aW1hZ2UvcG5nfGltYWdlcy9oMDYvaGEzLzkwOTA3OTc5OTQwMTQucG5nfGJjZmJhNzM1ODdkYTQ5ODI3YzNiMzQ1ZTdlM2JjNjUwMTBjM2E3YWFjNmUxZjdmMmEyOGRjZDMxOGI4ZWE0MWY",
+    caption: "Slide 3",
+    title: "SERVICE GUARANTEE",
+    desc: "HASSLE FREE",
+  },
+  {
+    img: "https://www.reliancedigital.in/medias/unmatched-network-img.png?context=bWFzdGVyfGltYWdlc3w3NDV8aW1hZ2UvcG5nfGltYWdlcy9oODIvaDJhLzkwOTA3OTgwNTk1NTAucG5nfDFmMThjYzdiYTNiOTgxYjA5YzdlZTFiMmQyODI5MGY2NTM4ZTcxOWZkZTA1ZjAzY2Q1ZTk5YjQ1NTMxMWViYzU",
+    caption: "Slide 4",
+    title: "UNMATCHED NETWORK",
+    desc: "700 CITIES, 2000 STORES",
+  },
+];

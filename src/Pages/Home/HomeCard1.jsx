@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Grid, Image, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import uuid from "react-uuid";
 
 const HomeCard1 = ({ type, heading}) => {
   return (
@@ -28,10 +29,10 @@ const HomeCard1 = ({ type, heading}) => {
  
       >
         {type.map((i) => (
-          <Box _hover={{transform:"scale(1.1)"}} w="50" display="block" key={i.id}>
-            <Link to={i.linked}>
+          <Box _hover={{transform:"scale(1.1)"}} w="50" display="block" key={uuid()}>
+            {/* <Link to={i.linked}> */}
               <Image src={`${i.img}`} alt={i.caption} w="100%" />
-            </Link>
+            {/* </Link> */}
           </Box>
         ))}
       </Grid>

@@ -6,6 +6,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import { Link } from "react-router-dom";
+import uuid from "react-uuid";
+import ViewButton from "./ViewButton";
 
 const Explore = ({ type, heading }) => {
   return (
@@ -15,13 +17,14 @@ const Explore = ({ type, heading }) => {
       mt="6"
       backgroundColor="#f7f7f7"
       cursor="pointer"
+      padding={4}
+      mb={5}
     >
       <Center>
         <Text fontSize="2xl" fontWeight="bold" mt="5">
           {heading}
         </Text>
       </Center>
-      <br />
       <br />
       <br />
       <Box mt="1">
@@ -54,11 +57,11 @@ const Explore = ({ type, heading }) => {
         >
           <Grid templateColumns="repeat(5, 1fr)" gap={6} w="90%" m="auto">
             {type.map((i) => (
-              <Box key={i.id}>
+              <Box key={uuid()}>
                 <SwiperSlide>
-                  <Box>
-                    <Link to={i.linked}>
-                      <Square m="auto">
+                  <Box overflow={"hidden"}>
+                    {/* <Link to={i.linked}> */}
+                      <Square m="auto" _hover={{transform:"scale(1.1)"}}>
                         <Image
                           src={`${i.img}`}
                           alt={i.caption}
@@ -72,7 +75,7 @@ const Explore = ({ type, heading }) => {
                           {i.categories}
                         </Text>
                       </Center>
-                    </Link>
+                    {/* </Link> */}
                   </Box>
                 </SwiperSlide>
               </Box>
@@ -80,6 +83,9 @@ const Explore = ({ type, heading }) => {
           </Grid>
         </Swiper>
       </Box>
+      <Center>
+        <ViewButton />
+      </Center>
     </Box>
   );
 };

@@ -5,14 +5,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
-import Heading from "./Heading";
 import { Link } from "react-router-dom";
+import uuid from "react-uuid";
 
-
-const SliderFormat = ({ type, heading }) => {
+const SliderFormat = ({ type }) => {
   return (
-    <Box justifyContent="left" w="70%" m="auto" mt="6" cursor="pointer">
-      <Heading heading={heading} />
+    <Box justifyContent="left" w="100%" m="auto" mt="6" cursor="pointer">
       <Box mt="1">
         <Swiper
           modules={[Navigation, Autoplay]}
@@ -28,7 +26,7 @@ const SliderFormat = ({ type, heading }) => {
               spaceBetween: 10,
             },
             768: {
-              slidesPerView: 3,
+              slidesPerView: 2,
               spaceBetween: 15,
             },
             1024: {
@@ -42,9 +40,9 @@ const SliderFormat = ({ type, heading }) => {
           }}
         >
           {type.map((i) => (
-            <Box width={"80%"} key={i.id}>
+            <Box key={uuid()}>
               <SwiperSlide p={10}>
-                <Link to={i.linked}>
+                {/* <Link to={i.linked}> */}
                   <Square m="auto" _hover={{ transform: "scale(1.1)" }}>
                     <Image src={`${i.img}`} alt={i.name} boxSize="160px" />
                   </Square>
@@ -89,7 +87,7 @@ const SliderFormat = ({ type, heading }) => {
                           {i.discount}
                         </Text>
                       </Flex>
-                      <Text color="#003380">{i.Rating}</Text>
+                      <Text fontSize={12} color="#003380">{i.Rating}</Text>
                       <Box
                         borderRadius="xl"
                         border="1px"
@@ -106,7 +104,7 @@ const SliderFormat = ({ type, heading }) => {
                       </Box>
                     </Box>
                   </Box>
-                </Link>
+                {/* </Link> */}
               </SwiperSlide>
             </Box>
           ))}
