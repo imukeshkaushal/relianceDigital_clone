@@ -6,16 +6,16 @@ const Heading = ({ heading }) => {
   return (
     <Flex gap="2"padding={6}>
       <Center>
-        <Text fontSize="xl" textAlign={"left"}>{heading}</Text>
+        <Text fontSize="xl"textAlign={"left"}>{heading}</Text>
         <Link to="/">
-          <button
+          <Text
             style={{
               backgroundColor:"#003380",
               color:"white",
               padding:"6px",
               marginLeft:"5px"
-            }}>View All
-          </button>
+            }}> VIEW ALL
+          </Text>
         </Link>
       </Center>
     </Flex>

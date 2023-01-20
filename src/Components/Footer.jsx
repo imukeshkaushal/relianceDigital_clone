@@ -9,7 +9,11 @@ import {
   useColorModeValue,
   Center,
   Image,
+  Grid,
 } from '@chakra-ui/react';
+import { AiFillFacebook } from "react-icons/ai";
+import { TfiTwitter } from "react-icons/tfi";
+import { CiYoutube } from "react-icons/ci";
 import {FaTwitter,FaFacebook,FaYoutube} from "react-icons/fa"
 
 // const Logo = (props) => {
@@ -90,23 +94,45 @@ export default function Footer() {
             <Link href={'#'}>Caution Notice</Link>
           </Stack>
         </SimpleGrid>
-        <Stack align={'flex-start'}>
-        <ListHeader>FOLLOW US</ListHeader>
-           <Flex >  
-            <Flex gap={3}> 
+      {/*-------------------------------------------------------------------------------*/}
+    <Box p={2} justifyContent="center">
+    <SimpleGrid columns={{ base: 1, sm: 1, md: 4 }} spacing={8}>
+        <Stack>
+          <Box>
+            <Text fontWeight="500">FOLLOW US</Text>
+          </Box>
+          <Box>
+          <Flex gap={3} cursor="pointer"> 
            <FaTwitter/>
            <FaFacebook/>
            <FaYoutube/> 
-           </Flex>  
-           <Stack ml={60} mt={-10}>
-           <ListHeader>EXPERIENCE DIGITAL XPRESS APP ON MOBILE</ListHeader>
-                  
-           <Image h={150} w={250} src="https://www.freepnglogos.com/uploads/app-store-logo-png/apple-app-store-travel-awards-globestamp-7.png"></Image>
-          
-           </Stack>
-            
            </Flex>
-          </Stack>
+          </Box>
+        </Stack>
+        <Stack>
+          <Text fontWeight="500">
+            EXPERIENCE RELIANCE DIGITAL APP ON MOBILE
+          </Text>
+          <Flex  gap="2" mt="2" cursor="pointer">
+            <Image
+              src="https://www.reliancedigital.in/build/client/images/google_play_store.png"
+              alt="Google Play Store"
+              w="40%"
+              objectFit="cover"
+            />
+            <Image
+              src="https://www.reliancedigital.in/build/client/images/ios_app_store_icon.png"
+              alt="Apple Store"
+              objectFit="cover"
+              w="40%"
+            />
+          </Flex>
+        </Stack>
+        </SimpleGrid>
+    </Box>
+
+
+        {/**------------------------------------------------------------------------------ */}
       </Container>
       <Box backgroundColor="#0a244a" p="2">
       <Center lineHeight="15px" borderColor="white.500" w="5%" m="auto" p="3">

@@ -3,12 +3,17 @@ import { Box, Flex, Image, Spacer } from "@chakra-ui/react";
 import Heading from "./Heading";
 import SliderFormat from "./SliderFormat";
 
-const Laptop2 = ({ type, heading, src }) => {
+const ImageSet = ({ type, heading, src }) => {
   return (
-    <Box justifyContent="left" w="95%" m="auto"  cursor="pointer">
-        
+    <Box justifyContent="left" w="95%" m="auto" mt="6" cursor="pointer">
       <Heading heading={heading} />
-      <Flex mt="7" overflow={"hidden"}>
+      <Flex mt="7"  overflow={"hidden"}>
+        <Box
+          w={{ sm: "100%", md: "100%", lg: "100%", xl: "70%", base: "100%" }}
+        >
+          <SliderFormat type={type} />
+        </Box>
+        <Spacer />
         <Box
           boxSize="sm"
           _hover={{transform:"scale(1.1)"}}
@@ -17,36 +22,20 @@ const Laptop2 = ({ type, heading, src }) => {
             sm: "none",
             md: "none",
             lg: "none",
-            xl: "40%",
+            xl: "30%",
             base: "none",
           }}
-          cursor="pointer"
-          pr="4"
         >
           <Image
             src={src}
             boxSize="340px"
             border="1px"
             borderColor="gray.200"
-            w={{
-              xs: "80%",
-              sm: "80%",
-              md: "80%",
-              lg: "400px",
-              xl: "400px",
-              base: "none",
-            }}
           />
-        </Box>
-        <Spacer />
-        <Box
-          w={{ sm: "100%", md: "100%", lg: "100%", xl: "75%", base: "100%" }}
-        >
-          <SliderFormat type={type} />
         </Box>
       </Flex>
     </Box>
   );
 };
 
-export default Laptop2;
+export default ImageSet;
