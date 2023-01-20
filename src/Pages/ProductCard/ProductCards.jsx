@@ -54,8 +54,9 @@ console.log(data)
         borderRadius='lg'
         
       />
+      
       <Stack  spacing='1' >
-        <Text color='blue.700' fontSize={"medium"} _hover={{color:"red"}}>{product.name}</Text>
+        <Text color='blue.700' fontSize={"medium"} _hover={{color:"red"}} id="cardTitle">{product.name}</Text>
         <Stack direction='row'>
         <Text color='gray.600'  fontSize="smaller" fontWeight={"bold"}> <span>&#8377;</span>{product.mrp}</Text>
        <Text color='gray.500' fontSize="smaller" fontWeight={"bold"}><s><span>&#8377;</span>{product.mrp} </s> </Text>
@@ -83,7 +84,7 @@ console.log(data)
 <Button flex='1' variant='ghost' >
 { <Stack direction='row' align={"center"} fontWeight={""}>
 <input type="checkbox" name="compare-btn" id="compare-btn" />
-<label for="compare">Compare</label>
+<label >Compare</label>
 </Stack>}
 </Button>
     <Button flex='1' variant='ghost' leftIcon={<BsHeart />}>
