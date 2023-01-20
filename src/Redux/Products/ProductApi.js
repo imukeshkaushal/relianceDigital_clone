@@ -1,10 +1,12 @@
 import axios from "axios"
 
-
+let el = JSON.parse(localStorage.getItem("items"))
+el = el.join("")
+console.log(el)
 
 export const getPostsApi = async() => {
-    let res = await axios.get("https://rus-digital-televisions.onrender.com/headphones")
-    return res.data
-   
+    console.log(el)
+    let res = await axios.get(`https://rus-digital-televisions.onrender.com/${el}`)
+    return res.data;
 }
 

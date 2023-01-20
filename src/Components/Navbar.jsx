@@ -28,9 +28,17 @@ import {MdComputer,MdLocationOn} from "react-icons/md";
 import {ImSpoonKnife} from "react-icons/im";
 import {BsGrid} from "react-icons/bs";
 import {AiFillMessage} from "react-icons/ai"
-
+import ProductCards from '../Pages/ProductCard/ProductCards';
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+
+  const getCategory=(el)=>{
+    let data=[];
+    data.push(el)
+    localStorage.setItem('items', JSON.stringify(data));
+   
+  }
 
   return (
     <>
@@ -137,6 +145,7 @@ export default function Navbar() {
                         fontWeight: "bold",
                         marginBottom: "20px",
                       }}
+                      onClick={(e)=>getCategory("mobilesandtablets")}
                     >
                       Smartphones
                     </p>
@@ -148,12 +157,12 @@ export default function Navbar() {
                         gap: "10px",
                       }}
                     >
-                      <Link to=''><h2>SMARTWATCHES</h2></Link>
+                      <Link to='' ><h2>SMARTWATCHES</h2></Link>
                       <Link to=''><h2>Accessories</h2></Link>
-                      <Link to=''><p>Tablet Accessories</p></Link>
-                      <Link to=''><p>Mobile Accessories</p></Link>
-                      <Link to=''><p>Mobile Grips & Stands</p></Link>
-                      <Link to=''><p>Car Mobile Holders</p></Link>
+                      <Link to='' onClick={(e)=>getCategory("mobilesandtablets")}><p>Tablet Accessories</p></Link>
+                      <Link to='' onClick={(e)=>getCategory("mobilesandtablets")}><p>Mobile Accessories</p></Link>
+                      <Link to='' onClick={(e)=>getCategory("mobilesandtablets")}><p>Mobile Grips & Stands</p></Link>
+                      <Link to='' onClick={(e)=>getCategory("mobilesandtablets")}><p>Car Mobile Holders</p></Link>
                     </div>
                   </div>
                   <div style={{ fontFamily: "sans-serif", paddingLeft: "20px" }}>
@@ -164,7 +173,9 @@ export default function Navbar() {
                        
                         fontWeight: "bold",
                         marginBottom: "20px",
-                      }}>
+                      }}
+                      onClick={(e)=>getCategory("mobilesandtablets")}
+                      >
                       Headphone & Headsets
                     </p>
                     <div
@@ -206,6 +217,7 @@ export default function Navbar() {
                         fontWeight: "bold",
                         marginBottom: "20px",
                       }}
+                      onClick={(e)=>getCategory("televisions")}
                     >
                      Television
                     </p>
@@ -216,11 +228,11 @@ export default function Navbar() {
                         flexDirection: "column",
                         gap: "10px",
                       }}>
-                      <Link to=''><p>Smart TVs</p></Link>
-                      <Link to=''><p>32 Inch TVs</p></Link>
-                      <Link to=''><p>43 Inch TVs</p></Link>
-                      <Link to=''><p>55 Inch TVs</p></Link>
-                      <Link to=''><p>Android TVs</p></Link>
+                      <Link to=''    onClick={(e)=>getCategory("televisions")}><p>Smart TVs</p></Link>
+                      <Link to=''    onClick={(e)=>getCategory("televisions")}><p>32 Inch TVs</p></Link>
+                      <Link to=''    onClick={(e)=>getCategory("televisions")}><p>43 Inch TVs</p></Link>
+                      <Link to=''    onClick={(e)=>getCategory("televisions")}><p>55 Inch TVs</p></Link>
+                      <Link to=''    onClick={(e)=>getCategory("televisions")}><p>Android TVs</p></Link>
                     </div>
                   </div>
                   <div style={{ fontFamily: "sans-serif", paddingLeft: "20px" }}>
@@ -281,7 +293,7 @@ export default function Navbar() {
                         flexDirection: "column",
                         gap: "10px",
                       }}>
-                      <Link to=''> <h2>TV & Audio Accessories</h2></Link>
+                      <Link to=''    onClick={(e)=>getCategory("televisions")}> <h2>TV & Audio Accessories</h2></Link>
                       <Link to=''> <h2>Virtual Reality Accessories</h2></Link>
                       <Link to=''> <p>Stabilizers & Surge Headsets</p></Link>
                     </div>
@@ -309,7 +321,9 @@ export default function Navbar() {
                         
                         fontWeight: "bold",
                         marginBottom: "20px",
-                      }}>
+                      }}
+                      onClick={(e)=>getCategory("headphones")}
+                      >
                      HeadPhones & Headsets
                     </p>
                     <div
@@ -320,11 +334,11 @@ export default function Navbar() {
                         gap: "10px",
                       }}
                     >
-                      <Link to=""><p>True Wireless</p></Link>
-                      <Link to=""><p>Bluetooth Neckbands</p></Link>
-                      <Link to=""><p>Wired Earphones</p></Link>
-                      <Link to=""><p>On Ear Headphones</p></Link>
-                      <Link to=""><p>Noise Cancelling Headphones</p></Link>
+                      <Link to="" onClick={(e)=>getCategory("headphones")}><p>True Wireless</p></Link>
+                      <Link to="" onClick={(e)=>getCategory("headphones")}><p>Bluetooth Neckbands</p></Link>
+                      <Link to="" onClick={(e)=>getCategory("headphones")}><p>Wired Earphones</p></Link>
+                      <Link to="" onClick={(e)=>getCategory("headphones")}><p>On Ear Headphones</p></Link>
+                      <Link to="" onClick={(e)=>getCategory("headphones")}><p>Noise Cancelling Headphones</p></Link>
                     </div>
                   </div>
                   <div style={{ fontFamily: "sans-serif", paddingLeft: "20px" }}>
@@ -336,6 +350,7 @@ export default function Navbar() {
                         fontWeight: "bold",
                         marginBottom: "20px",
                       }}
+                      onClick={(e)=>getCategory("headphones")}
                     >
                      Bluetooth & WiFi Speakers
                     </p>
@@ -347,8 +362,8 @@ export default function Navbar() {
                         gap: "10px",
                       }}
                     >
-                      <Link to=""><p>Bluetooth Speakers</p></Link>
-                      <Link to=""><p>Smart Speakers</p></Link>      
+                      <Link to="" onClick={(e)=>getCategory("headphones")}><p>Bluetooth Speakers</p></Link>
+                      <Link to="" onClick={(e)=>getCategory("headphones")}><p>Smart Speakers</p></Link>      
                     </div>
                   </div>
 
@@ -361,6 +376,7 @@ export default function Navbar() {
                         fontWeight: "bold",
                         marginBottom: "20px",
                       }}
+
                     >
                      TV Speakers & Soundbars
                     </p>
@@ -426,6 +442,8 @@ export default function Navbar() {
                         fontWeight: "bold",
                         marginBottom: "20px",
                       }}
+                      onClick={(e)=>getCategory("homeappliances")}
+                      
                     >
                      Air Conditioners
                     </p>
@@ -437,8 +455,8 @@ export default function Navbar() {
                         gap: "10px",
                       }}
                     >
-                      <Link to=''><p>Split Air Conditioners</p></Link>
-                      <Link to=''><p>Window Air Conditioners</p></Link>
+                      <Link to=''  onClick={(e)=>getCategory("homeappliances")}><p>Split Air Conditioners</p></Link>
+                      <Link to=''  onClick={(e)=>getCategory("homeappliances")}><p>Window Air Conditioners</p></Link>
                       <Link to=''><p>Smart Air Conditioners</p></Link>
                       <Link to=''><p>1 ton Air Conditioners</p></Link>
                       <Link to=''><p>1.5 ton Air Conditioners</p></Link>
@@ -454,6 +472,7 @@ export default function Navbar() {
                         fontWeight: "bold",
                         marginBottom: "20px",
                       }}
+                     
                     >
                      Washing Machines
                     </p>
@@ -519,6 +538,7 @@ export default function Navbar() {
                         fontWeight: "bold",
                         marginBottom: "20px",
                       }}
+                        onClick={(e)=>getCategory("computers")}
                     >
                      Laptops
                     </p>
@@ -530,8 +550,8 @@ export default function Navbar() {
                         gap: "10px",
                       }}
                     >
-                      <Link to=''><p>Basic use laptops</p></Link>
-                      <Link to=''><p>Student Laptops</p></Link>
+                      <Link to=''  onClick={(e)=>getCategory("computers")}><p>Basic use laptops</p></Link>
+                      <Link to=''  onClick={(e)=>getCategory("computers")}><p>Student Laptops</p></Link>
                       <Link to=''><p>Thin and light Laptops</p></Link>
                       <Link to=''><p>Multi-Tasking Laptops</p></Link>
                       <Link to=''><p>Gaming Laptops</p></Link>
@@ -647,6 +667,7 @@ export default function Navbar() {
                         fontWeight: "bold",
                         marginBottom: "20px",
                       }}
+                      onClick={(e)=>getCategory("cameras")}
                     >
                     DSLR Cameras
                     </p>
@@ -658,8 +679,8 @@ export default function Navbar() {
                         gap: "10px",
                       }}
                     >
-                      <Link to=''><p>Mirrorless Cameras</p></Link>
-                      <Link to=''><p>Point & Shoot Cameras</p></Link>
+                      <Link to='' onClick={(e)=>getCategory("cameras")}><p>Mirrorless Cameras</p></Link>
+                      <Link to='' onClick={(e)=>getCategory("cameras")}><p>Point & Shoot Cameras</p></Link>
                       <Link to=''><p>ProSumers Cameras</p></Link>
                       <Link to=''><p>Action Cameras</p></Link>
                       <Link to=''><p>Photo Storage Device</p></Link>                     
