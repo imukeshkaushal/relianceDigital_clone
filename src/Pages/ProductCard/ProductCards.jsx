@@ -58,8 +58,8 @@ const ProductCards = () => {
       </div>
 
       <div></div>
-      <div style={{ display: "flex" }}>
-        <div style={{ width: "25%", border: "1px solid red" }}>
+      <div style={{ display: "flex", justifyContent:"space-around"}}>
+        <div id="filters" >
           <h1
             style={{
               fontSize: "20px",
@@ -72,35 +72,33 @@ const ProductCards = () => {
           </h1>
          <Filters data={data}/>
         </div>
-        <div>
+        <div id="titleBar" >
+          <div style={{ display: "flex", justifyContent:"space-between",height:"80px",alignItems:"center",marginBottom:"5px",padding:"10px",boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
           <div>
-            <h1
-              style={{
-                fontSize: "20px",
-                fontWeight: "bold",
-                fontFamily: "sans-serif",
-              }}
-            >
-              Title
-            </h1>
-            <span>(Showing 1-{data.length} results of total Products )</span>
+          <h1
+          style={{
+            fontSize: "20px",
+            fontWeight: "bold",
+            fontFamily: "sans-serif",
+          }}
+        >
+          Title
+        </h1>
+        <span>(Showing 1-{data.length} results of total Products )</span>
           </div>
-          <div>
-            <Button>Relevance</Button>
-            <Button onClick={sortByLH}>Low to High</Button>
-            <Button onClick={sortByHL}>High to Low</Button>
+          <div id="sortButtonContainer" ><b> Sort By :</b>{" "}{" "}
+          <button id="sortingButton">Relevance</button>
+          <button onClick={sortByLH} id="sortingButton" >Low to High</button>
+          <button onClick={sortByHL} id="sortingButton">High to Low</button>
+        </div>
           </div>
+          
 
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(4,1fr)",
-              gap: "10px",
-            }}
+          <div id="productCards"
           >
             {data.map((product) => (
-              <Card maxW="sm" variant="outline" key={product.id}>
-                <CardBody>
+              <Card  variant="outline" key={product.id} id="Productcard" _hover={{boxShadow: "rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"}}>
+                <CardBody id="productBody">
                   <Image
                     mt="-5"
                     src={product.img}
