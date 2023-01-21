@@ -1,7 +1,7 @@
 import axios from "axios"
 
 let el = JSON.parse(localStorage.getItem("items"))
-el = el.join("")
+
 console.log(el)
 
 export const getPostsApi = async() => {
