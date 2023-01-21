@@ -17,7 +17,7 @@ export const getCartProducts = () => async (dispatch) => {
     type: GET_CART_LOADING,
   });
   try {
-    let response = await axios.get(`http://localhost:8080/cart`);
+    let response = await axios.get(`https://rus-digital-televisions.onrender.com/cart`);
     dispatch({
       type: GET_CART_SUCCESS,
       payload: response.data,
@@ -35,7 +35,7 @@ export const deleteProduct = (id) => async (dispatch) => {
     type: DELETE_CART_LOADING,
   });
   try {
-    await axios.delete(`http://localhost:8080/cart/${id}`);
+    await axios.delete(`https://rus-digital-televisions.onrender.com/cart/${id}`);
     dispatch({
       type: DELETE_CART_SUCCESS,
       payload: id,
@@ -54,7 +54,7 @@ export const addItemCart = (item) => async (dispatch) => {
     type: ADD_TO_CART_LOADING,
   });
   try {
-    let response = await axios.post(`http://localhost:8080/cart`, {
+    let response = await axios.post(`https://rus-digital-televisions.onrender.com/cart`, {
       count: 1,
       productId: item.id,
     });

@@ -1,16 +1,13 @@
-import React from 'react';
 import {
   Box,
   Flex,
-  HStack,
-  Link,
-  useDisclosure,
-  useColorModeValue,
   Image,
-  InputRightElement,
-  InputGroup,
   Input,
+  InputGroup,
+  InputLeftElement,
+  InputRightElement,
   Text,
+
   Drawer,
   DrawerBody,
   DrawerHeader,
@@ -34,6 +31,18 @@ import axios from 'axios';
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
+} from "@chakra-ui/react";
+import React from "react";
+import { BsCartFill, BsFillFilePlusFill, BsFillMicFill } from "react-icons/bs";
+import { MdAccountCircle } from "react-icons/md";
+import { Search2Icon } from "@chakra-ui/icons";
+
+
+import { FaShoppingCart } from "react-icons/fa";
+import Dropdown from "./NavComponents/Dropdown";
+import { Hamburger } from "./NavComponents/Hamburger";
+import { Link } from "react-router-dom";
+
 
   const getCategory=async(el)=>{
     // let res = await axios.get(`https://rus-digital-televisions.onrender.com/${el}`)
@@ -44,49 +53,74 @@ export default function Navbar() {
    window.location.reload(true)
   }
 
+
+export const Navbar = () => {
   return (
-    <>
-     <Box as="header"  bg='#e42529' w='100%' h='30px'   color='white'>
-            <Flex direction="row-reverse">
-            <Box >
-            <Text marginRight='30px' fontSize="16px" fontWeight="600">Find a store | Buying Guides | Contact Us</Text>   
-            </Box>
+    <Box>
+      <Box display={["none", "none", "none", "block"]}>
+        <Box bgColor="#e42529" maxW={"full"}>
+          <Flex flexDirection={"row-reverse"} p={2} pr={4}>
+            <Flex
+              fontWeight={"semibold"}
+              color={"white"}
+              gap="20px"
+              fontSize={"15px"}
+            >
+              <Text>Find a Store</Text>
+              <Text>|</Text>
+              <Text>Buying Guide</Text>
+              <Text>|</Text>
+              <Text>Contact Us</Text>
             </Flex>
+          </Flex>
         </Box>
-      <Box bg={useColorModeValue('#e42529', '#e42529')} className="nav" px={4} position={"fixed"} zIndex={1} w={"100%"}>
-        <Flex  className="input">
-        {/* {sizes.map((size) => (
-          <IconButton
-            size={'md'}
-            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-            aria-label={'Open Menu'}
-            display={{ md: 'none' }}
-            onClick={() => handleClick(size)}
-          />
-          ))} */}
-          <HStack spacing={8} alignItems={'center'} border={"0px solid yellow"} >
-            <Image src={logo} w={67} h={63} className="logo"/>
-          </HStack>
-          <HStack textAlign={"center"}>
-          <Box border={"0px solid green"} marginRight={60} >
-            <Flex className="in" >
-                <InputGroup className='group' >
-            <Input  bg="white" borderRadius="50px" placeholder="Find Your Favourite Products"></Input>
-            <InputRightElement children={<SearchIcon color='grey' />} />
-                </InputGroup>
+
+        <Box bgColor="#e42529" zIndex={99}>
+          <Flex
+            gap="60px"
+            alignItems={"center"}
+            justifyContent="space-between"
+            pl={"30px"}
+            pr={"30px"}
+          >
+            <Image
+              width={"150px"}
+              height={"60px"}
+              src="https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg"
+              alt="logo"
+            />
+            <InputGroup width={"38%"}>
+              <Input
+                placeholder="Enter amount"
+                variant={"none"}
+                borderRadius="20px"
+                paddingLeft={"20px"}
+              />
+              <InputRightElement
+                children={<Search2Icon color="green.500" />}
+                paddingRight={"20px"}
+              />
+            </InputGroup>
+            <Flex
+              gap={"30px"}
+              color={"white"}
+              fontSize={"15px"}
+              fontWeight={"semibold"}
+            >
+              <Flex gap={"20px"} alignItems="center">
+                <Text noOfLines={1}> Select Your Pin Code </Text>
+                <Text>|</Text>
+              </Flex>
+              <Link to= "/cart">
+              <Flex gap={"5px"} alignItems="center">
+              <BsCartFill /> Cart
             </Flex>
-         </Box>
-         <Box mt={8}>
-            <Flex color={"white"} alignItems={'center'} margin="auto">
-            <Text fontSize="16px" fontWeight="600" mr={3}>Select your PIN Code</Text> |
-            <Text ml={3}><HiShoppingCart/> </Text>
-            <Link to="/cart"><Text fontSize="16px" fontWeight="600" mr={3} ml={1}>Cart</Text></Link> |
-            <Text ml={3}><FaUser/> </Text>
-            <Link to="/register" ml={3}>
-            Login
-            {/* {loginstate.isLogin ? (<Text fontSize="16px" fontWeight="600" mr={3} ml={3}>Hi, {info.firstName}</Text>):(<Text fontSize="16px" fontWeight="600" mr={3} ml={3}>Login</Text>)} */}
-            </Link>
+              </Link>
+              <Flex gap={"5px"} alignItems="center">
+                <MdAccountCircle /> Login
+              </Flex>
             </Flex>
+
          </Box>
          </HStack>
         </Flex>
@@ -822,203 +856,55 @@ export default function Navbar() {
               <Link to=''><div id="menu-title">ADMIN</div></Link>
             </div>
           </Box>
+
+          </Flex>
+
         </Box>
-</Box>
-<div id="mobile_bar" style={{position : "fixed",color : "white", fontWeight:"bolder",
-width : "5%",marginLeft:"5px", top:"0", zIndex: "100", padding:"3px",
-marginBottom: "300px",marginTop:"68px"}}>
-        <div style={{ display: "flex",border:"0px solid blue" }}>
-          <div style={{ marginLeft: "30px" }}>
-            <HiMenu  border="0px solid yellow" onClick={onOpen} size="2.8em"/>
-            <Drawer
-              isOpen={isOpen}
-              placement="left"
-              onClose={onClose}
-              // finalFocusRef={btnRef}
-              height="100vh"
-              size="md"
-               
-            >
-              <DrawerOverlay />
-              <DrawerContent >
-                {/* <DrawerCloseButton /> */}
-                
-                  <DrawerHeader onClick = {onClose} display="flex" >
-                    {/* <Text > {isAuth ? "Hii " + username : "Account"}</Text> */}
-                    <Box  backgroundColor={"#e42529"} colorScheme="none" w="100%" p={3}>
-                      <Flex color={"white"} fontSize={20}>
-                 <Text mt={4}><FaUser/> </Text>
-               <Link to="" m={3}>Login</Link></Flex></Box>
-                 
-                </DrawerHeader>  
-                <DrawerBody>
-                  <Box display="flex" flexDirection="column" gap="20px" fontSize={20}>
-                    <Flex  justifyContent={"space-between"}>
-                    <Link to="" onClick={onClose}>
-                      <Flex>
-                      <FaMobileAlt p={5} />
-                      <Text ml={5}>Mobiles and Tablets</Text>
-                      </Flex>
-                      </Link>
-                    <SmallAddIcon/>
-                    </Flex>
-                    <Flex  justifyContent={"space-between"}>
-                    <Link to="" onClick={onClose}>
-                      <Flex>
-                        <IoIosLaptop/>
-                        <Text ml={5}>Televisions</Text>
-                      </Flex>
-                      </Link>
-                      <SmallAddIcon/>
-                    </Flex>
-                    <Flex  justifyContent={"space-between"}>
-                    <Link to="" onClick={onClose}>
-                    <Flex>
-                        <IoIosHeadset/>
-                        <Text ml={5}>Audio</Text>
-                      </Flex>
-                      </Link>
-                    <SmallAddIcon/>
-                    </Flex>
-                    <Flex  justifyContent={"space-between"}>
-                    <Link to="" onClick={onClose}> <Flex>
-                        <FaPlug/>
-                        <Text ml={5}>Home Appliances</Text>
-                      </Flex></Link>
-                    <SmallAddIcon/>
-                    </Flex>
-                    <Flex  justifyContent={"space-between"}>
-                    <Link to="" onClick={onClose}>
-                    <Flex>
-                        <MdComputer/>
-                        <Text ml={5}>Computers</Text>
-                      </Flex></Link>
-                    <SmallAddIcon/>
-                    </Flex>
-                    <Flex  justifyContent={"space-between"}>
-                    <Link to="" onClick={onClose}>
-                    <Flex>
-                        <FaCamera/>
-                        <Text ml={5}>Cameras</Text>
-                      </Flex></Link>
-                    <SmallAddIcon/>
-                    </Flex>
-                    <Flex  justifyContent={"space-between"}>
-                    <Link to="" onClick={onClose}>
-                    <Flex>
-                        <ImSpoonKnife/>
-                        <Text ml={5}>Kitchen Appliances</Text>
-                      </Flex></Link>
-                    <SmallAddIcon/>
-                    </Flex>
-                    <Flex  justifyContent={"space-between"}>
-                    <Link to="" onClick={onClose}>
-                    <Flex>
-                        <FaBath/>
-                        <Text ml={5}>Personal Care</Text>
-                      </Flex></Link>
-                    <SmallAddIcon/>
-                    </Flex>
-                    <Flex  justifyContent={"space-between"}>
-                    <Link to="" onClick={onClose}>
-                    <Flex>
-                        <FaUsb/>
-                        <Text ml={5}>Accessories</Text>
-                      </Flex></Link>
-                    <SmallAddIcon/>
-                    </Flex>
-                    <Link to="" onClick={onClose}>Admin</Link>
-                   
-                    <Flex  justifyContent={"space-between"}>
-                    <Link to="" onClick={onClose}>
-                    <Flex>
-                        <FaShoppingCart/>
-                        <Text ml={5}>Cart</Text>
-                      </Flex></Link>
-                    <SmallAddIcon/>
-                    </Flex>
-                    <Flex  justifyContent={"space-between"}>
-                    <Link to="" onClick={onClose}>
-                    <Flex>
-                        <MdLocationOn/>
-                        <Text ml={5}>Find a Store</Text>
-                      </Flex></Link>
-                    <SmallAddIcon/>
-                    </Flex>
-                    <Flex  justifyContent={"space-between"}>
-                    <Link to="" onClick={onClose}>
-                    <Flex>
-                        <FaPhone/>
-                        <Text ml={5}>Contact Us</Text>
-                      </Flex></Link>
-                    <SmallAddIcon/>
-                    </Flex>
-                    <Flex  justifyContent={"space-between"}>
-                    <Link to="" onClick={onClose}>
-                    <Flex>
-                        <BsGrid/>
-                        <Text ml={5}>Scanner</Text>
-                      </Flex></Link>
-                    <SmallAddIcon/>
-                    </Flex>
-                    <Flex  justifyContent={"space-between"}>
-                    <Link to="" onClick={onClose}>
-                    <Flex>
-                        <FaInfoCircle/>
-                        <Text ml={5}>Buying Guides</Text>
-                      </Flex></Link>
-                    <SmallAddIcon/>
-                    </Flex>
-                    <Flex  justifyContent={"space-between"}>
-                    <Link to="" onClick={onClose}>
-                    <Flex>
-                        <FaSitemap/>
-                        <Text ml={5}>Site Info</Text>
-                      </Flex></Link>
-                    <SmallAddIcon/>
-                    </Flex>
-                    <Flex  justifyContent={"space-between"}>
-                    <Link to="" onClick={onClose}>
-                    <Flex>
-                        <AiFillMessage/>
-                        <Text ml={5}>Policies</Text>
-                      </Flex></Link>
-                    <SmallAddIcon/>
-                    </Flex>
-                  </Box>
-                </DrawerBody>
+        <Dropdown/>
+      </Box>
 
-              </DrawerContent>
-            </Drawer>
-          </div>
-
-       
-        </div>
-
-        {/* <div>
-          <Link to="/">
-            <img style={{ width: "90px", height: "25px" }} src="https://seeklogo.com/images/S/skinstore-logo-5281C41BD3-seeklogo.com.png" alt="logo" />
-          </Link>
-        </div> */}
-
-        {/* <div style={{ display: "flex", gap: "30px", alignItems: "center" }}>
-          <Link to="/login">
-            <VscAccount size="1.6em" />
-          </Link>
-          <div class="dropdown" style={{ paddingRight: "50px" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: "24px" }}>
-              <div id="cart-icon">
-                <Link to="/cart">
-                  <FaShoppingCart size="1.6em" />
-                  <p className="cartValue">{cartItems.length}</p>
-                </Link>
-
-              </div>
-            </div>
-          </div>
-        </div> */}
-
-      </div>
-    </>
+      <Box
+        bgColor="#e42529"
+        pl={4}
+        pr={4}
+        pt={3}
+        pb={3}
+        display={["block", "block", "block", "none"]}
+      >
+        <Flex
+          alignItems={"center"}
+          color="white"
+          justifyContent={"space-between"}
+        >
+          <Flex gap={"20px"} alignItems="center" justifyContent={"center"}>
+            <Hamburger/>
+            <Image
+              width={"120px"}
+              height={"35px"}
+              src="https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg"
+              alt="logo"
+            />
+          </Flex>
+          <Flex justifyContent="space-between" gap={"20px"}>
+            <BsFillFilePlusFill size={"20px"} />
+            <FaShoppingCart size={"20px"} />
+          </Flex>
+        </Flex>
+        <InputGroup mt={2}>
+          <InputLeftElement
+            children={<Search2Icon size={"18px"} color={"gray"} />}
+          />
+          <Input
+            placeholder="Search for Products, Brands"
+            bgColor={"white"}
+            borderRadius="20px"
+            variant={"none"}
+          />
+          <InputRightElement
+            children={<BsFillMicFill color="gray" size={"20px"} />}
+          />
+        </InputGroup>
+      </Box>
+    </Box>
   );
-}
+};
