@@ -23,9 +23,11 @@ const Dropdown = () => {
       >
       <Flex alignItems="center">
       <div class="dropdown">
+      <Link to="/mobile">
       <button class="dropbtn" style={{fontSize : "13px"}}>
-        MOBILE & TABLETS
-      </button>
+      MOBILE & TABLETS
+    </button>
+      </Link>
       <div class="dropdown-content">
         <div class="row">
           <div class="column">
@@ -70,10 +72,11 @@ const Dropdown = () => {
 
         <Flex alignItems="center">
           <div class="dropdown">
+          <Link to="/televisions">
           <button class="dropbtn" style={{fontSize : "13px"}}>
-            TELEVISION
-            <i class="fa fa-caret-down"></i>
-          </button>
+          TELEVISION
+        </button>
+          </Link>
           <div class="dropdown-content">
             <div class="row">
               <div class="column">
@@ -114,10 +117,12 @@ const Dropdown = () => {
 
         <Flex alignItems="center">
         <div class="dropdown">
+        <Link to="headphone">
         <button class="dropbtn" style={{fontSize : "13px"}}>
-          AUDIO
-          <i class="fa fa-caret-down"></i>
-        </button>
+        AUDIO
+       
+      </button>
+        </Link>
         <div class="dropdown-content">
           <div class="row">
             <div class="column">
@@ -164,10 +169,12 @@ const Dropdown = () => {
 
       <Flex alignItems="center">
       <div class="dropdown">
+      <Link to="/home">
       <button class="dropbtn" style={{fontSize : "13px"}}>
-        HOME APPLIANCES
-        <i class="fa fa-caret-down"></i>
-      </button>
+      HOME APPLIANCES
+   
+    </button>
+      </Link>
       <div class="dropdown-content">
         <div class="row">
           <div class="column">
@@ -219,18 +226,21 @@ const Dropdown = () => {
         
 
         <Flex alignItems="center">
+        <Link to="/computer">
         <button class="dropbtn" style={{fontSize : "13px"}}>
         COMPUTERS
     
       </button>
+        </Link>
     
         </Flex>
         <Flex alignItems="center">
         <div class="dropdown">
+        <Link to="/camera">
         <button class="dropbtn" style={{fontSize : "13px"}}>
-          CAMERA
-          <i class="fa fa-caret-down"></i>
-        </button>
+        CAMERA
+      </button>
+        </Link>
         <div class="dropdown-content">
           <div class="row">
             <div class="column">
@@ -268,10 +278,12 @@ const Dropdown = () => {
 
       <Flex alignItems="center">
       <div class="dropdown">
+      <Link to="/kitchen">
       <button class="dropbtn" style={{fontSize : "13px"}}>
-        KITCHENS & APPLIANCES
-    
-      </button>
+      KITCHENS & APPLIANCES
+  
+    </button>
+      </Link>
       <div class="dropdown-content">
         <div class="row">
           <div class="column">
@@ -326,10 +338,12 @@ const Dropdown = () => {
     </Flex>
 
         <Flex alignItems="center">
+        <Link to="/personal">
         <button class="dropbtn" style={{fontSize : "13px"}}>
-            PERSONAL CARE
-    
-      </button>
+        PERSONAL CARE
+
+  </button>
+        </Link>
         
         </Flex>
         <Flex alignItems="center">
