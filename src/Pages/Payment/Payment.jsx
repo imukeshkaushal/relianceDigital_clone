@@ -19,17 +19,30 @@ import {
     RadioGroup,
     Stack,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import sty from "./payment.module.css";
 import immg from "./Dig_Xp.png"
+import { useDispatch, useSelector } from "react-redux";
+import { getCartProducts } from "../../Redux/cart/cart.action";
 
 const Payment = () => {
     const [cardDetail, setCardDetail] = useState("");
+    const [price,setPrice] = useState(0);
+    const cartData = useSelector((store) => store.cartManager.data);  
+  const dispatch = useDispatch();
 
     const handlepayment = (e) => {
         setCardDetail(e);
     }
+
+    useEffect(() => {
+        if (cartData.length === 0) {
+            dispatch(getCartProducts())
+        }
+        let x  = localStorage.getItem("finalPrice");
+        setPrice(x);
+    },[cartData.length,dispatch])
 
     return (
         <div className={sty.payhead}>
@@ -172,15 +185,15 @@ const Payment = () => {
                     <Box display={"grid"} gap="10px" >
                         <Box display={"flex"} alignItems={"center"} justifyContent={"space-between"} w="100%" >
                             <h3> Price </h3>
-                            <h3> ₹3000 </h3>
+                            <h3> ₹{price} </h3>
                         </Box>
                         <Box display={"flex"} alignItems={"center"} justifyContent={"space-between"} w="100%" >
                             <h3> Quantity </h3>
-                            <h3> 2 </h3>
+                            <h3> {cartData.length} </h3>
                         </Box>
                         <Box display={"flex"} alignItems={"center"} justifyContent={"space-between"} w="100%" >
                             <h3> Total Price </h3>
-                            <h3> 3000 </h3>
+                            <h3> ₹{price}</h3>
                         </Box>
                     </Box>
                 </Box>

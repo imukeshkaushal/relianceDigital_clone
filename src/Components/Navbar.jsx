@@ -16,6 +16,7 @@ import { Search2Icon } from "@chakra-ui/icons";
 import { FaShoppingCart } from "react-icons/fa";
 import Dropdown from "./NavComponents/Dropdown";
 import { Hamburger } from "./NavComponents/Hamburger";
+import { Link } from "react-router-dom";
 
 
 export const Navbar = () => {
@@ -75,9 +76,11 @@ export const Navbar = () => {
                 <Text noOfLines={1}> Select Your Pin Code </Text>
                 <Text>|</Text>
               </Flex>
+              <Link to= "/cart">
               <Flex gap={"5px"} alignItems="center">
-                <BsCartFill /> Cart
-              </Flex>
+              <BsCartFill /> Cart
+            </Flex>
+              </Link>
               <Flex gap={"5px"} alignItems="center">
                 <MdAccountCircle /> Login
               </Flex>

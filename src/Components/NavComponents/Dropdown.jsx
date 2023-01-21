@@ -1,6 +1,7 @@
 import { Box, Flex, Grid, GridItem, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import { BiChevronDown } from "react-icons/bi";
+import { Link } from "react-router-dom";
 import "./dropdown.css";
 
 let accessories = ["Tablet Accessorries","Mobile Accessories", "Memory Cards", "Cables & Cords", "Chargers & Adapters"];
@@ -332,10 +333,11 @@ const Dropdown = () => {
         
         </Flex>
         <Flex alignItems="center">
-        <button class="dropbtn" style={{fontSize : "13px"}}>
-        ADMIN
-    
-      </button>
+        <Link to="/admin/login">
+          <button class="dropbtn" style={{fontSize : "13px"}}>
+            ADMIN
+          </button>
+        </Link>
          
         </Flex>
       </Box>
