@@ -12,6 +12,13 @@ import Cart from "../Pages/Cart/Cart";
 import Payment from "../Pages/Payment/Payment";
 import ProductCards from "../Pages/ProductCard/ProductCards";
 import Televisions from "../Pages/ProductCard/Television";
+import Mobile from "../Pages/ProductCard/Mobile";
+import HeadPhone from "../Pages/ProductCard/HeadPhone";
+import HomeAppliances from "../Pages/ProductCard/HomeAppliances";
+import Computer from "../Pages/ProductCard/Computer";
+import Personal from "../Pages/ProductCard/Personal";
+import Kitchen from "../Pages/ProductCard/Kitchen";
+
 
 const AllRoutes = () => {
   return (
@@ -31,8 +38,14 @@ const AllRoutes = () => {
         <Route path="/register" element={<Register />}></Route>
         <Route path="/cart" element={<Cart/>}></Route>
         <Route path="/checkout" element = {<Payment/>}></Route>
-        <Route path="/products" element = {<ProductCards/>}></Route>
+        <Route path="/camera" element = {<ProductCards/>}></Route>
         <Route path="/televisions" element={<Televisions/>}></Route>
+        <Route path="/mobile" element={<Mobile/>}></Route>
+        <Route path="/headphone" element = {<HeadPhone/>}></Route>
+        <Route path="/home" element = {<HomeAppliances/>}></Route>
+        <Route path="/computer" element= {<Computer/>}></Route>
+        <Route path="/personal" element = {<Personal/>}></Route>
+        <Route path="/kitchen" element={<Kitchen/>}></Route>
       </Routes>
     </div>
   );
