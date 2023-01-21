@@ -29,15 +29,19 @@ import {ImSpoonKnife} from "react-icons/im";
 import {BsGrid} from "react-icons/bs";
 import {AiFillMessage} from "react-icons/ai"
 import ProductCards from '../Pages/ProductCard/ProductCards';
+
+import axios from 'axios';
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
 
-  const getCategory=(el)=>{
-    let data=[];
+  const getCategory=async(el)=>{
+    // let res = await axios.get(`https://rus-digital-televisions.onrender.com/${el}`)
+    // let d = res.data;
+    let data=[] || "allproduct";
     data.push(el)
     localStorage.setItem('items', JSON.stringify(data));
-   
+   window.location.reload(true)
   }
 
   return (
@@ -145,7 +149,7 @@ export default function Navbar() {
                         fontWeight: "bold",
                         marginBottom: "20px",
                       }}
-                      onClick={(e)=>getCategory("mobilesandtablets")}
+                      onClick={()=>getCategory("mobilesandtablets")}
                     >
                       Smartphones
                     </p>
@@ -159,7 +163,7 @@ export default function Navbar() {
                     >
                       <Link to='' ><h2>SMARTWATCHES</h2></Link>
                       <Link to=''><h2>Accessories</h2></Link>
-                      <Link to='' onClick={(e)=>getCategory("mobilesandtablets")}><p>Tablet Accessories</p></Link>
+                      <Link to='/ProductCards' onClick={(e)=>getCategory("mobilesandtablets")} ><p>Tablet Accessories</p></Link>
                       <Link to='' onClick={(e)=>getCategory("mobilesandtablets")}><p>Mobile Accessories</p></Link>
                       <Link to='' onClick={(e)=>getCategory("mobilesandtablets")}><p>Mobile Grips & Stands</p></Link>
                       <Link to='' onClick={(e)=>getCategory("mobilesandtablets")}><p>Car Mobile Holders</p></Link>
