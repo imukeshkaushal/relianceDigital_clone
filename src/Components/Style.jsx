@@ -18,6 +18,7 @@ export const Load = styled.div`
             animation-delay: 0.4s;
         }
     }
+    
     @keyframes pulse {
         to {
             transform: scale(0.8);
