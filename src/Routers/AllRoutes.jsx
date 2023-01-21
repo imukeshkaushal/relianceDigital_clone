@@ -18,6 +18,7 @@ import HomeAppliances from "../Pages/ProductCard/HomeAppliances";
 import Computer from "../Pages/ProductCard/Computer";
 import Personal from "../Pages/ProductCard/Personal";
 import Kitchen from "../Pages/ProductCard/Kitchen";
+import SingleProduct from "../Pages/ProductCard/SingleProduct";
 
 
 const AllRoutes = () => {
@@ -46,6 +47,7 @@ const AllRoutes = () => {
         <Route path="/computer" element= {<Computer/>}></Route>
         <Route path="/personal" element = {<Personal/>}></Route>
         <Route path="/kitchen" element={<Kitchen/>}></Route>
+        <Route path="/SingleProduct" element={<SingleProduct/>}></Route>
       </Routes>
     </div>
   );
