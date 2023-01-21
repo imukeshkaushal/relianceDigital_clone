@@ -15,6 +15,17 @@ function SingleProduct() {
                 <BiHeart size={25} />
               </Text>
               <Image src="" w={"60%"} m="auto" />
+
+
+
+
+
+
+
+
+
+
+
             </Box>
           </Box>
         </Flex>
