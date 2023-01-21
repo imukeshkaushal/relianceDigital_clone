@@ -20,7 +20,6 @@ import Personal from "../Pages/ProductCard/Personal";
 import Kitchen from "../Pages/ProductCard/Kitchen";
 import SingleProduct from "../Pages/ProductCard/SingleProduct";
 
-
 const AllRoutes = () => {
   return (
     <div>
@@ -37,17 +36,17 @@ const AllRoutes = () => {
         <Route path="/admin/login" element={<AdminLogin />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
-        <Route path="/cart" element={<Cart/>}></Route>
-        <Route path="/checkout" element = {<Payment/>}></Route>
-        <Route path="/camera" element = {<ProductCards/>}></Route>
-        <Route path="/televisions" element={<Televisions/>}></Route>
-        <Route path="/mobile" element={<Mobile/>}></Route>
-        <Route path="/headphone" element = {<HeadPhone/>}></Route>
-        <Route path="/home" element = {<HomeAppliances/>}></Route>
-        <Route path="/computer" element= {<Computer/>}></Route>
-        <Route path="/personal" element = {<Personal/>}></Route>
-        <Route path="/kitchen" element={<Kitchen/>}></Route>
-        <Route path="/SingleProduct" element={<SingleProduct/>}></Route>
+        <Route path="/cart" element={<Cart />}></Route>
+        <Route path="/checkout" element={<Payment />}></Route>
+        <Route path="/camera" element={<ProductCards />}></Route>
+        <Route path="/televisions" element={<Televisions />}></Route>
+        <Route path="/mobile" element={<Mobile />}></Route>
+        <Route path="/headphone" element={<HeadPhone />}></Route>
+        <Route path="/home" element={<HomeAppliances />}></Route>
+        <Route path="/computer" element={<Computer />}></Route>
+        <Route path="/personal" element={<Personal />}></Route>
+        <Route path="/kitchen" element={<Kitchen />}></Route>
+        <Route path="/SingleProduct" element={<SingleProduct />}></Route>
       </Routes>
     </div>
   );
