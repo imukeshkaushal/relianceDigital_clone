@@ -17,12 +17,13 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #003380;
+  background-color: rgb(37,47,100);
   left: 0;
   width: 100%;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 100;
 }
+
 
 .dropdown:hover .dropdown-content {
   display: block;

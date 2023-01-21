@@ -7,7 +7,7 @@ const AdminLogin = () => {
  
 
   return (
-    <Box width={["95%", "90%","90%", "90%"]} m="auto" mt={16}>
+    <Box width={["95%", "90%","90%", "90%"]} m="auto" mt={16}  mb = {12}>
       <Flex m="auto" gap={["30px","50px","60px","100px"]} flexDirection={["column-reverse","column-reverse","column-reverse","row"]} alignItems="center">
         <Box>
           <Image
