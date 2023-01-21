@@ -10,29 +10,40 @@ import {
   UnorderedList,
   useToast,
 } from "@chakra-ui/react";
+
 // import axios from "axios";
+
 import React from "react";
+
 // import { useState } from "react";
+
 // import { useEffect } from "react";
+
 import { BiFileBlank, BiHeart, BiShareAlt } from "react-icons/bi";
+
 import { Link } from "react-router-dom";
+
 import ImageCaraosel from "../../Components/SingleProduct/ImageCaraosel";
+
 const SingleProduct = () => {
-  // const [data,setData] = useState("")
+  // const [data,setData] = useState("");
+
   const toast = useToast();
+
   const handleCart = () => {
     toast({
       title: "Product Added Success",
-      description: "thik hai bhiyao",
+      description: "Okie. Product Added...",
       status: "success",
       duration: 5000,
       isClosable: true,
     });
   };
+
   const handleBuy = () => {
     toast({
       title: "Redirect to checkout",
-      description: "thik hai bhiyao",
+      description: "Okie. Redirecting...",
       status: "success",
       duration: 5000,
       isClosable: true,
@@ -40,6 +51,7 @@ const SingleProduct = () => {
   };
 
   // useEffect(()=>{
+
   //     axios.get("")
   //     .then((res)=>setData(res.data))
   //     .catch((err)=>console.log(err.message))
