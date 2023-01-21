@@ -14,9 +14,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-#Productcard{
 
-}
 #filters{
    width: 20%;
    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
@@ -26,7 +24,8 @@ code {
   
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 10px
+    gap: 10px;
+    margin-bottom: 20px;
  
 }
 
@@ -61,7 +60,7 @@ margin-right: 10px;
   display: none;
 }
 #titleBar{
-  width: 100%;
+  width: 90%;
   
 }
 #Productcard img{
@@ -74,12 +73,13 @@ margin: auto;
 @media all and (min-width: 751px) and (max-width: 1024px) {
   #productCards{
     grid-template-columns: repeat(2,1fr);
+   
 }
 #filters{
   display: none;
 }
 #titleBar{
-  width: 100%;
+  width: 90%;
   
 }
 #Productcard img{

@@ -22,19 +22,36 @@ import {
 import React, { useEffect } from "react";
 import { useState } from "react";
 import sty from "./payment.module.css";
+import swal from 'sweetalert';
+
 import immg from "./Dig_Xp.png"
 import { useDispatch, useSelector } from "react-redux";
 import { getCartProducts } from "../../Redux/cart/cart.action";
+import { useNavigate } from "react-router-dom";
 
 const Payment = () => {
     const [cardDetail, setCardDetail] = useState("");
     const [price,setPrice] = useState(0);
+    const navigate = useNavigate();
     const cartData = useSelector((store) => store.cartManager.data);  
   const dispatch = useDispatch();
 
     const handlepayment = (e) => {
         setCardDetail(e);
     }
+
+    const hanleCheckout = () => {
+        swal({
+            title: "Order Placed!",
+            text: "Thanks for Purchasing from us. Your Order will be delievered within 4-5 Days.",
+            icon: "success",
+            button: "OK",
+          });
+          localStorage.setItem("finalPrice","0");
+          navigate("/")
+
+    }
+
 
     useEffect(() => {
         if (cartData.length === 0) {
@@ -168,15 +185,19 @@ const Payment = () => {
                                     </Box>
                                 </Stack>
                             </CardBody>
-                        </Card> : <></>}
+                        </Card> : ""}
                         {/* ========= box 2 =========  */}
+    
                         <Button
                             size='md'
                             height='48px'
+                            type = "submit"
                             width='100%'
                             border='2px'
                             borderColor='blue.500'
-                            margin="14px 0" > Purchase </Button>
+                            margin="14px 0" 
+                            onClick={hanleCheckout}
+                            > Purchase </Button>
                         {/* ====== Button ====== */}
                     </FormControl>
                 </Box>

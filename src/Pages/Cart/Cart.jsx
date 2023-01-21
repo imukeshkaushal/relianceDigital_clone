@@ -43,7 +43,7 @@ const Cart = () => {
       dispatch(getCartProducts())
     }
     const date = new Date();
-    const x = date.getDate() + 7;
+    const x = date.getDate() + 4;
     date.setDate(x)
     let s = date.toString().split(" ")
     let a = s[2] + " " + s[1] + " " + s[3]

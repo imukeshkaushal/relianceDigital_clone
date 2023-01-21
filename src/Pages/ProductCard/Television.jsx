@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { store } from "../../Redux/store";
 import React, { useEffect } from "react";
-import { getPosts } from "../../Redux/Products/Product.action";
+import { getPosts, getPostsTelevisions } from "../../Redux/Products/Product.action";
 
 import {
   Card,
@@ -11,23 +11,28 @@ import {
   Button,
   Divider,
   Stack,
-
+  Heading,
+  Box,
   Image,
   Badge,
-
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
 } from "@chakra-ui/react";
 import Filters from "./Filters/Filters";
 import { AddIcon, MinusIcon } from "@chakra-ui/icons";
 import { BsHeart } from "react-icons/bs";
 import Carousel from "./carousel";
 
-const ProductCards = () => {
+const Televisions = () => {
   const { loading, error, data } = useSelector((store) => store.product);
 
   const dispatch = useDispatch();
   //console.log(data);
   useEffect(() => {
-    dispatch(getPosts());
+    dispatch(getPostsTelevisions());
   }, []);
 
   const sortByLH = () => {
@@ -193,4 +198,4 @@ const ProductCards = () => {
   );
 };
 
-export default ProductCards;
+export default Televisions;
