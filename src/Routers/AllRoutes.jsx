@@ -49,7 +49,7 @@ const AllRoutes = () => {
         <Route path="/personal" element = {<Personal/>}></Route>
         <Route path="/kitchen" element={<Kitchen/>}></Route>
         <Route path="/product" element= {<ProductDetailpage/>}></Route>
-      
+          
       </Routes>
     </div>
   );

@@ -78,7 +78,7 @@ export const Navbar = () => {
             >
               <Text>Find a Store</Text>
               <Text>|</Text>
-              <Text>Buying Guide</Text>
+              <Text>Wishlist</Text>
               <Text>|</Text>
               <Text>Contact Us</Text>
             </Flex>
