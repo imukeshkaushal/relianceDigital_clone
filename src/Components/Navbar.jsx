@@ -66,7 +66,7 @@ export const Navbar = () => {
 
 }
   return (
-    <Box>
+    <Box position={"fixed"} top = "0" left={"0"} right = "0" width = "100%" zIndex={99} >
       <Box display={["none", "none", "none", "block"]}  >
         <Box bgColor="#e42529" maxW={"full"} >
           <Flex flexDirection={"row-reverse"} p={2} pr={4}>
@@ -85,7 +85,7 @@ export const Navbar = () => {
           </Flex>
         </Box>
 
-        <Box bgColor="#e42529" zIndex={99}>
+        <Box bgColor="#e42529"  >
           <Flex
             gap="60px"
             alignItems={"center"}

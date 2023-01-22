@@ -11,6 +11,7 @@ const Dropdown = () => {
       <Box
         backgroundColor={"rgb(37,47,100)"}
         color="white"
+        
           // p={1}
         style={{
           display: "flex",
