@@ -43,8 +43,8 @@ const Refri = ({ type, heading }) => {
         >
           {type.map((i) => (
             <Box key={uuid()} >
-              <SwiperSlide p={10}>
-                {/* <Link to={i.linked}> */}
+              <SwiperSlide>
+                <Link to={i.linked}>
                   <Square m="auto" _hover={{ transform: "scale(1.1)" }}>
                     <Image src={`${i.img}`} alt={i.name} boxSize="160px" />
                   </Square>
@@ -89,7 +89,7 @@ const Refri = ({ type, heading }) => {
                           {i.discount}
                         </Text>
                       </Flex>
-                      <Text fontSize={12} color="#003380">{i.Rating}</Text>
+                      <Text fontSize={12} color="#003380" fontWeight={"bold"}>{i.Rating}</Text>
                       <Box
                         borderRadius="xl"
                         border="1px"
@@ -106,7 +106,7 @@ const Refri = ({ type, heading }) => {
                       </Box>
                     </Box>
                   </Box>
-                {/* </Link> */}
+                </Link>
               </SwiperSlide>
             </Box>
           ))}

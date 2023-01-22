@@ -42,7 +42,7 @@ const SliderFormat = ({ type }) => {
           {type.map((i) => (
             <Box key={uuid()}>
               <SwiperSlide p={10}>
-                {/* <Link to={i.linked}> */}
+                <Link to={i.linked}>
                   <Square m="auto" _hover={{ transform: "scale(1.1)" }}>
                     <Image src={`${i.img}`} alt={i.name} boxSize="160px" />
                   </Square>
@@ -87,7 +87,7 @@ const SliderFormat = ({ type }) => {
                           {i.discount}
                         </Text>
                       </Flex>
-                      <Text fontSize={12} color="#003380">{i.Rating}</Text>
+                      <Text fontSize={12} color="#003380" fontWeight={"bold"}>{i.Rating}</Text>
                       <Box
                         borderRadius="xl"
                         border="1px"
@@ -104,7 +104,7 @@ const SliderFormat = ({ type }) => {
                       </Box>
                     </Box>
                   </Box>
-                {/* </Link> */}
+                </Link>
               </SwiperSlide>
             </Box>
           ))}
