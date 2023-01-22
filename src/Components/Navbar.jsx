@@ -16,9 +16,14 @@ import { CheckCircleIcon, Search2Icon, WarningIcon } from "@chakra-ui/icons";
 import { FaShoppingCart } from "react-icons/fa";
 import { Hamburger } from "./NavComponents/Hamburger";
 import Dropdown from "./NavComponents/Dropdown";
+
+import logo from "../assets/Digital.png";
+import {Link as RouterLink} from "react-router-dom"
+
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { userLogout } from "../Redux/auth/auth.action";
+
 
 
 export const Navbar = () => {
@@ -62,8 +67,8 @@ export const Navbar = () => {
 }
   return (
     <Box>
-      <Box display={["none", "none", "none", "block"]}>
-        <Box bgColor="#e42529" maxW={"full"}>
+      <Box display={["none", "none", "none", "block"]}  >
+        <Box bgColor="#e42529" maxW={"full"} >
           <Flex flexDirection={"row-reverse"} p={2} pr={4}>
             <Flex
               fontWeight={"semibold"}
@@ -73,7 +78,7 @@ export const Navbar = () => {
             >
               <Text>Find a Store</Text>
               <Text>|</Text>
-              <Text>Buying Guide</Text>
+              <Text>Wishlist</Text>
               <Text>|</Text>
               <Text>Contact Us</Text>
             </Flex>
@@ -88,15 +93,17 @@ export const Navbar = () => {
             pl={"30px"}
             pr={"30px"}
           >
+            <RouterLink to="/">
             <Image
               width={"150px"}
-              height={"60px"}
-              src="https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg"
+              height={"70px"}
+              src={logo}
               alt="logo"
             />
+            </RouterLink>
             <InputGroup width={"38%"}>
               <Input
-                placeholder="Enter amount"
+                placeholder="Find your favorite products"
                 variant={"none"}
                 borderRadius="20px"
                 paddingLeft={"20px"}

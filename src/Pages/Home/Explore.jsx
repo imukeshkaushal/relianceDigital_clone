@@ -60,7 +60,7 @@ const Explore = ({ type, heading }) => {
               <Box key={uuid()}>
                 <SwiperSlide>
                   <Box overflow={"hidden"}>
-                    {/* <Link to={i.linked}> */}
+                    <Link to={i.linked}>
                       <Square m="auto" _hover={{transform:"scale(1.1)"}}>
                         <Image
                           src={`${i.img}`}
@@ -75,7 +75,7 @@ const Explore = ({ type, heading }) => {
                           {i.categories}
                         </Text>
                       </Center>
-                    {/* </Link> */}
+                    </Link>
                   </Box>
                 </SwiperSlide>
               </Box>
