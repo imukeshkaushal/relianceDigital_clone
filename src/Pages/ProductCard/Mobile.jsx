@@ -32,7 +32,7 @@ const Mobile = () => {
     return data.sort((a, b) => b.name.localeCompare(a.name));
    // console.log("d",d);
   };
-  console.log("outLH",data);
+ 
   const sortByHL = () => {
     console.log("HL",data);
     
@@ -45,7 +45,7 @@ const Mobile = () => {
 
   return (
     <>
-      <div style={{ marginTop: "20px", marginBottom: "20px" }}>
+      <div style={{  marginBottom: "20px" }}>
         <Carousel />
       </div>
       <div style={{ display: "flex", justifyContent:"space-around"}}>

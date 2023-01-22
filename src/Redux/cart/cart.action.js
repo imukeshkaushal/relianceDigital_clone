@@ -54,15 +54,14 @@ export const addItemCart = (item) => async (dispatch) => {
     type: ADD_TO_CART_LOADING,
   });
   try {
-    let response = await axios.post(`https://rus-digital-televisions.onrender.com/cart`, {
-      count: 1,
-      productId: item.id,
-    });
+    let response = await axios.post(`https://rus-digital-televisions.onrender.com/cart`,item);
     console.log(response.data);
     dispatch({
       type: ADD_TO_CART_SUCCESS,
-      payload: response.data,
+      
     });
+    dispatch(getCartProducts())
+    
   } catch (e) {
     dispatch({
       type: ADD_TO_CART_ERROR,

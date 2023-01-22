@@ -58,7 +58,6 @@ export const cartReducer = (state = productInitalState, { type, payload }) => {
     case ADD_TO_CART_SUCCESS: {
       return {
         ...state,
-        data: { ...state.data, payload },
       };
     }
     case ADD_TO_CART_ERROR: {

@@ -25,10 +25,11 @@ import Filters from "./Filters/Filters";
 import { AddIcon, MinusIcon } from "@chakra-ui/icons";
 import { BsHeart } from "react-icons/bs";
 import Carousel from "./carousel";
+import { addItemCart } from "../../Redux/cart/cart.action";
 
 const Televisions = () => {
   const { loading, error, data } = useSelector((store) => store.product);
-
+ 
   const dispatch = useDispatch();
   //console.log(data);
   useEffect(() => {
@@ -53,7 +54,7 @@ const Televisions = () => {
 
   return (
     <>
-      <div style={{ marginTop: "20px", marginBottom: "20px" }}>
+      <div style={{ marginBottom: "20px" }}>
         <Carousel />
       </div>
 
@@ -181,7 +182,15 @@ const Televisions = () => {
                           name="compare-btn"
                           id="compare-btn"
                         />
-                        <label>Compare</label>
+                        <label data-cy="product-add-item-to-cart-button" onClick={() => {
+                          let obj = {}
+                          for(let i of data)
+                            if(i.id === product.id){
+                              obj = i
+                            }
+                          dispatch(addItemCart(obj));
+
+                        }}>Add to Cart</label>
                       </Stack>
                     }
                   </Button>
