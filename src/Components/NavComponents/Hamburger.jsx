@@ -1,18 +1,59 @@
 
-import { Box, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Flex, Input, Text, useDisclosure } from "@chakra-ui/react"
+import { Box, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Flex, Input, Text, useDisclosure, useToast } from "@chakra-ui/react"
 import React from "react"
 import { BsCameraFill, BsFillTelephoneFill } from "react-icons/bs"
 import { FaBath, FaHeadphones, FaInfoCircle, FaMobileAlt, FaShoppingCart, FaSitemap, FaUsb } from "react-icons/fa"
 import { GiHamburgerMenu, GiPlug } from "react-icons/gi"
 import {GoPlus} from "react-icons/go"
-import { MdComputer, MdLocationOn, MdOutlineSms } from "react-icons/md"
+import { MdAccountCircle, MdComputer, MdLocationOn, MdOutlineSms } from "react-icons/md"
 import {RiComputerLine} from "react-icons/ri"
 import {ImSpoonKnife} from "react-icons/im"
 import { BiQrScan } from "react-icons/bi"
+import { userLogout } from "../../Redux/auth/auth.action"
+import { CheckCircleIcon, WarningIcon } from "@chakra-ui/icons"
+import { useDispatch, useSelector } from "react-redux"
 
 export const Hamburger = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef()
+    const username = useSelector((state) => state.authManager.userdata.username);
+    const isAuth = useSelector((state) => state.authManager.isAuth)
+    const dispatch = useDispatch();
+    const toast = useToast();
+  
+    const handleLogOut = () => {
+      if (!isAuth) {
+          toast({
+              position: 'bottom-center',
+  
+              duration: 1200,
+  
+              render: () => (
+                  <Flex color='white'  p={"10px"} bgColor='red' borderRadius={"10px"}>
+  
+                      <WarningIcon w={30} h={30} /><Text size="lg" ml="15px">You Are Not Login. Please Login Again!</Text>
+                  </Flex >
+              ),
+          })
+  
+      } else {
+  
+          toast({
+              position: 'bottom-center',
+              duration: 1200,
+              render: () => (
+                  <Flex color='white' borderRadius={"10px"} p={"10px"} bgColor='green.400'>
+  
+                      <CheckCircleIcon w={30} h={30} /><Text size="lg" ml="15px">You are Successfully Logged Out. Please Login Again!</Text>
+                  </Flex >
+              ),
+          })
+          dispatch(userLogout())
+      }
+  
+  
+  
+  }
   
     return (
       <>
@@ -27,7 +68,10 @@ export const Hamburger = () => {
           <DrawerOverlay />
           <DrawerContent >
             <DrawerCloseButton  color={"white"}/>
-            <DrawerHeader fontSize={"16px"} color="white" fontWeight={"semibold"} bgColor={"#e42529"}>Login / Register</DrawerHeader>
+            {
+              isAuth ? <DrawerHeader fontSize={"16px"} color="white" fontWeight={"semibold"} bgColor={"#e42529"}>Hi, {username}</DrawerHeader> : 
+              <DrawerHeader fontSize={"16px"} color="white" fontWeight={"semibold"} bgColor={"#e42529"}>Login / Register</DrawerHeader>
+            }
   
             <DrawerBody p={0} fontSize = {"15px"}>
               <Box bgColor = "gray.100" p={2}>Categories</Box>
@@ -144,13 +188,22 @@ export const Hamburger = () => {
                 <GoPlus/>
               </Flex>
 
+              {
+                isAuth ? <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
+                <Flex alignItems={"center"} gap="10px" onClick={handleLogOut}>
+                    <MdAccountCircle/>
+                    <Text>Log Out</Text>
+                </Flex>
+          
+              </Flex> : 
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
-                    <MdOutlineSms/>
-                    <Text>Policies</Text>
+                    <MdAccountCircle/>
+                    <Text>Login</Text>
                 </Flex>
-                <GoPlus/>
+              
               </Flex>
+              }
               
             </DrawerBody>
   
