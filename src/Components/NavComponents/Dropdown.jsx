@@ -11,6 +11,7 @@ const Dropdown = () => {
       <Box
         backgroundColor={"rgb(37,47,100)"}
         color="white"
+        
           // p={1}
         style={{
           display: "flex",
@@ -266,7 +267,7 @@ const Dropdown = () => {
     {/*------------------------------------home dropdown--------------------------------------*/}
       <Flex alignItems="center">
       <div class="dropdown">
-      <RouterLink to="/">
+      <RouterLink to="/home">
       <Flex _hover={{backgroundColor:"#e42529"}} p={3}>
       <button class="dropbtn" style={{fontSize : "13px"}}>
      APPLIANCES

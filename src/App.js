@@ -18,8 +18,12 @@ function App() {
       <Loader/>
     ):(
     <>
-      <Navbar/>   
-      <AllRoutes />
+      <Navbar/>  
+        <div style={{marginTop : "150px"}}></div>
+        
+        <AllRoutes />
+    
+      
       <Footer/>
     </>
     )

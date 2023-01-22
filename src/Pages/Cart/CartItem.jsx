@@ -1,3 +1,6 @@
+import { WarningIcon } from '@chakra-ui/icons'
+import { Flex, Text } from '@chakra-ui/layout'
+import { useToast } from '@chakra-ui/toast'
 import React from 'react'
 import { FaPlus } from 'react-icons/fa'
 import { useDispatch } from 'react-redux'
@@ -5,9 +8,22 @@ import { deleteProduct, getCartProducts } from '../../Redux/cart/cart.action'
 import crt from "./cart.module.css"
 const CartItem = ({img,id,name,price,mrp,delevery}) => {
     const dispatch = useDispatch();
+    const toast = useToast();
     const handleDelete = (id) => {
         dispatch(deleteProduct(id));
         dispatch(getCartProducts());
+        toast({
+          position: 'bottom-center',
+
+          duration: 1200,
+
+          render: () => (
+              <Flex color='white'  p={"10px"} bgColor='red' borderRadius={"10px"}>
+
+                  <WarningIcon w={30} h={30} /><Text size="lg" ml="15px">Your {name} is Removed from Cart</Text>
+              </Flex >
+          ),
+      })
       }
   return (
     <div>

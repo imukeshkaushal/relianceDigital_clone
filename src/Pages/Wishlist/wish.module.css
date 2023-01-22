@@ -1,84 +1,26 @@
-.topbox{
-    background-color: white; 
+.container{
+    width: 94%; 
+    margin: auto; 
 }
 
-.hometop{
-    border: 1px solid rgb(162, 162, 162); 
+.userdetail>div{
     display: flex; 
     align-items: center; 
-    font-size: 13px; 
-    margin: 20px auto 0 auto;
-    color: rgba(52, 51, 51, 0.959); 
-    padding: 10px 30px; 
-}
-
-.main{
-    border: 1px solid rgba(189, 189, 189, 0.845); 
-    display: flex;   
-    width: 90%; 
-    margin: auto;  
-}
-
-.main>div:nth-child(1){
-    flex: 2; 
-    border: 1px solid rgba(189, 189, 189, 0.845); 
-    padding: 20px; 
-}
-
-.main>div:nth-child(2){
-    flex: 8;
-    border: 1px solid rgba(189, 189, 189, 0.845); 
+    gap: 20px; 
+    margin: 10px; 
 }
 
 .myinfo{
-    margin: 10px auto 20px auto; 
-}
-
-.links{
-    display: grid; 
-    grid-template-columns: repeat(1,1fr); 
-    gap: 6px; 
-}
-
-.links *{
-    text-decoration: none; 
-    color: black; 
-    font-size: small;
-}
-
-.links>button{
-    border: 0; 
-    text-align: left; 
-    font-size: small;   
-    font-weight: bold; 
-    display: flex; 
-    align-items: center; 
-    gap: 6px; 
-    cursor: pointer; 
-} 
-
-.lnk{
-    font-size: small; 
-    margin-left: 6% ; 
-    font-weight: 100; 
-    cursor: pointer; 
-}
-
-.lnk:hover{ 
-    font-weight: bold;
-}
-
-.links>h4 *{
-    text-decoration: none; 
-    color: black; 
+    margin: 8px auto 22px auto; 
 }
 
 .myinfo>h2{
-    font-size: medium;
+    font-size: medium; 
+    font-weight: bold; 
 }
 
 .myinfo>p{
-    font-size: small; 
+    font-size: medium;  
     color: rgb(81, 81, 81);
 }
 
@@ -102,15 +44,18 @@
     grid-template-columns: repeat(3,1fr);  
     gap: 20px; 
     padding: 20px 10px; 
+    width: 100%; 
+    border: 2px solid black;
 }
+
+
 
 .option>div{
     padding: 10px;  
     border: 1px solid rgba(173, 173, 173, 0.715);  
     border-radius: 6px;  
     height: 80px; 
-    display: flex; 
-    cursor: pointer; 
+    display: flex;   
     align-items:flex-start ;  
     justify-content: space-between; 
 } 
@@ -136,3 +81,138 @@
 
 
 
+/* data css  */  
+
+
+
+.proinfobox{
+    border-radius: 4px;
+    background-color: white;  
+    overflow: hidden;
+    margin: 0;
+    margin: 10px 0;
+    padding: 4px 10px 0 10px ; 
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.productbox{ 
+    display: flex; 
+    border: 0; 
+    padding: 10px;  
+}
+
+.productbox>div:nth-child(1){
+    flex: 1;  
+}
+.productbox>div:nth-child(2){
+    flex: 3;  
+    padding: 0 10px; 
+}
+.productbox>div:nth-child(3){
+    flex: 2;  
+    text-align: end;
+} 
+
+.productbox h3{
+    font-size: medium; 
+    font-weight: 400; 
+    color: rgb(0, 0, 126);  
+    display: -webkit-box; 
+    -webkit-line-clamp: 2;  
+    -webkit-box-orient: vertical; 
+    overflow: hidden;  
+    margin: 0 0 10px 0;
+} 
+
+.productbox h2{
+    font-size: medium; 
+    font-weight: 400; 
+    color: rgb(0, 0, 0);  
+}
+
+.productbox h5>span{
+    font-size: x-small; 
+    color: rgb(229,45,49); 
+}
+
+.productbox h5{
+    display: flex; 
+    align-items: center;  
+    gap: 6px ; 
+}
+
+.cartimg{
+    width: 80%;   
+}
+
+.plslogo{ 
+    color: black ; 
+    background-color: yellow; 
+    border-radius: 90px;   
+    padding: 4px;
+}
+
+#mxm{
+    display: grid; 
+    gap: 6px; 
+}
+
+
+#strikethrough{
+    font-size: small; 
+    color: rgb(89, 122, 122);
+}
+#strikethrough>span{
+    font-size: x-small; 
+} 
+
+.appendingdata{
+    margin: 0;
+    padding: 0;
+}
+
+
+#ships{
+    font-size: 14px; 
+    color: rgb(27, 146, 146);
+}
+
+
+#delevery{
+    display: flex; 
+    align-items: center; 
+    font-size: small; 
+    text-align: end; 
+    color: rgb(58, 58, 183);
+    justify-content: flex-end; 
+} 
+
+
+#gov{
+    font-size: 10px;
+    color: rgb(27, 146, 146);
+}
+
+
+
+@media screen and (min-width:500px) and (max-width:800px) {
+    .option{
+        grid-template-columns: repeat(2,1fr);  
+    }
+
+    .myinfo{
+        display: none; 
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .option{
+        grid-template-columns: repeat(1,1fr);  
+    }
+
+    .myinfo{
+        display: none; 
+    }
+}

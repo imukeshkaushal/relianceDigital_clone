@@ -54,7 +54,7 @@ const Cart = () => {
   return (
     <>
       {
-        data.length === 0 ? <EmptyCart/> : <div className={crt.box}>
+        data.length === 0 ? <EmptyCart/> : <div className={crt.box} style = {{marginTop : "180px"}}>
         <div>
           {
             data.map((el) => {
@@ -75,7 +75,7 @@ const Cart = () => {
             <div id={crt.pricebox}>
               <h4> PRICE DETAILS </h4>
               <div>
-                <h4>Price (2 Items) </h4>
+                <h4>Price ({data.length} Items) </h4>
                 <h4> ₹{total} </h4>
               </div>
               <div>

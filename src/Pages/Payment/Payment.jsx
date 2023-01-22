@@ -26,7 +26,7 @@ import swal from 'sweetalert';
 
 import immg from "./Dig_Xp.png"
 import { useDispatch, useSelector } from "react-redux";
-import { getCartProducts } from "../../Redux/cart/cart.action";
+import { deleteProduct, getCartProducts } from "../../Redux/cart/cart.action";
 import { useNavigate } from "react-router-dom";
 
 const Payment = () => {
@@ -49,7 +49,14 @@ const Payment = () => {
           });
           localStorage.setItem("finalPrice","0");
           navigate("/")
+          handleDelete();
 
+    }
+
+    const handleDelete = ()=>{
+        for(let i=0;i<cartData.length;i++){
+            dispatch(deleteProduct(cartData[i].id))
+        }
     }
 
 
@@ -147,8 +154,8 @@ const Payment = () => {
                                         </Heading>
                                         <Input
                                             variant="flushed"
-                                            type="text"
-                                            placeholder="Enter State"
+                                            type="number"
+                                            placeholder="Enter Card Number"
                                         />
                                     </Box>
                                     <Box>
