@@ -25,6 +25,7 @@ import Filters from "./Filters/Filters";
 import { AddIcon, MinusIcon } from "@chakra-ui/icons";
 import { BsHeart } from "react-icons/bs";
 import Carousel from "./carousel";
+import { Link } from "react-router-dom";
 
 const HeadPhone = () => {
   const { loading, error, data } = useSelector((store) => store.product);
@@ -48,8 +49,7 @@ const HeadPhone = () => {
    
   };
  
-  if (loading) return <h1>...Loading</h1>;
-  if (error) return <h1>...Error</h1>;
+  
 
   return (
     <>
@@ -97,8 +97,9 @@ const HeadPhone = () => {
           <div id="productCards"
           >
             {data.map((product) => (
+              <Link to={`headphones/${product.id}`}>
               <Card  variant="outline" key={product.id} id="Productcard" _hover={{boxShadow: "rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"}}>
-                <CardBody id="productBody">
+              <CardBody id="productBody">
                   <Image
                     mt="-5"
                     src={product.img}
@@ -126,15 +127,15 @@ const HeadPhone = () => {
                         {product.mrp}
                       </Text>
                       <Text
-                        color="gray.500"
+                      color="gray.500"
                         fontSize="smaller"
                         fontWeight={"bold"}
-                      >
+                        >
                         <s>
-                          <span>&#8377;</span>
-                          {product.mrp}{" "}
+                        <span>&#8377;</span>
+                        {product.mrp}{" "}
                         </s>{" "}
-                      </Text>
+                        </Text>
                       <Text
                         color="green.600"
                         fontSize="x-small"
@@ -144,17 +145,17 @@ const HeadPhone = () => {
                         <span>&#8377;</span>
                         {product.discount}
                       </Text>
-                    </Stack>
-                    <Stack direction="row">
+                      </Stack>
+                      <Stack direction="row">
                       <Badge
                         variant="outline"
                         colorScheme="green"
                         borderRadius={"15px"}
                         padding={"0px 10px 0px 10px"}
-                      >
+                        >
                         OFFERS AVAILABLE
-                      </Badge>
-                      <Badge
+                        </Badge>
+                        <Badge
                         variant="outline"
                         colorScheme="green"
                         borderRadius={"15px"}
@@ -174,26 +175,27 @@ const HeadPhone = () => {
                   mt="-4"
                 >
                   <Button flex="1" variant="ghost">
-                    {
-                      <Stack direction="row" align={"center"} fontWeight={""}>
-                        <input
-                          type="checkbox"
-                          name="compare-btn"
-                          id="compare-btn"
-                        />
-                        <label>Compare</label>
-                      </Stack>
-                    }
+                  {
+                    <Stack direction="row" align={"center"} fontWeight={""}>
+                    <input
+                    type="checkbox"
+                    name="compare-btn"
+                    id="compare-btn"
+                    />
+                    <label>Compare</label>
+                    </Stack>
+                  }
                   </Button>
                   <Button flex="1" variant="ghost" leftIcon={<BsHeart />}>
-                    Wishlist
+                  Wishlist
                   </Button>
-                </CardFooter>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </div>
+                  </CardFooter>
+                  </Card>
+                  </Link>
+                  ))}
+                  </div>
+                  </div>
+                  </div>
     </>
   );
 };
