@@ -44,12 +44,12 @@ const AllRoutes = () => {
         <Route path="/televisions" element={<Televisions/>}></Route>
         <Route path="/mobile" element={<Mobile/>}></Route>
         <Route path="/headphone" element = {<HeadPhone/>}></Route>
-        <Route path="/home" element = {<HomeAppliances/>}></Route>
+        <Route path="/" element = {<HomeAppliances/>}></Route>
         <Route path="/computer" element= {<Computer/>}></Route>
         <Route path="/personal" element = {<Personal/>}></Route>
         <Route path="/kitchen" element={<Kitchen/>}></Route>
         <Route path="/product" element= {<ProductDetailpage/>}></Route>
-      
+          
       </Routes>
     </div>
   );

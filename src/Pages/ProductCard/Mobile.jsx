@@ -1,8 +1,8 @@
 import { useSelector, useDispatch } from "react-redux";
 import { store } from "../../Redux/store";
 import React, { useEffect } from "react";
-import { getPosts, getPostsMobile, getPostsTelevisions } from "../../Redux/Products/Product.action";
-
+import { getPostsMobile } from "../../Redux/Products/Product.action";
+import { Skeleton, SkeletonCircle, SkeletonText } from '@chakra-ui/react'
 import {
   Card,
   CardBody,
@@ -11,24 +11,16 @@ import {
   Button,
   Divider,
   Stack,
-  Heading,
-  Box,
   Image,
   Badge,
-  Accordion,
-  AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-  AccordionIcon,
 } from "@chakra-ui/react";
 import Filters from "./Filters/Filters";
-import { AddIcon, MinusIcon } from "@chakra-ui/icons";
 import { BsHeart } from "react-icons/bs";
 import Carousel from "./carousel";
+import { useState } from "react";
 
 const Mobile = () => {
   const { loading, error, data } = useSelector((store) => store.product);
-
   const dispatch = useDispatch();
   //console.log(data);
   useEffect(() => {
@@ -56,8 +48,6 @@ const Mobile = () => {
       <div style={{  marginBottom: "20px" }}>
         <Carousel />
       </div>
-
-      <div></div>
       <div style={{ display: "flex", justifyContent:"space-around"}}>
         <div id="filters" >
           <h1

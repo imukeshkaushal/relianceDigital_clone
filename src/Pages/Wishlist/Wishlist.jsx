@@ -3,6 +3,7 @@ import wsh from "./wish.module.css"
 import { FaHome } from 'react-icons/fa';
 import { IoIosArrowForward } from 'react-icons/io';
 import { FiLogOut } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 
 const Wishlist = () => {
@@ -17,12 +18,12 @@ const Wishlist = () => {
           </div>
           <div className={wsh.links}>
             <h4> <h6 to="/myacc"> My Account</h6> </h4>
-            <h5 className={wsh.lnk} to="/myprofile" > My Profile </h5>
-            <h5 className={wsh.lnk} to="/mywishlist" > My Wishlist </h5>
-            <h5 className={wsh.lnk} to="/myacc" > My Order </h5>
-            <h5 className={wsh.lnk} to="/myacc" > My Address </h5>
-            <h5 className={wsh.lnk} to="/myacc" > ROne Loyalty Points </h5>
-            <h5 className={wsh.lnk} to="/myacc" > My Credit </h5>
+            <Link className={wsh.lnk} to="/myprofile" > My Profile </Link>
+            <Link className={wsh.lnk} to="/mywishlist" > My Wishlist </Link>
+            <Link className={wsh.lnk} to="/myacc" > My Order </Link>
+            <Link className={wsh.lnk} to="/myacc" > My Address </Link>
+            <Link className={wsh.lnk} to="/myacc" > ROne Loyalty Points </Link>
+            <Link className={wsh.lnk} to="/myacc" > My Credit </Link>
             <button> Logout <FiLogOut /> </button>
           </div>
         </div>

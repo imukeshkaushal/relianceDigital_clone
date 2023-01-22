@@ -7,7 +7,7 @@ export const Refrigerators = [
       discount: "48%(₹6,500)",
       id: 1,
       Rating: "⭐⭐⭐⭐(1 Review)",
-      linked: "refrigerator",
+      linked: "kitchen",
     },
     {
       name: "LG 8 litres RO + UV + UF Water Purifier, WW184EPB with Mineral Booster, 2-in-1 Water Solution (Drinking + Fruit & Veggie Cleaning), Black",
@@ -17,17 +17,17 @@ export const Refrigerators = [
       discount: "23%(₹8,509)",
       id: 2,
       Rating: "⭐⭐⭐",
-      linked: "refrigerator",
+      linked: "kitchen",
     },
     {
-      name: "Kelvinator 170 litres Direct Cool 2 Star Single Door Refrigerator, Maroon Red, KRD-C190MRP",
-      img: "https://www.reliancedigital.in/medias/KELVINATOR-170L-KRD-C190MRP-Refrigerator-492911043-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzODA1OXxpbWFnZS9wbmd8aW1hZ2VzL2gwZS9oOTgvOTg3NzgzOTMxNDk3NC5wbmd8MTBiZjcwYmY2MjliOWY1MjMzYWY4NDlmMjU4Yzk3YWMxMDIwMDU1OTBlMGYxYWFkNTY0YmFhMWNiYTE1MWFkMA",
+      name: "Kelvinator 170 litres Direct Cool 2 Star Single Door kitchen, Maroon Red, KRD-C190MRP",
+      img: "https://www.reliancedigital.in/medias/KELVINATOR-170L-KRD-C190MRP-kitchen-492911043-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzODA1OXxpbWFnZS9wbmd8aW1hZ2VzL2gwZS9oOTgvOTg3NzgzOTMxNDk3NC5wbmd8MTBiZjcwYmY2MjliOWY1MjMzYWY4NDlmMjU4Yzk3YWMxMDIwMDU1OTBlMGYxYWFkNTY0YmFhMWNiYTE1MWFkMA",
       price: "10,990.00",
       mrp: "11,490.00",
       discount: "31%(₹5,000)",
       id: 3,
       Rating: "⭐⭐⭐⭐",
-      linked: "refrigerator",
+      linked: "kitchen",
     },
     {
       name: "Samsung 1.5 Ton 4 Star AR18BY4YATA Inverter Split AC,HD Filter, 2 Way Swing, Floral Design, 5 in 1 Convertible (2022 Launch)",
@@ -37,7 +37,7 @@ export const Refrigerators = [
       discount: "38%(₹24,000)",
       id: 4,
       Rating: "⭐⭐⭐⭐(1 Review)",
-      linked: "refrigerator",
+      linked: "kitchen",
     },
     {
       name: "Sansui 7 Kg Semi Automatic Top Loading Washing Machine with 3 Wash Programs, JSP70S-2024L, Burgundy",
@@ -47,37 +47,37 @@ export const Refrigerators = [
       discount: "38%(₹25,191)",
       id: 5,
       Rating: "⭐⭐⭐⭐(1 Review)",
-      linked: "refrigerator",
+      linked: "kitchen",
     },
     {
-      name: "Hisense 94 Litre 2 Star Single Door Refrigerator, Silver RR94D4SSN",
-      img: "https://www.reliancedigital.in/medias/Hisense-RR94D4SSN-Refrigerator-493627170-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNDM2NnxpbWFnZS9qcGVnfGltYWdlcy9oN2MvaDZjLzk5MTY0MDc2MTE0MjIuanBnfGEzYThlMGUxZDc2ZWI2ZWE2ZjM4MmM5YTcwN2E2MTAxNTlmOTZmZGU3YWM0YjdmNzFlYzlhNTdhY2FjMjI0MGU",
+      name: "Hisense 94 Litre 2 Star Single Door kitchen, Silver RR94D4SSN",
+      img: "https://www.reliancedigital.in/medias/Hisense-RR94D4SSN-kitchen-493627170-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNDM2NnxpbWFnZS9qcGVnfGltYWdlcy9oN2MvaDZjLzk5MTY0MDc2MTE0MjIuanBnfGEzYThlMGUxZDc2ZWI2ZWE2ZjM4MmM5YTcwN2E2MTAxNTlmOTZmZGU3YWM0YjdmNzFlYzlhNTdhY2FjMjI0MGU",
       price: "38,990.00",
       mrp: "67,090.00",
       discount: "42%(₹28,100)",
       id: 6,
       Rating: "⭐⭐⭐",
-      linked: "refrigerator",
+      linked: "kitchen",
     },
     {
-      name: "Voltas Beko 195 Litre 2 Star Direct Cool Single Door Refrigerator, Belus Blue, RDC215DBBRX",
-      img: "https://www.reliancedigital.in/medias/Voltas-Beko-RDC215DBBRX-Refrigerator-492911097-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNDI2NXxpbWFnZS9qcGVnfGltYWdlcy9oMWYvaDNkLzk4Mzg4OTc3OTEwMDYuanBnfGJkMTA1ZWY4ZDU0OTM4Zjc1ZjNmMDdhY2VmYWRhOGEyN2VlZWQ2MzExYjgyODU0NjZmZjBhOTE1ZTJhYjE2NmQ",
+      name: "Voltas Beko 195 Litre 2 Star Direct Cool Single Door kitchen, Belus Blue, RDC215DBBRX",
+      img: "https://www.reliancedigital.in/medias/Voltas-Beko-RDC215DBBRX-kitchen-492911097-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNDI2NXxpbWFnZS9qcGVnfGltYWdlcy9oMWYvaDNkLzk4Mzg4OTc3OTEwMDYuanBnfGJkMTA1ZWY4ZDU0OTM4Zjc1ZjNmMDdhY2VmYWRhOGEyN2VlZWQ2MzExYjgyODU0NjZmZjBhOTE1ZTJhYjE2NmQ",
       price: "43,749.00",
       mrp: "49,977.00",
       discount: "12%(₹6,228)",
       id: 7,
       Rating: "⭐⭐⭐⭐(1 Review)",
-      linked: "refrigerator",
+      linked: "kitchen",
     },
     {
-      name: "Kelvinator 170 litres Direct Cool 2 Star Single Door Refrigerator, Maroon Red, KRD-C190MRP",
+      name: "Kelvinator 170 litres Direct Cool 2 Star Single Door kitchen, Maroon Red, KRD-C190MRP",
       img: "https://www.reliancedigital.in/medias/LG-P7010RRAZ-Washing-Machine-492284109-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNzQyNnxpbWFnZS9qcGVnfGltYWdlcy9oNWIvaGNkLzk4ODkwNzI2MTEzNTguanBnfDQ2YTBhM2RjMDZmNGM3YjA1OWUyYmI5OTU0MDU1NDE5ZWViMTE3ZTViNjliMjIyMGNjNDgxYzJkYjAxMjliYTg",
       price: "39,999.00",
       mrp: "47,833.00",
       discount: "16%(₹7,834)",
       id: 8,
       Rating: "⭐⭐⭐⭐(1 Review)",
-      linked: "refrigerator",
+      linked: "kitchen",
     },
     {
       name: "Haier 0.9 Ton 3 Star QuriCool HSU10Q-TCW3B Triple Inverter Split AC with Copper Condenser, 50 Feet Airflow, Cools even at 60C, Hyper PCB, Self Clean Technology",
@@ -86,7 +86,7 @@ export const Refrigerators = [
       mrp: "67,831.00",
       discount: "15%(₹9,903)",
       id: 10,
-      linked: "refrigerator",
+      linked: "kitchen",
     }
    
   ];
@@ -100,7 +100,7 @@ export const Laptops = [
       discount: "11%(₹4,001)",
       Rating: "⭐⭐⭐⭐(1 Review)",
       id: 11,
-      linked: "computers",
+      linked: "computer",
     },
     {
       name: "HP 15s-er1501AU Standard Laptop (AMD Ryzen 3 3250U/8 GB/256 GB SSD/Radeon Graphics/Windows 11 Home/MSO/HD), 39.62 cm (15.6 Inch)",
@@ -109,7 +109,7 @@ export const Laptops = [
       mrp: "41,204.00",
       discount: "30%(₹12,214)",
       id: 12,
-      linked: "computers",
+      linked: "computer",
     },
     {
       name: "HP Pavilion 15-eg2002TU Laptop (Intel Core i5-1240P/16GB/512GB SSD/Intel Iris Xe Graphics/Windows 11 Home/FHD/MS), 39.6 cm (15.6 inch), 66C03PA",
@@ -119,7 +119,7 @@ export const Laptops = [
       discount: "40%(₹23,891)",
       Rating: "⭐⭐⭐⭐(1 Review)",
       id: 13,
-      linked: "computers",
+      linked: "computer",
     },
     {
       name: "HP 15s-fq2670TU Laptop (11th Gen Intel Core i3-1115G4/8 GB RAM/256 GB SSD/Windows 11 Home/MSO/FHD), 39.6 cm (15.6 inch)",
@@ -129,7 +129,7 @@ export const Laptops = [
       discount: "9%(₹4,009)",
       Rating: "⭐⭐⭐(2 Review)",
       id: 14,
-      linked: "computers",
+      linked: "computer",
     },
     {
       name: "HP 15s-FQ5112TU Laptop (12th Gen Intel Core i5-1235U/16GB/512GB SSD/Iris Xe Graphics/Windows 11 Home/MSO/FHD), 39.6 cm (15.6 inch), Natural Silver",
@@ -138,7 +138,7 @@ export const Laptops = [
       mrp: "65,690.00",
       discount: "38%(₹25,191)",
       id: 15,
-      linked: "computers",
+      linked: "computer",
     },
     {
       name: "Lenovo IdeaPad 3 Thin and Light Laptop (11th Gen Intel Core i3-1115G4/8 GB/512 GB SSD/Windows 11 Home/MSO/FHD), 39.62 cm (15.6 Inch)",
@@ -148,7 +148,7 @@ export const Laptops = [
       discount: "42%(₹28,100)",
       Rating: "⭐⭐⭐⭐(1 Review)",
       id: 16,
-      linked: "computers",
+      linked: "computer",
     },
     {
       name: "HP 15s-fq2672TU Laptop (11th Gen Intel Core i3-1115G4/8GB RAM/512GB SSD/UHD Graphics/Windows 11 Home/MSO/FHD), 39.6 cm (15.6 Inch), Natural Silver",
@@ -157,7 +157,7 @@ export const Laptops = [
       mrp: "49,977.00",
       discount: "12%(₹6,228)",
       id: 17,
-      linked: "computers",
+      linked: "computer",
     },
     {
       name: "HP 15s-fq2671TU Laptop (11th Gen Intel Core i3-1115G4/8 GB RAM/512 GB SSD/Windows 11 Home/MSO/FHD), 39.6 cm (15.6 inch)",
@@ -166,7 +166,7 @@ export const Laptops = [
       mrp: "47,833.00",
       discount: "16%(₹7,834)",
       id: 18,
-      linked: "computers",
+      linked: "computer",
     },
     {
       name: "Asus EK522WS Laptop (11th Gen Intel Core i5-1135G7/8 GB/512 GB SSD/Iris Xe Graphics/Windows 11 Home/MSO/FHD), 35.56 cm (14 Inch)",
@@ -176,7 +176,7 @@ export const Laptops = [
       discount: "30%(₹20,991)",
       Rating: "⭐⭐⭐⭐(1 Review)",
       id: 19,
-      linked: "computers",
+      linked: "computer",
     },
     {
       name: "HP 15s-fq5111TU Laptop (12th Gen Intel Core i5-1235U/8 GB RAM/512 GB SSD/Windows 11 Home/MSO/FHD), 39.6 cm (15.6 inch)",
@@ -185,7 +185,7 @@ export const Laptops = [
       mrp: "67,831.00",
       discount: "15%(₹9,903)",
       id: 20,
-      linked: "computers",
+      linked: "computer",
     },
     {
       name: "HP 15s-fr5007TU Laptop (12th Gen Intel Core i5-1235U/8GB RAM/512GB SSD/Iris Xe Graphics/Windows 11 Home/MSO/FHD), 39.6 cm (15.6 Inch), Natural Silver",
@@ -195,7 +195,7 @@ export const Laptops = [
       discount: "11%(₹7,501)",
       Rating: "⭐⭐⭐⭐(1 Review)",
       id: 21,
-      linked: "computers",
+      linked: "computer",
     },
     {
       name: "Asus EK562WS Laptop (11th Gen Intel Core i5-1135G7/8GB+32GB Intel Optane/512GB SSD/Intel Iris Xe Graphics/Windows 11/MSO/Full HD), 35.56 cm (14 inch)",
@@ -204,7 +204,7 @@ export const Laptops = [
       mrp: "69,990.00",
       discount: "30%(₹21,000)",
       id: 22,
-      linked: "computers",
+      linked: "computer",
     },
   ];
   
@@ -216,9 +216,9 @@ export const Card1 = [
     id: 67,
   },
   {
-    img: "https://www.reliancedigital.in/medias/Home-Appliances-Fes-Great-deals-on-Refrigeratorst-Small-Banners.jpg?context=bWFzdGVyfGltYWdlc3w0Mzg4OXxpbWFnZS9qcGVnfGltYWdlcy9oZmMvaDEyLzk5NDg3MDc4ODA5OTAuanBnfGE1YTE4ZTk3OGRmNTk4N2QxOGNlYmVkZWY0MGI1OTA1NzlkMTBiM2Y1ZDEzNTU5NjliNzAyMzFhNWZiYmM1ZTY",
+    img: "https://www.reliancedigital.in/medias/Home-Appliances-Fes-Great-deals-on-kitchenst-Small-Banners.jpg?context=bWFzdGVyfGltYWdlc3w0Mzg4OXxpbWFnZS9qcGVnfGltYWdlcy9oZmMvaDEyLzk5NDg3MDc4ODA5OTAuanBnfGE1YTE4ZTk3OGRmNTk4N2QxOGNlYmVkZWY0MGI1OTA1NzlkMTBiM2Y1ZDEzNTU5NjliNzAyMzFhNWZiYmM1ZTY",
     caption: "Slide 2",
-    linked: "headphones",
+    linked: "headphone",
     id: 68,
   },
   {
@@ -230,7 +230,7 @@ export const Card1 = [
   {
     img: "https://www.reliancedigital.in/medias/Home-Appliances-Fest-best-seller-home-appliances-Small-Banners.jpg?context=bWFzdGVyfGltYWdlc3w1ODEzMHxpbWFnZS9qcGVnfGltYWdlcy9oM2YvaDQ2Lzk5NDg3MDgwMTIwNjIuanBnfGZiYjg2ZjAzNGM1YzUwYjk4Mjc1MTM0YTYxOGI1YzI3NDJlNTFmNjdlNmU5Yjc3NWRkODdlMmEzNzhmMTA0NDU",
     caption: "Slide 4",
-    linked: "homeappliances",
+    linked: "/",
     id: 70,
   },
 ];
@@ -245,7 +245,7 @@ export const Card2 = [
   {
     img: "https://www.reliancedigital.in/medias/Hisense-HD-Ready-Smart-LED-TV-Small-Banner-28-12-2022.jpg?context=bWFzdGVyfGltYWdlc3w0OTgyNXxpbWFnZS9qcGVnfGltYWdlcy9oOWEvaDY1Lzk5Mzc4OTUxNjE4ODYuanBnfDZkM2I0YzZmM2UxZWNmZWE4M2FiYjEwYzM2NzdmMmM3NzQwYTE0ODFiMzA0ZDFkMzQ2ODQ4OGQ5MWRmZGI0MzM",
     caption: "Slide 2",
-    linked: "headphones",
+    linked: "headphone",
     id: 72,
   },
   {
@@ -257,7 +257,7 @@ export const Card2 = [
   {
     img: "https://www.reliancedigital.in/medias/Neckband-True-Wireless-Small-Banner-28-12-2022.jpg?context=bWFzdGVyfGltYWdlc3wzMjg5OHxpbWFnZS9qcGVnfGltYWdlcy9oNzYvaDE2Lzk5Mzc4OTUwOTYzNTAuanBnfGE1OTcxMTM4NGUyMjU3MmM4NTc4YTI1NThkMmQwOTc1ZDU2N2YwNjRjMWNiZTU2YjZiMzcwOTVkYjc0MzQ4MDc",
     caption: "Slide 4",
-    linked: "homeappliances",
+    linked: "/",
     id: 74,
   },
   {
@@ -269,7 +269,7 @@ export const Card2 = [
   {
     img: "https://www.reliancedigital.in/medias/Printers-Monitors-Small-Banner-28-12-2022.jpg?context=bWFzdGVyfGltYWdlc3wzNDkxNHxpbWFnZS9qcGVnfGltYWdlcy9oYTkvaDFhLzk5MzkyMDYwNDU3MjYuanBnfDYwMDA0MjljYTU2YWZkOWE3MjY4YjA4ZDE1ZDVkZjkyZGVkZTdhNDU0Y2FkMWZlMzEyMjhhZWZkYTliMjZmZWM",
     caption: "Slide 6",
-    linked: "headphones",
+    linked: "headphone",
     id: 77,
   },
   {
@@ -281,7 +281,7 @@ export const Card2 = [
   {
     img: "https://www.reliancedigital.in/medias/Apple-MNEH3HNA-MacBook-Small-Banner-28-12-2022.jpg?context=bWFzdGVyfGltYWdlc3wzMzM3MHxpbWFnZS9qcGVnfGltYWdlcy9oZWYvaGUxLzk5Mzc4OTU1NTUxMDIuanBnfDYwYWNmOTM3MDhjYjBhYzVhZTlkMWY0MTMyZTUwMDg4NmY4NGRjOWQ3YjIyMjNlNzllMjE1MTNlZjNjZGQ2OTA",
     caption: "Slide 8",
-    linked: "homeappliances",
+    linked: "/",
     id: 79,
   },
 ];
@@ -295,7 +295,7 @@ export const Laptops2 = [
     discount: "11%(₹4,001)",
     Rating: "⭐⭐⭐⭐(1 Review)",
     id: 23,
-    linked: "computers",
+    linked: "computer",
   },
   {
     name: "HP 15s-er1501AU Standard Laptop (AMD Ryzen 3 3250U/8 GB/256 GB SSD/Radeon Graphics/Windows 11 Home/MSO/HD), 39.62 cm (15.6 Inch)",
@@ -304,7 +304,7 @@ export const Laptops2 = [
     mrp: "41,204.00",
     discount: "30%(₹12,214)",
     id: 24,
-    linked: "computers",
+    linked: "computer",
   },
   {
     name: "HP Pavilion 15-eg2002TU Laptop (Intel Core i5-1240P/16GB/512GB SSD/Intel Iris Xe Graphics/Windows 11 Home/FHD/MS), 39.6 cm (15.6 inch), 66C03PA",
@@ -314,7 +314,7 @@ export const Laptops2 = [
     discount: "40%(₹23,891)",
     Rating: "⭐⭐⭐⭐(2 Review)",
     id: 25,
-    linked: "computers",
+    linked: "computer",
   },
   {
     name: "HP 15s-fq2670TU Laptop (11th Gen Intel Core i3-1115G4/8 GB RAM/256 GB SSD/Windows 11 Home/MSO/FHD), 39.6 cm (15.6 inch)",
@@ -323,7 +323,7 @@ export const Laptops2 = [
     mrp: "45,409.00",
     discount: "9%(₹4,009)",
     id: 26,
-    linked: "computers",
+    linked: "computer",
   },
   {
     name: "HP 15s-FQ5112TU Laptop (12th Gen Intel Core i5-1235U/16GB/512GB SSD/Iris Xe Graphics/Windows 11 Home/MSO/FHD), 39.6 cm (15.6 inch), Natural Silver",
@@ -333,7 +333,7 @@ export const Laptops2 = [
     discount: "38%(₹25,191)",
     Rating: "⭐⭐⭐⭐(1 Review)",
     id: 27,
-    linked: "computers",
+    linked: "computer",
   },
   {
     name: "Lenovo IdeaPad 3 Thin and Light Laptop (11th Gen Intel Core i3-1115G4/8 GB/512 GB SSD/Windows 11 Home/MSO/FHD), 39.62 cm (15.6 Inch)",
@@ -342,7 +342,7 @@ export const Laptops2 = [
     mrp: "67,090.00",
     discount: "42%(₹28,100)",
     id: 28,
-    linked: "computers",
+    linked: "computer",
   },
   {
     name: "HP 15s-fq2672TU Laptop (11th Gen Intel Core i3-1115G4/8GB RAM/512GB SSD/UHD Graphics/Windows 11 Home/MSO/FHD), 39.6 cm (15.6 Inch), Natural Silver",
@@ -351,7 +351,7 @@ export const Laptops2 = [
     mrp: "49,977.00",
     discount: "12%(₹6,228)",
     id: 29,
-    linked: "computers",
+    linked: "computer",
   },
   {
     name: "HP 15s-fq2671TU Laptop (11th Gen Intel Core i3-1115G4/8 GB RAM/512 GB SSD/Windows 11 Home/MSO/FHD), 39.6 cm (15.6 inch)",
@@ -360,7 +360,7 @@ export const Laptops2 = [
     mrp: "47,833.00",
     discount: "16%(₹7,834)",
     id: 30,
-    linked: "computers",
+    linked: "computer",
   },
   {
     name: "Asus EK522WS Laptop (11th Gen Intel Core i5-1135G7/8 GB/512 GB SSD/Iris Xe Graphics/Windows 11 Home/MSO/FHD), 35.56 cm (14 Inch)",
@@ -370,7 +370,7 @@ export const Laptops2 = [
     discount: "30%(₹20,991)",
     Rating: "⭐⭐⭐⭐(1 Review)",
     id: 31,
-    linked: "computers",
+    linked: "computer",
   },
   {
     name: "HP 15s-fq5111TU Laptop (12th Gen Intel Core i5-1235U/8 GB RAM/512 GB SSD/Windows 11 Home/MSO/FHD), 39.6 cm (15.6 inch)",
@@ -379,7 +379,7 @@ export const Laptops2 = [
     mrp: "67,831.00",
     discount: "15%(₹9,903)",
     id: 32,
-    linked: "computers",
+    linked: "computer",
   },
   {
     name: "HP 15s-fr5007TU Laptop (12th Gen Intel Core i5-1235U/8GB RAM/512GB SSD/Iris Xe Graphics/Windows 11 Home/MSO/FHD), 39.6 cm (15.6 Inch), Natural Silver",
@@ -389,7 +389,7 @@ export const Laptops2 = [
     discount: "11%(₹7,501)",
     Rating: "⭐⭐⭐(1 Review)",
     id: 33,
-    linked: "computers",
+    linked: "computer",
   },
   {
     name: "Asus EK562WS Laptop (11th Gen Intel Core i5-1135G7/8GB+32GB Intel Optane/512GB SSD/Intel Iris Xe Graphics/Windows 11/MSO/Full HD), 35.56 cm (14 inch)",
@@ -399,7 +399,7 @@ export const Laptops2 = [
     discount: "30%(₹21,000)",
     Rating: "⭐⭐⭐⭐(1 Review)",
     id: 34,
-    linked: "computers",
+    linked: "computer",
   },
 ];
 
@@ -413,7 +413,7 @@ export const Phones = [
     discount: "1%(₹1,099)",
     id: 35,
     Rating: "⭐⭐⭐⭐(1 Review)",
-    linked: "mobilesandtablets",
+    linked: "mobile",
   },
   {
     name: "Apple iPhone 14 Plus 128 GB, Starlight",
@@ -423,7 +423,7 @@ export const Phones = [
     mrp: "90,889.00",
     id: 36,
     discount: "1%(₹8,99)",
-    linked: "mobilesandtablets",
+    linked: "mobile",
   },
   {
     name: "Apple iPhone 14 Plus 128 GB, Blue",
@@ -434,7 +434,7 @@ export const Phones = [
     id: 37,
     discount: "1%(₹8,99)",
     Rating: "⭐⭐⭐(1 Review)",
-    linked: "mobilesandtablets",
+    linked: "mobile",
   },
   {
     name: "Apple iPhone 14 Plus 128 GB, Blue",
@@ -444,7 +444,7 @@ export const Phones = [
     id: 38,
     mrp: "90,889.00",
     discount: "1%(₹8,99)",
-    linked: "mobilesandtablets",
+    linked: "mobile",
   },
   {
     name: "Apple iPhone 14 Plus 512 GB, Midnight",
@@ -455,7 +455,7 @@ export const Phones = [
     id: 39,
     discount: "1%(₹1,099)",
     Rating: "⭐⭐⭐⭐(1 Review)",
-    linked: "mobilesandtablets",
+    linked: "mobile",
   },
 ];
 
@@ -547,7 +547,7 @@ export const AppleWatch = [
     id: 49,
     discount: "5%(₹4,495)",
     Rating: "⭐⭐⭐⭐(2 Review)",
-    linked: "personalcare",
+    linked: "personal",
   },
   {
     name: "Apple Watch SE GPS + Cellular - 40 mm Silver Aluminium Case with White 2nd Generation Sport Band",
@@ -557,7 +557,7 @@ export const AppleWatch = [
     id: 50,
     price: "34,900.00",
     discount: "5%(₹1,745)",
-    linked: "personalcare",
+    linked: "personal",
   },
   {
     name: "Apple Watch Ultra GPS + Cellular - 49 mm Titanium Case with Orange Alpine Loop - Medium",
@@ -568,7 +568,7 @@ export const AppleWatch = [
     id: 51,
     discount: "5%(₹1,895)",
     Rating: "⭐⭐⭐⭐(1 Review)",
-    linked: "personalcare",
+    linked: "personal",
   },
   {
     name: "Apple Watch SE GPS + Cellular - 44 mm Silver Aluminium Case with White 2nd Generation Sport Band",
@@ -578,7 +578,7 @@ export const AppleWatch = [
     price: "89,900.00",
     id: 52,
     discount: "5%(₹4,495)",
-    linked: "personalcare",
+    linked: "personal",
   },
   {
     name: "Apple Watch Ultra GPS + Cellular - 49 mm Titanium Case with Blue and Gray Trail Loop - M/L",
@@ -589,7 +589,7 @@ export const AppleWatch = [
     id: 53,
     discount: "5%(₹4,495)",
     Rating: "⭐⭐⭐⭐(1 Review)",
-    linked: "personalcare",
+    linked: "personal",
   },
 ];
 
@@ -602,7 +602,7 @@ export const Headphones = [
     discount: "69%(₹2,400)",
     Rating: "⭐⭐⭐⭐(1 Review)",
     id: 54,
-    linked: "headphones",
+    linked: "headphone",
   },
   {
     name: "boAt Airdopes 131 RTL Twin Wireless Earbuds with IWP Technology, Bluetooth V5.0, Immersive Audio, Up to 15H Total Playback, Instant Voice Assistant and Type-C Charging",
@@ -611,14 +611,14 @@ export const Headphones = [
     mrp: "2,990.00",
     discount: "63%(₹1,891)",
     id: 55,
-    linked: "headphones",
+    linked: "headphone",
   },
   {
     name: "Apple MME73HN/A 3rd Generation Airpods with Mic and Wireless Charging Case, White",
     img: "https://www.reliancedigital.in/medias/Apple-Airpods-492571632-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMTQ1NnxpbWFnZS9qcGVnfGltYWdlcy9oMjgvaGU2Lzk4MjU2MDg5OTA3NTAuanBnfGU0MjZmMjM3YjYwMDhkYmUxOWIwYjllNTczODI0YzdjY2EyYTMyYjY5MTQ3ZTE4Y2I2YzEwNGMyN2Q1N2MwMzU",
     price: "18,500.00",
     id: 56,
-    linked: "headphones",
+    linked: "headphone",
     Rating: "⭐⭐⭐⭐(1 Review)",
   },
   {
@@ -628,7 +628,7 @@ export const Headphones = [
     mrp: "4,490.00",
     discount: "71%(₹3,191)",
     id: 4,
-    linked: "headphones",
+    linked: "headphone",
   },
   {
     name: "OnePlus Nord Buds Wireless Earbuds with 4 Mics and AI Noise Reduction, Black Slate",
@@ -638,7 +638,7 @@ export const Headphones = [
     discount: "17%(₹500)",
     Rating: "⭐⭐⭐⭐(1 Review)",
     id: 57,
-    linked: "headphones",
+    linked: "headphone",
   },
   {
     name: "boAt Airdopes 131 RTL Twin Wireless Earbuds with IWP Technology, Bluetooth V5.0, Immersive Audio, Up to 15H Total Playback, Instant Voice Assistant and Type-C Charging, Black",
@@ -647,7 +647,7 @@ export const Headphones = [
     mrp: "2,990.00",
     discount: "63%(₹1,891)",
     id: 58,
-    linked: "headphones",
+    linked: "headphone",
   },
   {
     name: "OnePlus Bullets Z2 Wireless Neckband Earphone with AI Noise Cancellation, Magico Black",
@@ -656,7 +656,7 @@ export const Headphones = [
     mrp: "2,290.00",
     discount: "26%(₹591)",
     id: 59,
-    linked: "headphones",
+    linked: "headphone",
   },
   {
     name: "pTron InTunes Classic Bluetooth 5.2 Wireless Neckband Earphones with 24Hrs Playback Time, Made in India, Hi-Fi Stereo Audio, Deep Bass, Type-C Fast Charging, Voice Assistant, IPX4 & In-line Music & Call Controls (Black)",
@@ -666,16 +666,16 @@ export const Headphones = [
     discount: "74%(₹1,400)",
     Rating: "⭐⭐⭐⭐(1 Review)",
     id: 60,
-    linked: "headphones",
+    linked: "headphone",
   },
   {
-    name: "pTron Basspods P181 Bluetooth 5.1 Wireless Headphones, 32Hrs Total Playtime, Immersive Stereo Sound, Stereo Calls, Snug-fit TWS Earbuds, Touch Controls, Voice Assistance, Type-C Fast Charging & IPX4 (Black)",
+    name: "pTron Basspods P181 Bluetooth 5.1 Wireless headphone, 32Hrs Total Playtime, Immersive Stereo Sound, Stereo Calls, Snug-fit TWS Earbuds, Touch Controls, Voice Assistance, Type-C Fast Charging & IPX4 (Black)",
     img: "https://www.reliancedigital.in/medias/pTron-Basspods-P181-Bluetooth-Earphones-492796965-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0MjMyM3xpbWFnZS9qcGVnfGltYWdlcy9oYWIvaDlmLzk4MjU4OTQ4MjYwMTQuanBnfDFiNDA1MjIwOGNkMjM4YmVmYThiMjY2OWEyMzg3OWRmNDQ3MDBhYzMwYjcxOTMyZWEwNmRhMDQyMWMyMDZmZTk",
     price: "649.00",
     mrp: "2,999.00",
     discount: "78%(₹2,350)",
     id: 61,
-    linked: "headphones",
+    linked: "headphone",
   },
   {
     name: "Apple MLWK3HN/A Airpods Pro with Magsafe Charging Case, White",
@@ -684,7 +684,7 @@ export const Headphones = [
     mrp: "26,300.00",
     discount: "20%(₹5,310)",
     id: 61,
-    linked: "headphones",
+    linked: "headphone",
   },
 ];
 
@@ -693,21 +693,21 @@ export const Explore1 = [
     img: "https://www.reliancedigital.in/medias/iphone-pro-11-01.png?context=bWFzdGVyfGltYWdlc3wyOTc3NnxpbWFnZS9wbmd8aW1hZ2VzL2gxNi9oNWUvOTI3NjA1OTkxMDE3NC5wbmd8MzdkYzljODgzMDcyM2ZjMjJmZDI2ZjMwNjhkZmU5YjFmOTJmMGRmOTFiYzc4ZjcyMDRhMjQ5MWMyNjYwOTgxYg",
     caption: "Slide 1",
     categories: "Smartphone",
-    linked: "personalcare",
+    linked: "personal",
     id: 62,
   },
   {
     img: "https://www.reliancedigital.in/medias/Washing-Machine-180x180-15-01-2019.png?context=bWFzdGVyfGltYWdlc3wzNDU4MXxpbWFnZS9wbmd8aW1hZ2VzL2gzOC9oM2UvOTI1MTA1MDg4MTA1NC5wbmd8ZDAyZGNkMzU1MzE3N2E2OGFlOTliMzUyODZkYzlkNTc0NzFmODllY2JiZDVlNzdhYjg3MTgyMTc4ZGVhODA3ZA",
     caption: "Slide 2",
     categories: "Washing Machines",
-    linked: "homeappliances",
+    linked: "/",
     id: 62,
   },
   {
     img: "https://www.reliancedigital.in/medias/Laptop-180x180-15-01-2019.png?context=bWFzdGVyfGltYWdlc3wyOTAwOXxpbWFnZS9wbmd8aW1hZ2VzL2g0Mi9oNTYvOTI1MTA1MDYxODkxMC5wbmd8N2ZjYTg0ZDAyOTZmMmQ5OTZhZDNiM2M4NDg0ZDgxY2UyNzNjMmJiYzMwZTZiOGQwOWE5N2JlZDI4M2ViMGZjNw",
     caption: "Slide 3",
     categories: "Laptops",
-    linked: "computers",
+    linked: "computer",
     id: 63,
   },
   {
@@ -721,14 +721,14 @@ export const Explore1 = [
     img: "https://www.reliancedigital.in/medias/Watch-180x180-27-02-2020.png?context=bWFzdGVyfGltYWdlc3w2Njk2fGltYWdlL3BuZ3xpbWFnZXMvaGQ1L2g2My85MjUzNTA3NTk2MzE4LnBuZ3w4NmEwODU5NDI5YzVlMzJjNzRlNzNlYmJkMmJmYTZjMTI2OWY0YTUxYWU3YzMzM2E3YTc5YjljZmU4ZGMyNGQ2",
     caption: "Slide 5",
     categories: "Smart Wearables",
-    linked: "personalcare",
+    linked: "personal",
     id: 65,
   },
   {
     img: "https://www.reliancedigital.in/medias/Speaker-Headset-180x180-15-01-2019.png?context=bWFzdGVyfGltYWdlc3wyNzUzN3xpbWFnZS9wbmd8aW1hZ2VzL2g1YS9oODAvOTI1MTA1MDY4NDQ0Ni5wbmd8YmMyYWJiNzRhMzk4NjMxMDRmOWRlZGI1MzVjZDk2Y2IxYTkxOGNlNjlmZjA2YTgwMGIwMjhmYTJlYmNhYjIwOA",
     caption: "Slide 5",
     categories: "Speakers & Headsets",
-    linked: "homeappliances",
+    linked: "/",
     id: 66,
   },
 ];
