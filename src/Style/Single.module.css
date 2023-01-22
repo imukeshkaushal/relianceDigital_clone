@@ -1,0 +1,10 @@
+/* single product page */
+.main_flex{
+    border: 2px solid red;
+
+}
+@media (max-width: 907px){
+    .main_flex{
+        flex-direction: column;
+    }  
+}

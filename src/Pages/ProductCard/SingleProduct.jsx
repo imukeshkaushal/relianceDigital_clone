@@ -24,7 +24,7 @@ import { BiFileBlank, BiHeart, BiShareAlt } from "react-icons/bi";
 import { Link } from "react-router-dom";
 
 import ImageCaraosel from "../../Components/SingleProduct/ImageCaraosel";
-
+import Styles from "../../Style/Single.module.css"
 const SingleProduct = () => {
   // const [data,setData] = useState("");
 
@@ -60,7 +60,7 @@ const SingleProduct = () => {
   return (
     <>
       <Box w={"100%"}>
-        <Flex h={"95vh"} py={2} pl={2} pr={2} gap="2px">
+        <Flex  py={2} pl={2} pr={2} gap="2px" className={Styles.main_flex}>
           <Box w="40%">
             <Box mt={2}>
               <Text color={"red"} ml="95%" mb={"-25px"}>
