@@ -19,6 +19,7 @@ import Computer from "../Pages/ProductCard/Computer";
 import Personal from "../Pages/ProductCard/Personal";
 import Kitchen from "../Pages/ProductCard/Kitchen";
 import PrivateRoute from "./PrivateRoutes";
+import ProductDetailpage from "../Pages/productdetailpage/ProductDetailpage";
 
 
 const AllRoutes = () => {
@@ -47,7 +48,7 @@ const AllRoutes = () => {
         <Route path="/computer" element= {<Computer/>}></Route>
         <Route path="/personal" element = {<Personal/>}></Route>
         <Route path="/kitchen" element={<Kitchen/>}></Route>
-     
+        <Route path="/product" element= {<ProductDetailpage/>}></Route>
       
       </Routes>
     </div>
