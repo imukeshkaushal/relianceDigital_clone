@@ -12,6 +12,7 @@ import { BiQrScan } from "react-icons/bi"
 import { userLogout } from "../../Redux/auth/auth.action"
 import { CheckCircleIcon, WarningIcon } from "@chakra-ui/icons"
 import { useDispatch, useSelector } from "react-redux"
+import { Link } from "react-router-dom"
 
 export const Hamburger = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -78,56 +79,56 @@ export const Hamburger = () => {
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
                     <FaMobileAlt/>
-                    <Text>Mobiles & Tablets</Text>
+                   <Link to = "/mobile"> <Text>Mobiles & Tablets</Text></Link>
                 </Flex>
                 <GoPlus/>
               </Flex>
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
                     <RiComputerLine/>
-                    <Text>Television</Text>
+                    <Link to="/televisions"><Text>Television</Text></Link>
                 </Flex>
                 <GoPlus/>
               </Flex>
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
                     <FaHeadphones/>
-                    <Text>Audio</Text>
+                    <Link to="/headphone"><Text>Audio</Text></Link>
                 </Flex>
                 <GoPlus/>
               </Flex>
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
                     <GiPlug/>
-                    <Text>Home Appliances</Text>
+                    <Link to="/home"><Text>Home Appliances</Text></Link>
                 </Flex>
                 <GoPlus/>
               </Flex>
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
                     <MdComputer/>
-                    <Text>Computer</Text>
+                    <Link to="computer"><Text>Computer</Text></Link>
                 </Flex>
                 <GoPlus/>
               </Flex>
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
                     <BsCameraFill/>
-                    <Text>Cameras</Text>
+                    <Link to="/camera"><Text>Cameras</Text></Link>
                 </Flex>
                 <GoPlus/>
               </Flex>
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
                     <ImSpoonKnife/>
-                    <Text>Kitchen Appliances</Text>
+                    <Link to="/kitchen"><Text>Kitchen Appliances</Text></Link>
                 </Flex>
                 <GoPlus/>
               </Flex>
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
                     <FaBath/>
-                    <Text>Personal Care</Text>
+                    <Link to="/personal"><Text>Personal Care</Text></Link>
                 </Flex>
                 <GoPlus/>
               </Flex>
