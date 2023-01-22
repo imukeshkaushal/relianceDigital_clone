@@ -79,63 +79,63 @@ export const Hamburger = () => {
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
                     <FaMobileAlt/>
-                   <Link to = "/mobile"> <Text>Mobiles & Tablets</Text></Link>
+                   <Link to = "/mobile"> <Text onClick={onClose}>Mobiles & Tablets</Text></Link>
                 </Flex>
                 <GoPlus/>
               </Flex>
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
                     <RiComputerLine/>
-                    <Link to="/televisions"><Text>Television</Text></Link>
+                    <Link to="/televisions"><Text onClick={onClose}>Television</Text></Link>
                 </Flex>
                 <GoPlus/>
               </Flex>
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
                     <FaHeadphones/>
-                    <Link to="/headphone"><Text>Audio</Text></Link>
+                    <Link to="/headphone"><Text onClick={onClose}>Audio</Text></Link>
                 </Flex>
                 <GoPlus/>
               </Flex>
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
                     <GiPlug/>
-                    <Link to="/home"><Text>Home Appliances</Text></Link>
+                    <Link to="/home"><Text onClick={onClose}>Home Appliances</Text></Link>
                 </Flex>
                 <GoPlus/>
               </Flex>
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
                     <MdComputer/>
-                    <Link to="computer"><Text>Computer</Text></Link>
+                    <Link to="computer"><Text onClick={onClose}>Computer</Text></Link>
                 </Flex>
                 <GoPlus/>
               </Flex>
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
                     <BsCameraFill/>
-                    <Link to="/camera"><Text>Cameras</Text></Link>
+                    <Link to="/camera"><Text onClick={onClose}>Cameras</Text></Link>
                 </Flex>
                 <GoPlus/>
               </Flex>
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
                     <ImSpoonKnife/>
-                    <Link to="/kitchen"><Text>Kitchen Appliances</Text></Link>
+                    <Link to="/kitchen"><Text onClick={onClose}>Kitchen Appliances</Text></Link>
                 </Flex>
                 <GoPlus/>
               </Flex>
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
                     <FaBath/>
-                    <Link to="/personal"><Text>Personal Care</Text></Link>
+                    <Link to="/personal"><Text onClick={onClose}>Personal Care</Text></Link>
                 </Flex>
                 <GoPlus/>
               </Flex>
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
                     <FaUsb/>
-                    <Text>Accessories</Text>
+                    <Text onClick={onClose}>Accessories</Text>
                 </Flex>
                 <GoPlus/>
               </Flex>
@@ -144,7 +144,7 @@ export const Hamburger = () => {
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
                     <FaShoppingCart/>
-                    <Text>Cart</Text>
+                    <Text onClick={onClose}>Cart</Text>
                 </Flex>
                 
               </Flex>
@@ -152,7 +152,7 @@ export const Hamburger = () => {
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
                     <MdLocationOn/>
-                    <Text>Find a Store</Text>
+                    <Text onClick={onClose}>Find a Store</Text>
                 </Flex>
              
               </Flex>
@@ -160,7 +160,7 @@ export const Hamburger = () => {
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
                     <BsFillTelephoneFill/>
-                    <Text>Contact Us</Text>
+                    <Text onClick={onClose}>Contact Us</Text>
                 </Flex>
                 
               </Flex>
@@ -168,7 +168,7 @@ export const Hamburger = () => {
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
                     <BiQrScan/>
-                    <Text>Scanner</Text>
+                    <Text onClick={onClose}>Scanner</Text>
                 </Flex>
                 
               </Flex>
@@ -176,7 +176,7 @@ export const Hamburger = () => {
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
                     <FaInfoCircle/>
-                    <Text>Buying Guide</Text>
+                    <Text onClick={onClose}>Buying Guide</Text>
                 </Flex>
               
               </Flex>
@@ -184,7 +184,7 @@ export const Hamburger = () => {
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
                     <FaSitemap/>
-                    <Text>Site Info</Text>
+                    <Text onClick={onClose}>Site Info</Text>
                 </Flex>
                 <GoPlus/>
               </Flex>
@@ -193,14 +193,14 @@ export const Hamburger = () => {
                 isAuth ? <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px" onClick={handleLogOut}>
                     <MdAccountCircle/>
-                    <Text>Log Out</Text>
+                    <Text onClick={onClose}>Log Out</Text>
                 </Flex>
           
               </Flex> : 
               <Flex alignItems={"center"} justifyContent="space-between" pl={3} pr = {3} pt = {2} pb={2} borderTop="1px solid #cecece" borderBottom="1px solid #cecece">
                 <Flex alignItems={"center"} gap="10px">
                     <MdAccountCircle/>
-                    <Text>Login</Text>
+                    <Text onClick={onClose}>Login</Text>
                 </Flex>
               
               </Flex>
