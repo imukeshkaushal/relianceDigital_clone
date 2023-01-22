@@ -7,6 +7,7 @@ import {
   InputLeftElement,
   InputRightElement,
   Text,
+  useDisclosure,
   useToast,
 } from "@chakra-ui/react";
 import React from "react";
@@ -16,10 +17,7 @@ import { CheckCircleIcon, Search2Icon, WarningIcon } from "@chakra-ui/icons";
 import { FaShoppingCart } from "react-icons/fa";
 import { Hamburger } from "./NavComponents/Hamburger";
 import Dropdown from "./NavComponents/Dropdown";
-
-import logo from "../assets/Digital1.png";
 import {Link as RouterLink} from "react-router-dom"
-
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { userLogout } from "../Redux/auth/auth.action";
@@ -31,6 +29,7 @@ export const Navbar = () => {
   const isAuth = useSelector((state) => state.authManager.isAuth)
   const dispatch = useDispatch();
   const toast = useToast();
+  const {onClose } = useDisclosure()
 
   const handleLogOut = () => {
     if (!isAuth) {
@@ -169,12 +168,14 @@ export const Navbar = () => {
         >
           <Flex gap={"20px"} alignItems="center" justifyContent={"center"}>
             <Hamburger />
+            <RouterLink to="/">
             <Image
               width={"120px"}
               height={"35px"}
               src="https://i.ibb.co/fCTrHJP/New-Project-4.png"
               alt="logo"
-            />
+              />
+              </RouterLink>
           </Flex>
           <Flex justifyContent="space-between" gap={"20px"}>
             <BsFillFilePlusFill size={"20px"} />
