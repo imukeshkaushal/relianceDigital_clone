@@ -30,9 +30,9 @@ const HomeCard1 = ({ type, heading}) => {
       >
         {type.map((i) => (
           <Box _hover={{transform:"scale(1.1)"}} w="50" display="block" key={uuid()}>
-            {/* <Link to={i.linked}> */}
+            <Link to={i.linked}>
               <Image src={`${i.img}`} alt={i.caption} w="100%" />
-            {/* </Link> */}
+            </Link>
           </Box>
         ))}
       </Grid>
