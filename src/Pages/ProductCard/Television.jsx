@@ -20,29 +20,37 @@ import Filters from "./Filters/Filters";
 import { AddIcon, MinusIcon } from "@chakra-ui/icons";
 import { BsHeart } from "react-icons/bs";
 import Carousel from "./carousel";
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 import { addItemCart } from "../../Redux/cart/cart.action";
 
 const Televisions = () => {
   const { loading, error, data } = useSelector((store) => store.product);
  
+  const [skeletonLoading,setSkeletonLoading] = useState(true)
 
   const dispatch = useDispatch();
   //console.log(data);
   useEffect(() => {
-    dispatch(getPostsTelevisions());
+    setTimeout(() => {
+      dispatch(getPostsTelevisions());
+      setSkeletonLoading(false)
+    }, 5000);
+   
   }, []);
 
-  const sortByLH = () => {
-    // let amt = 0;
-       data.forEach((e) => {
+  const sortByLH = (data) => {
+      
+    data.forEach((e) => {
+      let bag = 0;
       let x = e.price
-      let a = x.split(".")
-       let z = a[0].split(",").join("");
-    //   amt += +z;
-    // console.log(z)
-     return data.sort((a, b) => b.z.localeCompare(a.z));
+      let a = x.replaceAll(",", "")
+      bag += +a;
+    
+      
+     return data.sort((a, b) => b.amt.localeCompare(a.amt));
        })
-    // console.log("LH",amt);
+   
 
   
   };
@@ -59,6 +67,7 @@ const Televisions = () => {
     <>
       <div style={{ marginBottom: "20px" }}>
         <Carousel />
+        
       </div>
 
       <div></div>
@@ -97,10 +106,99 @@ const Televisions = () => {
         </div>
           </div>
           
-
-          <div id="productCards"
-          >
+          {skeletonLoading  ? 
+            
+         ( <div id="productCards">
+         <div>
+         <Skeleton highlightColor="" height={140} />
+       <h1><Skeleton/></h1>
+       <h1><Skeleton/></h1>
+       <p><Skeleton/></p>
+       <h1><Skeleton height={50}/></h1>
+       </div>
+       <div>
+       <Skeleton height={140} />
+     <h1><Skeleton/></h1>
+     <h1><Skeleton/></h1>
+     <p><Skeleton/></p>
+     <h1><Skeleton height={50}/></h1>
+     </div>
+     <div>
+     <Skeleton height={140} />
+   <h1><Skeleton/></h1>
+   <h1><Skeleton/></h1>
+   <p><Skeleton/></p>
+   <h1><Skeleton height={50}/></h1>
+   </div>
+   <div>
+   <Skeleton height={140} />
+ <h1><Skeleton/></h1>
+ <h1><Skeleton/></h1>
+ <p><Skeleton/></p>
+ <h1><Skeleton height={50}/></h1>
+ </div>
+ <div>
+ <Skeleton height={140} />
+<h1><Skeleton/></h1>
+<h1><Skeleton/></h1>
+<p><Skeleton/></p>
+<h1><Skeleton height={50}/></h1>
+</div>
+<div>
+<Skeleton height={140} />
+<h1><Skeleton/></h1>
+<h1><Skeleton/></h1>
+<p><Skeleton/></p>
+<h1><Skeleton height={50}/></h1>
+</div>
+<div>
+<Skeleton height={140} />
+<h1><Skeleton/></h1>
+<h1><Skeleton/></h1>
+<p><Skeleton/></p>
+<h1><Skeleton height={50}/></h1>
+</div>
+<div>
+<Skeleton height={140} />
+<h1><Skeleton/></h1>
+<h1><Skeleton/></h1>
+<p><Skeleton/></p>
+<h1><Skeleton height={50}/></h1>
+</div>
+<div>
+<Skeleton height={140} />
+<h1><Skeleton/></h1>
+<h1><Skeleton/></h1>
+<p><Skeleton/></p>
+<h1><Skeleton height={50}/></h1>
+</div>
+<div>
+<Skeleton height={140} />
+<h1><Skeleton/></h1>
+<h1><Skeleton/></h1>
+<p><Skeleton/></p>
+<h1><Skeleton height={50}/></h1>
+</div>
+<div>
+<Skeleton height={140} />
+<h1><Skeleton/></h1>
+<h1><Skeleton/></h1>
+<p><Skeleton/></p>
+<h1><Skeleton height={50}/></h1>
+</div>
+<div>
+<Skeleton height={140} />
+<h1><Skeleton/></h1>
+<h1><Skeleton/></h1>
+<p><Skeleton/></p>
+<h1><Skeleton height={50}/></h1>
+</div>
+       </div>)
+          :
+          
+          (<div id="productCards">
             {data.map((product) => (
+              
               <Card  variant="outline" key={product.id} id="Productcard" _hover={{boxShadow: "rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"}}>
                 <CardBody id="productBody">
                   <Image
@@ -203,7 +301,8 @@ const Televisions = () => {
                 </CardFooter>
               </Card>
             ))}
-          </div>
+                  
+          </div>)}
         </div>
       </div>
     </>
