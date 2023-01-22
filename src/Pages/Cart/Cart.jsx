@@ -20,12 +20,11 @@ const Cart = () => {
   const handleTotal = (arr) => {
     setTotal(0);
     let amt = 0;
-    // arr.forEach((e) => {
-    //   let x = e.price
-    //   let a = x.split(".")
-    //   let z = a[0].split(",").join("");
-    //   amt += +z;
-    // })
+    arr.forEach((e) => {
+      let x = e.price
+      let a = x.replaceAll(",", "")
+      amt += +a;
+    })
     setTotal(amt);
   }
 

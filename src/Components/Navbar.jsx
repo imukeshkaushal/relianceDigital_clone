@@ -17,7 +17,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import { Hamburger } from "./NavComponents/Hamburger";
 import Dropdown from "./NavComponents/Dropdown";
 
-import logo from "../assets/Digital.png";
+import logo from "../assets/Digital1.png";
 import {Link as RouterLink} from "react-router-dom"
 
 import { Link } from "react-router-dom";
