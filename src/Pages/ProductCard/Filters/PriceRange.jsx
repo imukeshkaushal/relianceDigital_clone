@@ -22,10 +22,10 @@ const PriceRange = () => {
             <Flex justifyContent={"space-between"} width="100%"><Text>₹26999</Text><Text>₹46999</Text></Flex>
             <br/>
             <Flex>
-                <Input  borderColor={"blue"}/>
+                <Input width={"80px"}  borderColor={"blue"}/>
                 <Text>to</Text>
-                <Input borderColor={"blue"} />
-                <Button background={"darkblue"} color={"white"} paddingLeft="10px">GO</Button>
+                <Input width={"80px"} borderColor={"blue"} />{" "}
+                <Button background={"darkblue"} color={"white"} marginLeft="10px">GO</Button>
             </Flex>
         </VStack>
     </Box>
