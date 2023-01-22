@@ -95,9 +95,8 @@ export const Navbar = () => {
           >
             <RouterLink to="/">
             <Image
-              width={"150px"}
-              height={"70px"}
-              src={logo}
+             mb={2}
+              src="https://i.ibb.co/fCTrHJP/New-Project-4.png"
               alt="logo"
             />
             </RouterLink>
@@ -173,7 +172,7 @@ export const Navbar = () => {
             <Image
               width={"120px"}
               height={"35px"}
-              src="https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg"
+              src="https://i.ibb.co/fCTrHJP/New-Project-4.png"
               alt="logo"
             />
           </Flex>
