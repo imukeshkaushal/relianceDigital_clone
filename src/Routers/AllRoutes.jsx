@@ -18,6 +18,8 @@ import HomeAppliances from "../Pages/ProductCard/HomeAppliances";
 import Computer from "../Pages/ProductCard/Computer";
 import Personal from "../Pages/ProductCard/Personal";
 import Kitchen from "../Pages/ProductCard/Kitchen";
+import PrivateRoute from "./PrivateRoutes";
+import ProductDetailpage from "../Pages/productdetailpage/ProductDetailpage";
 
 
 const AllRoutes = () => {
@@ -37,7 +39,7 @@ const AllRoutes = () => {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/cart" element={<Cart/>}></Route>
-        <Route path="/checkout" element = {<Payment/>}></Route>
+        <Route path="/checkout" element = {<PrivateRoute><Payment/></PrivateRoute>}></Route>
         <Route path="/camera" element = {<ProductCards/>}></Route>
         <Route path="/televisions" element={<Televisions/>}></Route>
         <Route path="/mobile" element={<Mobile/>}></Route>
@@ -46,6 +48,18 @@ const AllRoutes = () => {
         <Route path="/computer" element= {<Computer/>}></Route>
         <Route path="/personal" element = {<Personal/>}></Route>
         <Route path="/kitchen" element={<Kitchen/>}></Route>
+
+
+
+        <Route path="/camera/:name/:id" element={<ProductDetailpage />} ></Route>
+        <Route path="/home/:name/:id" element = {<ProductDetailpage />}></Route>
+        <Route path="/televisions/:name/:id" element={<ProductDetailpage />}></Route>
+        <Route path="/mobile/:name/:id" element={<ProductDetailpage />}></Route>
+        <Route path="/headphone/:name/:id" element = {<ProductDetailpage />}></Route> 
+        <Route path="/computer/:name/:id" element= {<ProductDetailpage />}></Route>
+        <Route path="/personal/:name/:id" element = {<ProductDetailpage />}></Route>
+        <Route path="/kitchen/:name/:id" element={<ProductDetailpage />}></Route>
+          
       </Routes>
     </div>
   );
