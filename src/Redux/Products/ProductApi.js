@@ -49,3 +49,9 @@ export const getPostsApiPersonal = async() => {
     let res = await axios.get(`https://rus-digital-televisions.onrender.com/personalcare`)
     return res.data;
 }
+
+export const getPersonalApi = async(name,id) => {
+    
+    let res = await axios.get(`https://rus-digital-televisions.onrender.com/${name}/${id}`)
+    return res.data;
+}

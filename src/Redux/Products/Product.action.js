@@ -1,5 +1,5 @@
 import {GET_POSTS_ERROR,GET_POSTS_LOADING,GET_POSTS_SUCCESS} from "./Product.types"
-import { getPostsApi, getPostsApiComputer, getPostsApiHeadphone, getPostsApiHome, getPostsApiKitchen, getPostsApiMobile, getPostsApiPersonal, getPostsApiTelevision } from "./ProductApi"
+import { getPersonalApi, getPostsApi, getPostsApiComputer, getPostsApiHeadphone, getPostsApiHome, getPostsApiKitchen, getPostsApiMobile, getPostsApiPersonal, getPostsApiTelevision } from "./ProductApi"
 export const getPosts=()=>async(dispatch)=>{
     dispatch({type:GET_POSTS_LOADING});
     try{
@@ -73,6 +73,16 @@ export const getPostsPersonal=()=>async(dispatch)=>{
     dispatch({type:GET_POSTS_LOADING});
     try{
         let data = await getPostsApiPersonal()
+        dispatch({type:GET_POSTS_SUCCESS,payload:data})
+    }catch(e){
+        dispatch({type:GET_POSTS_ERROR})
+    }
+}
+
+export const getPersonalPost=(name,id)=>async(dispatch)=>{
+    dispatch({type:GET_POSTS_LOADING});
+    try{
+        let data = await getPersonalApi(name,id)
         dispatch({type:GET_POSTS_SUCCESS,payload:data})
     }catch(e){
         dispatch({type:GET_POSTS_ERROR})
