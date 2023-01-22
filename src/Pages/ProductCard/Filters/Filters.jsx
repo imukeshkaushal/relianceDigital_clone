@@ -5,6 +5,7 @@ const Filters = ({data}) => {
 
   return (
     <div>
+    <PriceRange/>
   <Accordians data={data}/>
   
     </div>

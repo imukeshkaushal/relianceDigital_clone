@@ -82,7 +82,7 @@ const Personal = () => {
             fontFamily: "sans-serif",
           }}
         >
-          Title
+          Personal Care
         </h1>
         <span>(Showing 1-{data.length} results of total Products )</span>
           </div>

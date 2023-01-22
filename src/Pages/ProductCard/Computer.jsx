@@ -82,7 +82,7 @@ const Computer = () => {
             fontFamily: "sans-serif",
           }}
         >
-          Title
+         Computers
         </h1>
         <span>(Showing 1-{data.length} results of total Products )</span>
           </div>
