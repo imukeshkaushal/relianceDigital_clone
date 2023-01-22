@@ -6,26 +6,26 @@ const PriceRange = () => {
   
     
     <Flex>
-    <Box padding={"10px"} borderRight="1px solid #D3D3D3">
+    <Box width={"100%"} borderRight="1px solid #D3D3D3">
     <VStack  divider={<StackDivider borderColor='gray.200' />}  spacing={4}  align='stretch'>
     
     <Box>
         <VStack>
             <Text>Price</Text>
-            <RangeSlider  aria-label={['min', 'max']}  defaultValue={[0,100]} >
+            <RangeSlider  aria-label={['min', 'max']} width = "90%" m="auto"  defaultValue={[0,100]} >
                 <RangeSliderTrack>
-                    <RangeSliderFilledTrack />
+                    <RangeSliderFilledTrack background={"#003380"}/>
                 </RangeSliderTrack>
-                    <RangeSliderThumb index={0} />
-                    <RangeSliderThumb index={1} />
+                    <RangeSliderThumb index={0} backgroundColor="#e42529"/>
+                    <RangeSliderThumb index={1} backgroundColor="#e42529"/>
             </RangeSlider>
-            <Flex justifyContent={"space-between"} width="100%"><Text>₹26999</Text><Text>₹46999</Text></Flex>
+            <Flex justifyContent={"space-between"} width="95%" m="auto"><Text>₹26999</Text><Text>₹46999</Text></Flex>
             <br/>
-            <Flex>
-                <Input width={"80px"}  borderColor={"blue"}/>
-                <Text>to</Text>
-                <Input width={"80px"} borderColor={"blue"} />{" "}
-                <Button background={"darkblue"} color={"white"} marginLeft="10px">GO</Button>
+            <Flex flexDirection={["column","column","row"]} gap = "10px" width={"95%"} m="auto" alignItems={"center"}>
+                <Input borderColor={"blue"}/>
+                <Text>To</Text>
+                <Input  borderColor={"blue"} />{" "}
+                <Button background={"#003380"} color={"white"} colorScheme="none">GO</Button>
             </Flex>
         </VStack>
     </Box>

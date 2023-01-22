@@ -38,17 +38,18 @@ const Televisions = () => {
    
   }, []);
 
-  const sortByLH = () => {
-    // let amt = 0;
-       data.forEach((e) => {
+  const sortByLH = (data) => {
+      
+    data.forEach((e) => {
+      let bag = 0;
       let x = e.price
-      let a = x.split(".")
-       let z = a[0].split(",").join("");
-    //   amt += +z;
-    // console.log(z)
-     return data.sort((a, b) => b.z.localeCompare(a.z));
+      let a = x.replaceAll(",", "")
+      bag += +a;
+    
+      
+     return data.sort((a, b) => b.amt.localeCompare(a.amt));
        })
-    // console.log("LH",amt);
+   
 
   
   };
