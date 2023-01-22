@@ -54,7 +54,7 @@ const Cart = () => {
   return (
     <>
       {
-        data.length === 0 ? <EmptyCart/> : <div className={crt.box}>
+        data.length === 0 ? <EmptyCart/> : <div className={crt.box} style = {{marginTop : "180px"}}>
         <div>
           {
             data.map((el) => {

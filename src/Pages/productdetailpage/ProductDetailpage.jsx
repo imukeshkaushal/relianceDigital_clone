@@ -1,4 +1,4 @@
-import { Box, Heading, Image, ListItem, Text, UnorderedList } from '@chakra-ui/react';
+import { Box, Flex, Heading, Image, ListItem, Text, UnorderedList, useToast } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react'
 import mycs from "./prod.module.css";
 
@@ -6,6 +6,7 @@ import { useParams } from 'react-router';
 import axios from 'axios';
 import { addItemCart } from '../../Redux/cart/cart.action';
 import { useDispatch } from 'react-redux';
+import { CheckCircleIcon } from '@chakra-ui/icons';
 
 
 
@@ -14,6 +15,7 @@ const ProductDetailpage = () => {
     const {name,id }= useParams()
     console.log(id,name)
     const dispatch = useDispatch(); 
+    const toast = useToast();
 
     
 
@@ -71,7 +73,17 @@ const ProductDetailpage = () => {
                             <Text className={mycs.lines}> *Delivery assurance is subject to our delivery locations staying open as per govt. regulations </Text>
                             <div gap="10px" className={mycs.butbox}>
                             <button data-cy="product-add-item-to-cart-button" onClick={() => {  
-                                dispatch(addItemCart(data)); 
+                                dispatch(addItemCart(data));
+                                toast({
+                                    position: 'bottom-center',
+                                    duration: 1200,
+                                    render: () => (
+                                        <Flex color='white' borderRadius={"10px"} p={"10px"} bgColor='green.400'>
+                        
+                                            <CheckCircleIcon w={30} h={30} /><Text size="lg" ml="15px">You Successfully Added Product in Cart. Please Check Your Cart!</Text>
+                                        </Flex >
+                                    ),
+                                })
                               }}>Add to Cart</button>
                                 <button> BUY NOW </button>
                             </div>
