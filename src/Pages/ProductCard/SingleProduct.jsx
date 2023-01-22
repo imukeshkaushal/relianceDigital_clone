@@ -61,7 +61,7 @@ const SingleProduct = () => {
     <>
       <Box w={"100%"}>
         <Flex  py={2} pl={2} pr={2} gap="2px" className={Styles.main_flex}>
-          <Box w="40%">
+          <Box w="50%">
             <Box mt={2}>
               <Text color={"red"} ml="95%" mb={"-25px"}>
                 <BiHeart size={25} />
@@ -104,7 +104,7 @@ const SingleProduct = () => {
             </Box>
             <Box w={"100%"} border="1px solid gray" mt={3}></Box>
             <Box mt={5}>
-              <Flex>
+              <Flex className={Styles.inner_flex}>
                 <Box w={"50%"}>
                   <Text fontSize={16} fontWeight="500">
                     Gain more with offers (1)
@@ -227,16 +227,14 @@ const SingleProduct = () => {
                       placeholder="Enter / Detect PIN Code"
                       border={"1px solid black"}
                     />
-                    <Flex gap={"2%"} mt={5}>
+                    <Flex gap={"2%"} mt={5} className={Styles.Button_flex}>
                       <Button
                         border={"2px solid red"}
                         fontWeight="bold"
                         fontSize={18}
-                        h="50px"
                         onClick={handleCart}
                         color="white"
                         bg={"#e42529"}
-                        w="50%"
                       >
                         ADD TO CART
                       </Button>
@@ -244,11 +242,9 @@ const SingleProduct = () => {
                         border={"2px solid red"}
                         fontWeight="bold"
                         fontSize={18}
-                        h="50px"
                         onClick={handleBuy}
                         color=""
                         bg={"#fc6027"}
-                        w="50%"
                       >
                         BUY NOW
                       </Button>

@@ -8,3 +8,13 @@
         flex-direction: column;
     }  
 }
+@media (max-width: 736px){
+    .inner_flex{
+        flex-direction: column;
+        width: 150%;
+    } 
+    .Button_flex{
+        flex-direction: column;
+        width: 150%;
+    } 
+}
