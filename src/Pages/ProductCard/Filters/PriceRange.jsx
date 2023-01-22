@@ -19,12 +19,12 @@ const PriceRange = () => {
                     <RangeSliderThumb index={0} backgroundColor="#e42529"/>
                     <RangeSliderThumb index={1} backgroundColor="#e42529"/>
             </RangeSlider>
-            <Flex justifyContent={"space-between"} width="95%" m="auto"><Text>₹26999</Text><Text>₹46999</Text></Flex>
+            <Flex justifyContent={"space-between"} width="95%" m="auto"><Text>₹499</Text><Text>₹46999</Text></Flex>
             <br/>
             <Flex flexDirection={["column","column","row"]} gap = "10px" width={"95%"} m="auto" alignItems={"center"}>
-                <Input borderColor={"blue"}/>
+                <Input borderColor={"blue"} placeholder="499"/>
                 <Text>To</Text>
-                <Input  borderColor={"blue"} />{" "}
+                <Input  borderColor={"blue"} placeholder="9999"/>{" "}
                 <Button background={"#003380"} color={"white"} colorScheme="none">GO</Button>
             </Flex>
         </VStack>
