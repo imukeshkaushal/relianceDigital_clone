@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { store } from "../../Redux/store";
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 import { getPosts, getPostsTelevisions } from "../../Redux/Products/Product.action";
 
 import {
@@ -14,12 +14,7 @@ import {
   Heading,
   Box,
   Image,
-  Badge,
-  Accordion,
-  AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-  AccordionIcon,
+  Badge
 } from "@chakra-ui/react";
 import Filters from "./Filters/Filters";
 import { AddIcon, MinusIcon } from "@chakra-ui/icons";
@@ -30,6 +25,7 @@ import { addItemCart } from "../../Redux/cart/cart.action";
 const Televisions = () => {
   const { loading, error, data } = useSelector((store) => store.product);
  
+
   const dispatch = useDispatch();
   //console.log(data);
   useEffect(() => {
@@ -37,16 +33,23 @@ const Televisions = () => {
   }, []);
 
   const sortByLH = () => {
-    console.log("LH",data);
-    return data.sort((a, b) => b.name.localeCompare(a.name));
-   // console.log("d",d);
+    // let amt = 0;
+       data.forEach((e) => {
+      let x = e.price
+      let a = x.split(".")
+       let z = a[0].split(",").join("");
+    //   amt += +z;
+    // console.log(z)
+     return data.sort((a, b) => b.z.localeCompare(a.z));
+       })
+    // console.log("LH",amt);
+
+  
   };
-  console.log("outLH",data);
+ 
   const sortByHL = () => {
-    console.log("HL",data);
     
       return data.sort((a, b) => a.name.localeCompare(b.name));
-   
   };
  
   if (loading) return <h1>...Loading</h1>;
@@ -83,7 +86,7 @@ const Televisions = () => {
             fontFamily: "sans-serif",
           }}
         >
-          Title
+          Television
         </h1>
         <span>(Showing 1-{data.length} results of total Products )</span>
           </div>

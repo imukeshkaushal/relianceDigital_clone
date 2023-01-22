@@ -72,7 +72,7 @@ const Mobile = () => {
             fontFamily: "sans-serif",
           }}
         >
-          Title
+         Mobiles
         </h1>
         <span>(Showing 1-{data.length} results of total Products )</span>
           </div>

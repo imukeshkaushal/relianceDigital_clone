@@ -82,7 +82,7 @@ const HeadPhone = () => {
             fontFamily: "sans-serif",
           }}
         >
-          Title
+        Headphones
         </h1>
         <span>(Showing 1-{data.length} results of total Products )</span>
           </div>

@@ -82,7 +82,7 @@ const HomeAppliances = () => {
             fontFamily: "sans-serif",
           }}
         >
-          Title
+         HomeAppliances
         </h1>
         <span>(Showing 1-{data.length} results of total Products )</span>
           </div>
