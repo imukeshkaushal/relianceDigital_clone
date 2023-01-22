@@ -6,6 +6,7 @@ import { FaPlus } from 'react-icons/fa';
 import { deleteProduct, getCartProducts } from '../../Redux/cart/cart.action';
 import { useNavigate } from 'react-router-dom';
 import EmptyCart from './EmptyCart';
+import CartItem from './CartItem';
 
 
 
@@ -19,20 +20,17 @@ const Cart = () => {
   const handleTotal = (arr) => {
     setTotal(0);
     let amt = 0;
-    arr.forEach((e) => {
-      let x = e.price
-      let a = x.split(".")
-      let z = a[0].split(",").join("");
-      amt += +z;
-    })
+    // arr.forEach((e) => {
+    //   let x = e.price
+    //   let a = x.split(".")
+    //   let z = a[0].split(",").join("");
+    //   amt += +z;
+    // })
     setTotal(amt);
   }
 
 
-  const handleDelete = (id) => {
-    dispatch(deleteProduct(id));
-    dispatch(getCartProducts());
-  }
+  
 
   const handlePayment = () => {
     localStorage.setItem("finalPrice",total);
@@ -59,40 +57,13 @@ const Cart = () => {
       {
         data.length === 0 ? <EmptyCart/> : <div className={crt.box}>
         <div>
-          {data.map((el) => (
-            <div key={el.id} className={crt.proinfobox}>
-              <div className={crt.productbox} >
-                <div>
-                  <img src={el.img} alt="Product images" className={crt.cartimg} />
-                </div>
-                <div>
-                  <h3>{el.name}</h3>
-                  <h5> <FaPlus size="12" className={crt.plslogo} /> <span> RECOMMENDED SERVICES/WARRANTY </span> </h5>
-                </div>
-                <div id={crt.mxm}>
-                  <h2> ₹{el.price} </h2>
-                  <h2 id={crt.strikethrough}> M.R.P: <i style={{ textDecoration: "line-through" }}> {el.mrp} </i> <span> Inclusive of all taxes </span> </h2>
-                  <h2 id={crt.ships}> Free Shipping </h2>
-                  <h2 id={crt.delevery}> <img src="https://www.reliancedigital.in/build/client/images/standard_delivery_icon.png" width="24px" alt="truck" /> Delivere by: {delevery} </h2>
-                  <h2 id={crt.gov}> *Delivery assurance is subject to our delivery locations staying open as per govt. regulations </h2>
-                </div>
-              </div> 
-              <div className={crt.cartbutton}>
-                <button onClick={() => { handleDelete(el.id) }}>Remove</button>
-  
-                {/* <button onClick={() => {
-                  let obj = {}
-                  for (let i of data)
-                    if (i.id === el.id) {
-                      obj = i
-                    }
-                  dispatch(addtoWish(obj));
-                }}>Add to Wish</button>  */}
-  
-                <button> Move to wishlist </button>
-              </div>
-            </div>
-          ))}
+          {
+            data.map((el) => {
+              return (
+                <CartItem key={el.id} {...el} delevery = {delevery}/>
+              )
+            })
+          }
         </div>
         <div className={crt.checkoutbox}>
           <button id={crt.checkoutbtn} onClick = {handlePayment}> Checkout </button>
