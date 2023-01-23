@@ -6,7 +6,7 @@ export const getAdminProducts = () => async(dispatch) => {
         type : GET_ADMIN_LOADING,
     })
     try{
-        let response = await axios.get(`https://rus-digital-televisions.onrender.com/computers`);
+        let response = await axios.get(`https://digital-express.vercel.app/computers`);
         dispatch({
             type : GET_ADMIN_SUCCESS,
             payload : response.data,
@@ -25,7 +25,7 @@ export const deleteAdminProducts = (id) => async(dispatch) => {
         type : DELETE_ADMIN_LOADING,
     })
     try{
-        let response = await axios.delete(`https://rus-digital-televisions.onrender.com/computers/${id}`);
+        let response = await axios.delete(`https://digital-express.vercel.app/computers/${id}`);
         dispatch({
             type: DELETE_ADMIN_SUCCESS,
             payload : id,

@@ -76,7 +76,7 @@ const AddProducts = () => {
 
         ),
     })
-    let res = await fetch("https://rus-digital-televisions.onrender.com/computers", {
+    let res = await fetch("https://digital-express.vercel.app/computers", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {

@@ -15,7 +15,7 @@ const Admin = () => {
   let [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("https://rus-digital-televisions.onrender.com/computers")
+    fetch("https://digital-express.vercel.app/computers")
       .then((res) => res.json())
       .then((res) => setData(res));
   }, []);

@@ -20,7 +20,7 @@ const ProductDetailpage = () => {
     
 
     useEffect(() => { 
-        axios.get(`https://rus-digital-televisions.onrender.com/${name}/${id}`).then((e)=>setData(e.data))
+        axios.get(`https://digital-express.vercel.app/${name}/${id}`).then((e)=>setData(e.data))
     }, [name,id]); 
 
     return (
