@@ -580,7 +580,7 @@ const Dropdown = () => {
         </Flex>
         
    {/*------------------------------------admin-----------------------------*/ }
-        <Flex alignItems="center">
+        {/* <Flex alignItems="center">
         <RouterLink to="/admin/login">
         <Flex _hover={{backgroundColor:"#e42529"}} p={3}>
           <button class="dropbtn" style={{fontSize : "13px"}}>
@@ -589,7 +589,7 @@ const Dropdown = () => {
           </Flex>
         </RouterLink>
          
-        </Flex>
+        </Flex> */}
       </Box>
     </div>
   );
