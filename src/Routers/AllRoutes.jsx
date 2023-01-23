@@ -1,11 +1,9 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "../Pages/Home/Home";
-
 import Admin from "../Admin/Admin";
 import AdminRequireAuth from "../Admin/AdminRequireAuth";
 import AdminLogin from "../Pages/AdminLogin";
-
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import Cart from "../Pages/Cart/Cart";
