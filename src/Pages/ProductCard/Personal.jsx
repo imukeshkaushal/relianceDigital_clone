@@ -280,15 +280,7 @@ const Personal = () => {
                         name="compare-btn"
                         id="compare-btn"
                       />
-                      <label data-cy="product-add-item-to-cart-button" onClick={() => {
-                        let obj = {}
-                        for(let i of data)
-                          if(i.id === product.id){
-                            obj = i
-                          }
-                        dispatch(addItemCart(obj));
-
-                      }}>Add to Cart</label>
+                      <label>Compare</label>
                     </Stack>
                   }
                 </Button>
