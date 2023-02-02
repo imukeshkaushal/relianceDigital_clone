@@ -105,4 +105,4 @@ We using different kinds of the technologies to make this website. These things 
 - [x] Mukesh Kaushal - [GitHub Profile](https://github.com/imukeshkaushal) 
 - [x] Rajat Agrawal - [GitHub Profile](https://github.com/agrawalrajat310)
 - [x] Tushit Saxena - [GitHub Profile](https://github.com/tushit99)
-- [x] Braj Mohan Verma - [GitHub Profile](https://github.com/vermabraj)
+- [x] Brajmohan Verma - [GitHub Profile](https://github.com/vermabraj)
