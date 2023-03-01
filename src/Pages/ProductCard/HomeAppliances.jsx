@@ -44,18 +44,14 @@ const HomeAppliances = () => {
    
   }, []);
 
-  const sortByLH = () => {
-    console.log("LH",data);
-    return data.sort((a, b) => b.name.localeCompare(a.name));
-   // console.log("d",d);
-  };
+ const sortByLH = () => {
+   dispatch({ type: "SORT_LOW_TO_HIGH" });
+ };
+
+ const sortByHL = () => {
+   dispatch({ type: "SORT_HIGH_TO_LOW" });
+ };
  
-  const sortByHL = () => {
-    console.log("HL",data);
-    
-      return data.sort((a, b) => a.name.localeCompare(b.name));
-   
-  };
  
  
 

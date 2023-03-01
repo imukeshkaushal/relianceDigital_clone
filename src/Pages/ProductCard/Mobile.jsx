@@ -31,26 +31,22 @@ const Mobile = () => {
 
   const dispatch = useDispatch();
   //console.log(data);
+  
+ 
+
   useEffect(() => {
     setTimeout(() => {
       dispatch(getPostsMobile());
-      setSkeletonLoading(false)
+      setSkeletonLoading(false);
     }, 2000);
-   
   }, []);
- 
 
   const sortByLH = () => {
-    console.log("LH",data);
-    return data.sort((a, b) => b.name.localeCompare(a.name));
-   // console.log("d",d);
+    dispatch({ type: "SORT_LOW_TO_HIGH" });
   };
- 
+
   const sortByHL = () => {
-    console.log("HL",data);
-    
-      return data.sort((a, b) => a.name.localeCompare(b.name));
-   
+    dispatch({ type: "SORT_HIGH_TO_LOW" });
   };
  
   
