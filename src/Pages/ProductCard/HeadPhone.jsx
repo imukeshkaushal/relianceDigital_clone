@@ -41,7 +41,7 @@ const HeadPhone = () => {
     setTimeout(() => {
       dispatch(getPostsHeadPhone());
       setSkeletonLoading(false)
-    }, 5000);
+    }, 2000);
    
   }, []);
 

@@ -36,29 +36,16 @@ const Televisions = () => {
     setTimeout(() => {
       dispatch(getPostsTelevisions());
       setSkeletonLoading(false)
-    }, 5000);
+    }, 2000);
    
   }, []);
 
-  const sortByLH = (data) => {
-      
-    data.forEach((e) => {
-      let bag = 0;
-      let x = e.price
-      let a = x.replaceAll(",", "")
-      bag += +a;
-    
-      
-     return data.sort((a, b) => b.amt.localeCompare(a.amt));
-       })
-   
-
-  
+  const sortByLH = () => {
+   dispatch({ type: "SORT_LOW_TO_HIGH" });
   };
  
   const sortByHL = () => {
-    
-      return data.sort((a, b) => a.name.localeCompare(b.name));
+     dispatch({ type: "SORT_HIGH_TO_LOW" });
   };
  
  
@@ -225,7 +212,7 @@ const Televisions = () => {
                       >
                         {" "}
                         <span>&#8377;</span>
-                        {product.mrp}
+                        {product.price}
                       </Text>
                       <Text
                         color="gray.500"
@@ -234,7 +221,7 @@ const Televisions = () => {
                       >
                         <s>
                           <span>&#8377;</span>
-                          {product.mrp}{" "}
+                          {product.price}{" "}
                         </s>{" "}
                       </Text>
                       <Text

@@ -40,7 +40,7 @@ const HomeAppliances = () => {
     setTimeout(() => {
       dispatch(getPostsHome());
       setSkeletonLoading(false)
-    }, 5000);
+    }, 2000);
    
   }, []);
 

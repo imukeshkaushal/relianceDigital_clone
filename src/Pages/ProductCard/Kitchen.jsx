@@ -40,7 +40,7 @@ const Kitchen = () => {
     setTimeout(() => {
       dispatch(getPostsKitchen());
       setSkeletonLoading(false)
-    }, 5000);
+    }, 2000);
    
   }, []);
 

@@ -3,7 +3,7 @@ import { getPersonalApi, getPostsApi, getPostsApiComputer, getPostsApiHeadphone,
 export const getPosts=()=>async(dispatch)=>{
     dispatch({type:GET_POSTS_LOADING});
     try{
-        let data = await getPostsApi()
+        let data = await getPostsApi();
         dispatch({type:GET_POSTS_SUCCESS,payload:data})
     }catch(e){
         dispatch({type:GET_POSTS_ERROR})
