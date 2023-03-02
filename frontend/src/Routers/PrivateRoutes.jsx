@@ -7,7 +7,7 @@ const PrivateRoute = ({ children }) => {
     let isAuth = useSelector((state) => state.authManager.isAuth);
 
     const toast = useToast()
-    console.log(isAuth)
+    
     if (isAuth) {
         return children
     } else {

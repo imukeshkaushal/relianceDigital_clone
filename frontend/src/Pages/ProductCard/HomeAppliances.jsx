@@ -35,7 +35,7 @@ const HomeAppliances = () => {
   const [skeletonLoading,setSkeletonLoading] = useState(true)
 
   const dispatch = useDispatch();
-  //console.log(data);
+ 
   useEffect(() => {
     setTimeout(() => {
       dispatch(getPostsHome());

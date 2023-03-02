@@ -28,14 +28,14 @@ export const postReducer = (state = initState, { payload, type }) => {
       };
     }
     case GET_POSTS_SUCCESS: {
-      console.log("state", payload);
+      
       const categories = {};
       payload.forEach((product) => {
         if (categories[product.brand] == undefined) {
           categories[product.brand] = 1;
         } else categories[product.brand]++;
       });
-      console.log(categories, "category");
+   
       return {
         ...state,
         loading: false,
@@ -58,21 +58,20 @@ export const postReducer = (state = initState, { payload, type }) => {
       return { ...state, data: newData };
     }
     case "FILTER_BY_PRICE_RANGE": {
-    //   console.log("price range called", payload);
+   
       let newData = state.data.filter((product) => {
-        // console.log(convertToNum(product.price), "price");
-        // console.log(payload, "payload");
+      
         return convertToNum(product.price) <= payload;
       });
-      console.log(newData, "price range filter");
+     
       return { ...state, data: [...newData] };
     }
     case "FILTER_BY_CATEGORY": {
-      console.log("FILTER_BY_CATEGORY callled");
+     
       let filteredData = state.data.filter(
         (product) => product.brand == payload
       );
-      console.log(filteredData);
+      
       return { ...state, data: filteredData };
     }
     default: {
