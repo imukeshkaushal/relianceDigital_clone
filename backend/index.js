@@ -22,13 +22,13 @@ app.use("/carts", cartRoute);
 
 app.use("/wishlist", wishlistRoute)
 
-app.listen(7500, async () => {
+app.listen(7800, async () => {
   try {
     await connection;
     console.log("Connected to DB");
   } catch (error) {
     console.log(" Cannot Connected to DB");
-    console.log(error);
+    console.log(error.message);
   }
   console.log("Running the server at port 7500");
 });
