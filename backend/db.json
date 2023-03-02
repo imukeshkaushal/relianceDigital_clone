@@ -1,0 +1,327 @@
+
+[
+    {
+        "category":"Jeans",
+        "gender": "Men",
+        "imageSrc": "https://bit.ly/3lU7KYa",
+        "rating": 9,
+        "brand": "Louis Philippe",
+        "description": "Mens Slip Fit Jeans",
+        "price": 1899
+    },
+    {
+        "category":"Jeans",
+        "gender": "Men",
+        "imageSrc": "https://bit.ly/3IdWk8Q",
+        "rating": 9.5,
+        "brand": "Louis Philippe",
+        "description": "Men Skinny Fit Jeans",
+        "price": 4000
+    },
+    {
+        "category":"Jeans",
+        "gender": "Women",
+        "imageSrc": "https://bit.ly/3YMH4aa",
+        "rating": 7.5,
+        "brand": "Levis Jeans",
+        "description": "Women Skinny Fit Jeans",
+        "price": 3689
+    },
+    {
+        "category":"Jeans",
+        "gender": "Women",
+        "imageSrc": "https://bit.ly/3xIcena",
+        "rating": 8.8,
+        "brand": "Levis Jeans",
+        "description": "Women Slim Fit Jeans",
+        "price": 1800
+    },
+    {
+        "category":"Jeans",
+        "gender": "Men",
+        "imageSrc": "https://bit.ly/3Z8wZE9",
+        "rating": 5.5,
+        "brand": "Pepe Jeans",
+        "description": "Mens Slip Fit Jeans",
+        "price": 1399
+    },
+    {
+        "category":"Jeans",
+        "gender": "Men",
+        "imageSrc": "https://bit.ly/41knkMH",
+        "rating": 8.5,
+        "brand": "Pepe Jeans",
+        "description": "Men Skinny Fit Jeans",
+        "price": 2149
+    },
+    {
+        "category":"Jeans",
+        "gender": "Women",
+        "imageSrc": "https://bit.ly/3KopKUE",
+        "rating": 7.5,
+        "brand": "Pepe Jeans",
+        "description": "Women Skinny Fit Jeans",
+        "price": 3689
+    },
+    {
+        "category":"Jeans",
+        "gender": "Women",
+        "imageSrc": "https://bit.ly/3ILrvKw",
+        "rating": 8.8,
+        "brand": "Pepe Jeans",
+        "description": "Women Slim Fit Jeans",
+        "price": 1800
+    },
+    {
+        "category":"Jeans",
+        "gender": "Men",
+        "imageSrc": "https://bit.ly/3KsMK4N",
+        "rating": 7.5,
+        "brand": "Jack & Jones",
+        "description": "Mens Bootcut Cotton Jeans",
+        "price": 1999
+    },
+    {
+        "category":"Jeans",
+        "gender": "Men",
+        "imageSrc": "https://bit.ly/3ZdjaEq",
+        "rating": 8.5,
+        "brand": "Jack & Jones",
+        "description": "Men Skinny Fit Jeans",
+        "price": 3500
+    },
+    {
+        "category":"Jeans",
+        "gender": "Women",
+        "imageSrc": "https://bit.ly/3KopKUE",
+        "rating": 8.5,
+        "brand": "SPYKAR",
+        "description": "Women Skinny Fit Jeans",
+        "price": 1264
+    },
+    {
+        "category":"Jeans",
+        "gender": "Women",
+        "imageSrc": "https://bit.ly/3ILrvKw",
+        "rating": 9.8,
+        "brand": "SPYKAR",
+        "description": "Women Slim Fit Jeans",
+        "price": 1500
+    },
+    {
+        "category":"Shirts",
+        "gender": "Men",
+        "imageSrc": "https://bit.ly/3knrAub",
+        "rating": 5.5,
+        "brand": "Louis Philippe",
+        "description": "Mens Solid Formal Shirt",
+        "price": 1999
+    },
+    {
+        "category":"Shirts",
+        "gender": "Men",
+        "imageSrc": "https://bit.ly/3XNaTGh",
+        "rating": 7.5,
+        "brand": "Louis Philippe",
+        "description": "Classic Fromal Cotton Shirt",
+        "price": 4500
+    },
+    {
+        "category":"Shirts",
+        "gender": "Women",
+        "imageSrc": "https://bit.ly/3ZsYRTZ",
+        "rating": 8,
+        "brand": "Hancock",
+        "description": "Women Slim Formal Shirt",
+        "price": 759
+    },
+    {
+        "category":"Shirts",
+        "gender": "Women",
+        "imageSrc": "https://bit.ly/3Es0SHG",
+        "rating": 9,
+        "brand": "Hancock",
+        "description": "Women Cotton Shirt",
+        "price": 800
+    },
+    {
+        "category":"Shirts",
+        "gender": "Men",
+        "imageSrc": "https://bit.ly/3Z87CT5",
+        "rating": 7.5,
+        "brand": "Allen Solly",
+        "description": "Mens Slim Fit Formal Shirt",
+        "price": 2500
+    },
+    {
+        "category":"Shirts",
+        "gender": "Men",
+        "imageSrc": "https://bit.ly/3Et52Px",
+        "rating": 6.5,
+        "brand": "Allen Solly",
+        "description": "Classic Fromal Cotton Shirt",
+        "price": 2220
+    },
+    {
+        "category":"Shirts",
+        "gender": "Women",
+        "imageSrc": "https://bit.ly/3XWaa5z",
+        "rating": 9,
+        "brand": "Allen Solly Women",
+        "description": "Women Slim Formal Shirt",
+        "price": 1700
+    },
+    {
+        "category":"Shirts",
+        "gender": "Women",
+        "imageSrc": "https://bit.ly/3Kp94MD",
+        "rating": 9.5,
+        "brand": "Allen Solly Women",
+        "description": "Women Cotton Shirt",
+        "price": 1600
+    },
+    {
+        "category":"Shirts",
+        "gender": "Men",
+        "imageSrc": "https://bit.ly/3YU04DK",
+        "rating": 10,
+        "brand": "Van Heusen",
+        "description": "Mens Slim Fit Formal Shirt",
+        "price": 5000
+    },
+    {
+        "category":"Shirts",
+        "gender": "Men",
+        "imageSrc": "https://bit.ly/3IoqiXM",
+        "rating": 9.9,
+        "brand": "Van Heusen",
+        "description": "Classic Fromal Cotton Shirt",
+        "price": 6000
+    },
+    {
+        "category":"Shirts",
+        "gender": "Women",
+        "imageSrc": "https://bit.ly/3Sr0zTu",
+        "rating": 8.5,
+        "brand": "Van Heusen Women",
+        "description": "Women Slim Formal Shirt",
+        "price": 1000
+    },
+    {
+        "category":"Shirts",
+        "gender": "Women",
+        "imageSrc": "https://bit.ly/3Zt2LfB",
+        "rating": 9.5,
+        "brand": "Van Heusen Women",
+        "description": "Women Cotton Shirt",
+        "price": 2000
+    },
+    {
+        "category":"Shoes",
+        "gender": "Men",
+        "imageSrc": "https://bit.ly/3SgBqLb",
+        "rating": 5.5,
+        "brand": "Puma",
+        "description": "Mens Smooth Walking Running Shoe",
+        "price": 2250
+    },
+    {
+        "category":"Shoes",
+        "gender": "Men",
+        "imageSrc": "https://bit.ly/3SlQKpy",
+        "rating": 5,
+        "brand": "Puma",
+        "description": "Men Fusion Running Shoes",
+        "price": 4050
+    },
+    {
+        "category":"Shoes",
+        "gender": "Women",
+        "imageSrc": "https://bit.ly/3XRNx28",
+        "rating": 4.5,
+        "brand": "Puma",
+        "description": "Women Running Shoes",
+        "price": 2750
+    },
+    {
+        "category":"Shoes",
+        "gender": "Women",
+        "imageSrc": "https://bit.ly/3YMUfYG",
+        "rating": 4.9,
+        "brand": "Puma",
+        "description": "Women Zode Running Shoes",
+        "price": 1500
+    },
+    {
+        "category":"Shoes",
+        "gender": "Men",
+        "imageSrc": "https://bit.ly/3EsaxxW",
+        "rating": 5.1,
+        "brand": "Skechers",
+        "description": "Mens Bounded Sneakers",
+        "price": 4900
+    },
+    {
+        "category":"Shoes",
+        "gender": "Men",
+        "imageSrc": "https://bit.ly/3IG77cv",
+        "rating": 5.5,
+        "brand": "Skechers",
+        "description": "Mens Solid Sneakers",
+        "price": 2500
+    },
+    {
+        "category":"Shoes",
+        "gender": "Women",
+        "imageSrc": "https://bit.ly/3YQ24wV",
+        "rating": 4.2,
+        "brand": "Skechers",
+        "description": "Women Air-Cooled Sneakers",
+        "price": 5500
+    },
+    {
+        "category":"Shoes",
+        "gender": "Women",
+        "imageSrc": "https://bit.ly/3ZdeUFk",
+        "rating": 4.5,
+        "brand": "Skechers",
+        "description": "Women On The Go Sneakers",
+        "price": 6000
+    },
+    {
+        "category":"Shoes",
+        "gender": "Men",
+        "imageSrc": "https://bit.ly/3SlBcCq",
+        "rating": 4.1,
+        "brand": "Nike",
+        "description": "Mens Court Vision Sneakers",
+        "price": 4955
+    },
+    {
+        "category":"Shoes",
+        "gender": "Men",
+        "imageSrc": "https://bit.ly/3KsSThr",
+        "rating": 5.6,
+        "brand": "Nike",
+        "description": "Air Force Sneakers",
+        "price": 10000
+    },
+    {
+        "category":"Shoes",
+        "gender": "Women",
+        "imageSrc": "https://bit.ly/3lQCA3L",
+        "rating": 4.2,
+        "brand": "Nike",
+        "description": "Women Basket Ball Shoe",
+        "price": 5500
+    },
+    {
+        "category":"Shoes",
+        "gender": "Women",
+        "imageSrc": "https://bit.ly/3lPfL0d",
+        "rating": 4.7,
+        "brand": "Nike",
+        "description": "Women Go Walk Shoe",
+        "price": 5099
+    }
+]
