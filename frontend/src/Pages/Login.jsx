@@ -12,7 +12,7 @@ const Login = () => {
             src="https://www.reliancedigital.in/akamai/images/mobile/Login-banner.jpeg"
             alt="img"
           />
-        </Box>
+        </Box> 
 
         <Box
           borderRadius={"15px"}

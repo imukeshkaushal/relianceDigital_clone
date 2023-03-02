@@ -118,9 +118,9 @@ const PriceRange = () => {
           </VStack>
           <VStack alignItems="flex-start" paddingLeft="10px">
             <Text>Category</Text>
-            {allCategories.map((category) => {
+            {allCategories.map((category,index) => {
               return (
-                <Flex gap="1rem">
+                <Flex key={index+2} gap="1rem">
                   {" "}
                   <Checkbox onChange={(e) => filterCategory(e, category)} />
                   <Text>{`${category} (${categories[category]})`}</Text>

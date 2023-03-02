@@ -14,7 +14,7 @@ import { useParams } from "react-router";
 import axios from "axios";
 import { addItemCart } from "../../Redux/cart/cart.action";
 import { useDispatch } from "react-redux";
-import { CheckCircleIcon } from "@chakra-ui/icons";
+import { CheckCircleIcon, SmallCloseIcon } from "@chakra-ui/icons";
 
 const ProductDetailpage = () => {
   const [data, setData] = useState([]);
@@ -32,10 +32,9 @@ const ProductDetailpage = () => {
         // console.log(data.name);  
         if(cart[i].name===data.name){
             doesincludes = true; 
-        }
-
+        } 
     }
-    if(doesincludes==true){
+    if(doesincludes===true){
         toast({
             position: "bottom-center",
             duration: 1200,
@@ -44,9 +43,9 @@ const ProductDetailpage = () => {
                 color="white"
                 borderRadius={"10px"}
                 p={"10px"}
-                bgColor="red.400"
+                bgColor="red.500"
               >
-                <CheckCircleIcon w={30} h={30} />
+                <SmallCloseIcon w={8} h={8} />
                 <Text size="lg" ml="15px">
                   Product is already added in card!
                 </Text>
