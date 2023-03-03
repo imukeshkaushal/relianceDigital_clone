@@ -29,27 +29,57 @@ import { useDispatch, useSelector } from "react-redux";
 import { deleteProduct, getCartProducts } from "../../Redux/cart/cart.action";
 import { useNavigate } from "react-router-dom";
 
+const clientData = {
+    name: "",
+    flat: "",
+    city: "",
+    state: "",
+    phone: "",
+  };
+
 const Payment = () => {
     const [cardDetail, setCardDetail] = useState("");
+    const [formState, setFormState] = useState(clientData);
     const [price,setPrice] = useState(0);
     const navigate = useNavigate();
     const cartData = useSelector((store) => store.cartManager.data);  
   const dispatch = useDispatch();
+  const [loading, setLoading] = useState(true);
+
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    const val = type === "checkbox" ? checked : value;
+    if(formState.name === "" && formState.flat === "" && formState.city === "" && formState.phone === "" && formState.state === ""){
+        setLoading(true)
+    
+    }
+    else{
+        setLoading(false)
+        
+    }
+    setFormState({ ...formState, [name]: val });
+  };
+
 
     const handlepayment = (e) => {
         setCardDetail(e);
     }
 
+    
     const hanleCheckout = () => {
-        swal({
-            title: "Order Placed!",
-            text: "Thanks for Purchasing from us. Your Order will be delievered within 4-5 Days.",
-            icon: "success",
-            button: "OK",
-          });
-          localStorage.setItem("finalPrice","0");
-          navigate("/")
-          handleDelete();
+       
+            swal({
+                title: "Order Placed!",
+                text: "Thanks for Purchasing from us. Your Order will be delievered within 4-5 Days.",
+                icon: "success",
+                button: "OK",
+              });
+              localStorage.setItem("finalPrice","0");
+              navigate("/")
+              handleDelete();
+        
+        
 
     }
 
@@ -67,6 +97,8 @@ const Payment = () => {
         let x  = localStorage.getItem("finalPrice");
         setPrice(x);
     },[cartData.length,dispatch])
+
+    
 
     return (
         <div className={sty.payhead}>
@@ -91,6 +123,9 @@ const Payment = () => {
                             type="text"
                             placeholder="Enter Name"
                             required
+                            name="name"
+                            value={formState.name}
+                            onChange={handleChange}/>
                         />
                         <FormLabel> Flat / House No </FormLabel>
                         <Input
@@ -98,6 +133,9 @@ const Payment = () => {
                             type="text"
                             placeholder="Enter flat/house"
                             required
+                            name="flat"
+                            value={formState.flat}
+                            onChange={handleChange}/>
                         />
                         <FormLabel> City </FormLabel>
                         <Input
@@ -105,6 +143,9 @@ const Payment = () => {
                             type="text"
                             placeholder="Enter City"
                             required
+                            name="city"
+                            value={formState.city}
+                            onChange={handleChange}/>
                         />
                         <FormLabel> State </FormLabel>
                         <Input
@@ -112,6 +153,9 @@ const Payment = () => {
                             type="text"
                             placeholder="Enter State"
                             required
+                            name="state"
+                            value={formState.state}
+                            onChange={handleChange}/>
                         />
                         <FormLabel> Enter Phone no. </FormLabel>
                         <InputGroup>
@@ -124,6 +168,9 @@ const Payment = () => {
                                 variant="flushed"
                                 placeholder="Enter Phone number"
                                 required
+                                name="phone"
+                                value={formState.phone}
+                                onChange={handleChange}/>
                             />
                         </InputGroup>
                         <FormLabel as="legend"> Payment Method: </FormLabel>
@@ -156,6 +203,7 @@ const Payment = () => {
                                             variant="flushed"
                                             type="number"
                                             placeholder="Enter Card Number"
+                                            
                                         />
                                     </Box>
                                     <Box>
@@ -203,6 +251,7 @@ const Payment = () => {
                             border='2px'
                             borderColor='blue.500'
                             margin="14px 0" 
+                            disabled = {loading}
                             onClick={hanleCheckout}
                             > Purchase </Button>
                         {/* ====== Button ====== */}
