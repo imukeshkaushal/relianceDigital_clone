@@ -12,18 +12,23 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { userSignUp } from "../Redux/auth/auth.action";
+import validator from 'validator'
+
 
 const RegisterForm = () => {
-  let intdata = {
+  let userData = {
     email: "",
     password: "",
     username: "",
   };
 
-  const [data, setData] = useState(intdata);
+  const [data, setData] = useState(userData);
+  const [emailError, setEmailError] = useState(true)
   const dispatch = useDispatch();
   const toast = useToast();
   const navigate = useNavigate();
+
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -46,14 +51,24 @@ const RegisterForm = () => {
     });
     dispatch(userSignUp(data));
 
-    setData(intdata);
+    setData(userData);
     navigate("/login");
   };
 
   const handleChange = (e) => {
-    console.log(1);
     const { name, value } = e.target;
+    if (validator.isEmail(data.email)) {
+      
+      setEmailError(false)
+      
+    } else {
+      setEmailError(true)
+      
+    }
     setData({ ...data, [name]: value });
+      
+    
+    
   };
 
   return (
@@ -85,6 +100,7 @@ const RegisterForm = () => {
             onChange={handleChange}
             name="email"
           />
+          {emailError ? <Text mt={2}  color={"red"}>Please enter valid Email Address</Text> : <Text mt={2}  color={"green"}>Good Job, Everything looks Great</Text>}
 
           <FormLabel mt={4}>Password</FormLabel>
           <Input placeholder="Create Password Here" borderRadius="none"  value={data.password} onChange={handleChange} name="password"/>

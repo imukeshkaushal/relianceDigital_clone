@@ -12,14 +12,17 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { userLogin } from "../Redux/auth/auth.action";
+import validator from 'validator'
 
-let intdata = {
+let userData = {
   email: "",
   password: "",
 };
 
 const LoginForm = () => {
-  const [data, setData] = useState(intdata);
+  const [data, setData] = useState(userData);
+  const [emailError, setEmailError] = useState(true)
+
   const existingData = useSelector((state) => state.authManager.userdata);
   const dispatch = useDispatch();
   const toast = useToast();
@@ -66,10 +69,15 @@ const LoginForm = () => {
       navigate("/");
     }
 
-    setData(intdata);
+    setData(userData);
   };
   const handleChange = (e) => {
     const { type, value } = e.target;
+    if (validator.isEmail(data.email)) {
+      setEmailError(false)
+    } else {
+      setEmailError(true)
+    }
     setData({ ...data, [type]: value });
   };
   
@@ -87,6 +95,7 @@ const LoginForm = () => {
         >
           <FormLabel>Email Address</FormLabel>
           <Input placeholder="Enter Email Address" type="email" borderRadius={"none"} value={data.email} onChange={handleChange}/>
+          {emailError ? <Text mt={2}  color={"red"}>Please enter valid Email Address</Text> : <Text mt={2}  color={"green"}>Good Job, Everything looks Great</Text>}
 
           <FormLabel mt={8}>Password</FormLabel>
           <Input placeholder="Enter Password Here" borderRadius="none" type="password" value={data.password} onChange={handleChange}/>
