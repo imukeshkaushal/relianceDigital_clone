@@ -10,14 +10,14 @@ import {
   useDisclosure,
   useToast,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 import { BsCartFill, BsFillFilePlusFill, BsFillMicFill } from "react-icons/bs";
 import { MdAccountCircle } from "react-icons/md";
 import { CheckCircleIcon, Search2Icon, WarningIcon } from "@chakra-ui/icons";
 import { FaShoppingCart } from "react-icons/fa";
 import { Hamburger } from "./NavComponents/Hamburger";
 import Dropdown from "./NavComponents/Dropdown";
-import {Link as RouterLink} from "react-router-dom"
+import {Link as RouterLink, useNavigate} from "react-router-dom"
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { userLogout } from "../Redux/auth/auth.action";
@@ -27,9 +27,13 @@ import { userLogout } from "../Redux/auth/auth.action";
 export const Navbar = () => {
   const username = useSelector((state) => state.authManager.userdata.username);
   const isAuth = useSelector((state) => state.authManager.isAuth)
+  const [updated, setUpdated] = useState("");
+  const [message, setMessage] = useState('');
   const dispatch = useDispatch();
   const toast = useToast();
   const {onClose } = useDisclosure()
+  const navigate = useNavigate();
+  const [data,setData] = useState([])
 
   const handleLogOut = () => {
     if (!isAuth) {
@@ -64,6 +68,23 @@ export const Navbar = () => {
 
 
 }
+
+const handleChange = (event) => {
+  setMessage(event.target.value);
+};
+
+const handleKeyDown = (event) => {
+  if (event.key === 'Enter') {
+    setUpdated(message);
+    navigate(`/allproduct/?q=${message}`)
+  }
+};
+
+
+
+console.log(data);
+
+
   return (
     <Box position={"fixed"} top = "0" left={"0"} right = "0" width = "100%" zIndex={99} >
       <Box display={["none", "none", "none", "block"]}  >
@@ -105,6 +126,11 @@ export const Navbar = () => {
                 variant={"none"}
                 borderRadius="20px"
                 paddingLeft={"20px"}
+                id="message"
+                name="message"
+                value={message}
+                onChange={handleChange}
+                onKeyDown={handleKeyDown}
               />
               <InputRightElement
                 children={<Search2Icon color="green.500" />}

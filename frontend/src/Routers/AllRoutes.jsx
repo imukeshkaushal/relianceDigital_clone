@@ -19,6 +19,8 @@ import Kitchen from "../Pages/ProductCard/Kitchen";
 import PrivateRoute from "./PrivateRoutes";
 import ProductDetailpage from "../Pages/productdetailpage/ProductDetailpage";
 import Wishlist from "../Pages/Wishlist/Wishlist";
+import Product from "../Pages/ProductCard/Product";
+import SingleProduct from "../Pages/productdetailpage/SingleProduct";
 
 
 const AllRoutes = () => {
@@ -50,7 +52,7 @@ const AllRoutes = () => {
         <Route path="/wishlist" element = {<PrivateRoute><Wishlist/></PrivateRoute>}></Route>
 
 
-
+        
         <Route path="/camera/:name/:id" element={<ProductDetailpage />} ></Route>
         <Route path="/home/:name/:id" element = {<ProductDetailpage />}></Route>
         <Route path="/televisions/:name/:id" element={<ProductDetailpage />}></Route>
@@ -59,6 +61,9 @@ const AllRoutes = () => {
         <Route path="/computer/:name/:id" element= {<ProductDetailpage />}></Route>
         <Route path="/personal/:name/:id" element = {<ProductDetailpage />}></Route>
         <Route path="/kitchen/:name/:id" element={<ProductDetailpage />}></Route>
+
+        <Route path="/allproduct" element= {<Product/>}></Route>
+        <Route path="singleproduct/:id" element={<SingleProduct/>} ></Route>
           
       </Routes>
     </div>

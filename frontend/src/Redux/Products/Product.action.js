@@ -1,4 +1,6 @@
 import {GET_POSTS_ERROR,GET_POSTS_LOADING,GET_POSTS_SUCCESS} from "./Product.types"
+import { GET_PRODUCT_FAILURE, GET_PRODUCT_REQUEST, GET_PRODUCT_SUCCESS } from "./Product.types";
+import axios from "axios";
 import { getPersonalApi, getPostsApi, getPostsApiComputer, getPostsApiHeadphone, getPostsApiHome, getPostsApiKitchen, getPostsApiMobile, getPostsApiPersonal, getPostsApiTelevision } from "./ProductApi"
 export const getPosts=()=>async(dispatch)=>{
     dispatch({type:GET_POSTS_LOADING});
@@ -88,3 +90,27 @@ export const getPersonalPost=(name,id)=>async(dispatch)=>{
         dispatch({type:GET_POSTS_ERROR})
     }
 }
+
+
+
+const getProductRequestAction = ()=>{
+    return {type:GET_PRODUCT_REQUEST}
+ }
+ 
+ const getProductSuccessAction=(payload)=>{
+     return {type:GET_PRODUCT_SUCCESS,payload}
+ }
+ 
+ const getProductFailureAction=()=>{
+     return {type:GET_PRODUCT_FAILURE}
+ }
+ 
+ 
+ export const getProduct =(paramObj)=> (dispatch)=>{
+     dispatch(getProductRequestAction())
+     axios.get("https://digital-express.vercel.app/allproduct",paramObj)
+ 
+       .then((res)=>dispatch(getProductSuccessAction(res.data)))
+       .then((res) => console.log(res.data))
+       .catch((err)=>dispatch(getProductFailureAction()))
+ }
