@@ -4,7 +4,7 @@ Digital Xpress is ECommerce Website & is a clone of Reliance Digital. It is used
 
 ## Deployed Link
 
-Visit : https://adventurous-sweater-7809.vercel.app/
+Visit :https://frontend-beta-wine.vercel.app/
 
 ## Responsive for all screen sizes
 
