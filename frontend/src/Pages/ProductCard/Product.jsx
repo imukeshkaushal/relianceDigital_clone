@@ -24,7 +24,7 @@ import 'react-loading-skeleton/dist/skeleton.css'
 import { Link, useSearchParams } from "react-router-dom";
 import { BsHeart } from "react-icons/bs";
 import Carousel from "./carousel";
-import SortData from "./Filters/SortData";
+
 
 const Product = () => {
 
@@ -75,7 +75,8 @@ const Product = () => {
           >
             Filters
           </h1>
-         <Filters data={data}/>
+          <Text pl={2}>There is No filters avilable Now.</Text>
+        
         </div>
         <div id="titleBar" >
           <div style={{ display: "flex", justifyContent:"space-between",height:"80px",alignItems:"center",marginBottom:"5px",padding:"10px",boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
@@ -91,9 +92,7 @@ const Product = () => {
         </h1>
         <span>(Showing 1-{data.length} results of total Products )</span>
           </div>
-          <Box>
-            <SortData/>
-        </Box>
+         
         </div>
           
         

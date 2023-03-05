@@ -53,47 +53,7 @@ const PriceRange = () => {
           spacing={4}
           align="stretch"
         >
-          <Box>
-            <VStack>
-              <Text>Price</Text>
-              <RangeSlider
-                aria-label={["min", "max"]}
-                width="90%"
-                m="auto"
-                defaultValue={[0, 100]}
-              >
-                <RangeSliderTrack>
-                  <RangeSliderFilledTrack background={"#003380"} />
-                </RangeSliderTrack>
-                <RangeSliderThumb index={0} backgroundColor="#e42529" />
-                <RangeSliderThumb index={1} backgroundColor="#e42529" />
-              </RangeSlider>
-              <Flex justifyContent={"space-between"} width="95%" m="auto">
-                <Text>₹499</Text>
-                <Text>₹46999</Text>
-              </Flex>
-              <br />
-              <Flex
-                flexDirection={["column", "column", "row"]}
-                gap="10px"
-                width={"95%"}
-                m="auto"
-                alignItems={"center"}
-              >
-                <Input borderColor={"blue"} placeholder="499" />
-                <Text>To</Text>
-                <Input borderColor={"blue"} placeholder="9999" />{" "}
-                <Button
-                  background={"#003380"}
-                  color={"white"}
-                  colorScheme="none"
-                >
-                  GO
-                </Button>
-              </Flex>
-            </VStack>
-          </Box>
-
+          
           <VStack alignItems="flex-start" paddingLeft="10px">
             <Text>Availability</Text>
             <Flex gap="1rem">
@@ -109,25 +69,7 @@ const PriceRange = () => {
               <Text>Exclude out of Stock</Text>
             </Flex>
           </VStack>
-          <VStack alignItems="flex-start" paddingLeft="10px">
-            <Text>Category</Text>
-            <Flex gap="1rem">
-              <Checkbox />
-              <Text>Laptops</Text>
-            </Flex>
-          </VStack>
-          <VStack alignItems="flex-start" paddingLeft="10px">
-            <Text>Category</Text>
-            {allCategories.map((category,index) => {
-              return (
-                <Flex key={index+2} gap="1rem">
-                  {" "}
-                  <Checkbox onChange={(e) => filterCategory(e, category)} />
-                  <Text>{`${category} (${categories[category]})`}</Text>
-                </Flex>
-              );
-            })}
-          </VStack>
+          
         </VStack>
       </Box>
     </Flex>
