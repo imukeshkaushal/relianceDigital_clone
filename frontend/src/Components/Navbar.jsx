@@ -77,6 +77,7 @@ const handleKeyDown = (event) => {
   if (event.key === 'Enter') {
     setUpdated(message);
     navigate(`/allproduct/?q=${message}`)
+    setMessage("");
   }
 };
 
