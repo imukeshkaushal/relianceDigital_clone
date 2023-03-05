@@ -13,9 +13,9 @@ Visit : https://adventurous-sweater-7809.vercel.app/
 Digital Express webiste looks very amazing and introduced with various type of languages like JavaScript, HTML, CSS etc. There are the some important details regarding with this project which is mentioned below:
 
 <ul dir="auto">
- <ol dir="auto">◉ JavaScript : 94.0%</ol>
- <ol dir="auto">◉ HTML : 0.6%</ol>
- <ol dir="auto">◉ CSS : 5.4%</ol>
+ <ol dir="auto">◉ JavaScript : 94.6%</ol>
+ <ol dir="auto">◉ HTML : 0.5%</ol>
+ <ol dir="auto">◉ CSS : 4.9%</ol>
  </ul>
  
  ## Functionalities
