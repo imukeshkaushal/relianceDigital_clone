@@ -16,7 +16,7 @@ code {
 }
 
 #filters{
-   width: 20%;
+   width: 20vw;
    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
 }
 
@@ -26,6 +26,7 @@ code {
     grid-template-columns: repeat(4,1fr);
     gap: 10px;
     margin-bottom: 20px;
+    
  
 }
 
@@ -44,7 +45,7 @@ code {
 margin-right: 10px;
 }
 #titleBar{
-   width: 78%;
+   width: 78vw;
 }
 #priceRange{
  justify-content: space-evenly;
