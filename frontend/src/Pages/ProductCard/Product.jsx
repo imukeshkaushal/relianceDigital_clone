@@ -53,9 +53,7 @@ const Product = () => {
     },[searchParams])
 
 
-    console.log(data);
- 
- 
+   
 
   return (
     <>
