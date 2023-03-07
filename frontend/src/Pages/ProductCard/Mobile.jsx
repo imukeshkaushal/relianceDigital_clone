@@ -289,7 +289,7 @@ const Mobile = () => {
           ) : (
             <div id="productCards">
               {data.map((product, index) => (
-                <Link key={index + 2} to={`televisions/${product.id}`}>
+                <Link key={index+2} to={`mobilesandtablets/${product.id}`}>
                   <Card
                     variant="outline"
                     key={product.id}
