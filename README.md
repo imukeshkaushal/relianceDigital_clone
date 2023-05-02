@@ -24,7 +24,7 @@ Digital Express webiste looks very amazing and introduced with various type of l
  
  <ol dir="auto">1. Cart Functionality (like adding an item and removing) </ol>
  <ol dir="auto">2. Admin Page</ol>
- <ol dir="auto">3. Admin can add a product product Will be shown on the latest page </ol>
+ <ol dir="auto">3. Admin can add a product Will be shown on the latest page </ol>
  <ol dir="auto">4. Login and Sign Up </ol>
  </ul>
  
