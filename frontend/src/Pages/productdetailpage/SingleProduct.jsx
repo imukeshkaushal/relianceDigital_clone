@@ -24,7 +24,7 @@ const SingleProduct = () => {
   const toast = useToast();
 
   const handleAddtoCart = async () => { 
-    let fet = await fetch(`https://digital-express.vercel.app/cart`); 
+    let fet = await fetch(`https://relience.onrender.com/cart`); 
     let cart =await fet.json() 
     let doesincludes = false;
     for(let i=0;i<cart.length;i++){   

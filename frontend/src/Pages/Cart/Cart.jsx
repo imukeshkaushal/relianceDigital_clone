@@ -48,7 +48,7 @@ const Cart = () => {
     setDelevery(a);
     handleTotal(data);
   }, [data.length, dispatch])
-  console.log(data);
+  // console.log(data);
 
 
   return (

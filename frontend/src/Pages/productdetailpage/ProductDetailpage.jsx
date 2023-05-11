@@ -24,12 +24,10 @@ const ProductDetailpage = () => {
   const toast = useToast();
 
   const handleAddtoCart = async () => { 
-    let fet = await fetch(`https://digital-express.vercel.app/cart`); 
+    let fet = await fetch(`https://relience.onrender.com/cart`); 
     let cart =await fet.json() 
     let doesincludes = false;
     for(let i=0;i<cart.length;i++){   
-        // console.log(cart[i]);    
-        // console.log(data.name);  
         if(cart[i].name===data.name){
             doesincludes = true; 
         } 
@@ -78,7 +76,7 @@ const ProductDetailpage = () => {
 
   useEffect(() => {
     axios
-      .get(`https://digital-express.vercel.app/${name}/${id}`)
+      .get(`https://relience.onrender.com/${name}/${id}`)
       .then((e) => setData(e.data));
   }, [name, id]);
 

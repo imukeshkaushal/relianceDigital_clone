@@ -11,6 +11,7 @@ const CartItem = ({img,id,name,price,mrp,delevery}) => {
     const toast = useToast();
     const handleDelete = (id) => {
         dispatch(deleteProduct(id));
+      
         dispatch(getCartProducts());
         toast({
           position: 'bottom-center',
@@ -24,6 +25,7 @@ const CartItem = ({img,id,name,price,mrp,delevery}) => {
               </Flex >
           ),
       })
+    
       }
   return (
     <div>

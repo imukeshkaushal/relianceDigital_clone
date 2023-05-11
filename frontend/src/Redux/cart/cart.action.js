@@ -17,7 +17,7 @@ export const getCartProducts = () => async (dispatch) => {
     type: GET_CART_LOADING,
   });
   try {
-    let response = await axios.get(`https://digital-express.vercel.app/cart`);
+    let response = await axios.get(`https://relience.onrender.com/cart`);
     dispatch({
       type: GET_CART_SUCCESS,
       payload: response.data,
@@ -35,7 +35,7 @@ export const deleteProduct = (id) => async (dispatch) => {
     type: DELETE_CART_LOADING,
   });
   try {
-    await axios.delete(`https://digital-express.vercel.app/cart/${id}`);
+    await axios.delete(`https://relience.onrender.com/cart/${id}`);
     dispatch({
       type: DELETE_CART_SUCCESS,
       payload: id,
@@ -54,7 +54,7 @@ export const addItemCart = (item) => async (dispatch) => {
     type: ADD_TO_CART_LOADING,
   });
   try {
-    let response = await axios.post(`https://digital-express.vercel.app/cart`,item);
+    let response = await axios.post(`https://relience.onrender.com/cart`,item);
     console.log(response.data);
     dispatch({
       type: ADD_TO_CART_SUCCESS,
