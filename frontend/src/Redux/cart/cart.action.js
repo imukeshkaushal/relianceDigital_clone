@@ -17,7 +17,9 @@ export const getCartProducts = () => async (dispatch) => {
     type: GET_CART_LOADING,
   });
   try {
-    let response = await axios.get(`https://relience.onrender.com/cart`);
+    let response = await axios.get(
+      `https://drab-cyan-puffer-cap.cyclic.app/cart`
+    );
     dispatch({
       type: GET_CART_SUCCESS,
       payload: response.data,
@@ -35,33 +37,31 @@ export const deleteProduct = (id) => async (dispatch) => {
     type: DELETE_CART_LOADING,
   });
   try {
-    await axios.delete(`https://relience.onrender.com/cart/${id}`);
-    dispatch({
-      type: DELETE_CART_SUCCESS,
-      payload: id,
-    });
+    await axios
+      .delete(`https://drab-cyan-puffer-cap.cyclic.app/cart/${id}`)
+      .then(() => {
+        dispatch({
+          type: DELETE_CART_SUCCESS,
+        });
+      });
   } catch (e) {
     dispatch({
       type: DELETE_CART_ERROR,
-      payload: e,
     });
   }
 };
 
 //
 export const addItemCart = (item) => async (dispatch) => {
-  dispatch({
-    type: ADD_TO_CART_LOADING,
-  });
   try {
-    let response = await axios.post(`https://relience.onrender.com/cart`,item);
-    console.log(response.data);
-    dispatch({
-      type: ADD_TO_CART_SUCCESS,
-      
-    });
-    dispatch(getCartProducts())
-    
+    console.log(item); 
+    await axios
+      .post(`https://drab-cyan-puffer-cap.cyclic.app/cart`, item)
+      .then(() => { 
+        dispatch({
+          type: ADD_TO_CART_SUCCESS,
+        });
+      });
   } catch (e) {
     dispatch({
       type: ADD_TO_CART_ERROR,

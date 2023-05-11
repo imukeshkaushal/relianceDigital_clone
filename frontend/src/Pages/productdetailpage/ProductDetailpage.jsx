@@ -17,21 +17,24 @@ import { useDispatch } from "react-redux";
 import { CheckCircleIcon, SmallCloseIcon } from "@chakra-ui/icons";
 
 const ProductDetailpage = () => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState({});
   const { name, id } = useParams();
 
   const dispatch = useDispatch();
   const toast = useToast();
 
   const handleAddtoCart = async () => { 
-    let fet = await fetch(`https://relience.onrender.com/cart`); 
-    let cart =await fet.json() 
-    let doesincludes = false;
+    let fet = await axios.get(`https://drab-cyan-puffer-cap.cyclic.app/cart`); 
+    let cart = await fet.data ;  
+
+    let doesincludes = false; 
+
     for(let i=0;i<cart.length;i++){   
         if(cart[i].name===data.name){
             doesincludes = true; 
         } 
-    }
+    } 
+
     if(doesincludes===true){
         toast({
             position: "bottom-center",
@@ -51,8 +54,17 @@ const ProductDetailpage = () => {
             ),
           });
     }
-    else{
-        dispatch(addItemCart(data)); 
+    else{ 
+
+      const obj = {
+        name: data.name, 
+        img: data.img, 
+        price: data.price, 
+        mrp: data.mrp, 
+        brand: data.brand
+      }
+
+        dispatch(addItemCart(obj)); 
         toast({
           position: "bottom-center",
           duration: 1200,
@@ -76,7 +88,7 @@ const ProductDetailpage = () => {
 
   useEffect(() => {
     axios
-      .get(`https://relience.onrender.com/${name}/${id}`)
+      .get(`https://drab-cyan-puffer-cap.cyclic.app/${name}/${id}`)
       .then((e) => setData(e.data));
   }, [name, id]);
 

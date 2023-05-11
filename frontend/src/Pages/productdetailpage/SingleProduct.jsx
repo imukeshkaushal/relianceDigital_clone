@@ -24,8 +24,12 @@ const SingleProduct = () => {
   const toast = useToast();
 
   const handleAddtoCart = async () => { 
-    let fet = await fetch(`https://relience.onrender.com/cart`); 
-    let cart =await fet.json() 
+    let fet = await axios.get(`https://drab-cyan-puffer-cap.cyclic.app/cart`); 
+    let cart = await fet.data ; 
+
+    let flag = cart.includes(data.name); 
+    console.log(flag); 
+
     let doesincludes = false;
     for(let i=0;i<cart.length;i++){   
         // console.log(cart[i]);    

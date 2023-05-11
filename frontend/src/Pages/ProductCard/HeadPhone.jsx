@@ -395,7 +395,13 @@ const sortByHL = () => {
                                 let obj = {};
                                 for (let i of data)
                                   if (i.id === product.id) {
-                                    obj = i;
+                                    obj ={
+                                      name: i.name, 
+                                      img: i.img, 
+                                      price: i.price, 
+                                      mrp: i.mrp, 
+                                      brand: i.brand
+                                    }
                                   }
                                 dispatch(addItemCart(obj));
                               }}

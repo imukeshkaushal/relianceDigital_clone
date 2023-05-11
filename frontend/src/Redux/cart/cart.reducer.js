@@ -75,19 +75,16 @@ export const cartReducer = (state = productInitalState, { type, payload }) => {
       };
     }
     case DELETE_CART_SUCCESS: {
-      const filterDeleteProducts = state.data.filter(
-        (product) => product.id !== payload
-      );
       return {
         ...state,
-        data: filterDeleteProducts,
+        loading: false,
       };
     }
     case DELETE_CART_ERROR: {
       return {
         ...state,
         loading: false,
-        error: payload,
+        error: true,
       };
     }
 
